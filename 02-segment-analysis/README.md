@@ -8,11 +8,10 @@
 
 ## Prompts inside / Prompt trong folder này
 
-| # | Prompt | When to use / Khi dùng |
-|---|--------|------------------------|
-| 04 | Analyze cohort drop | Retention thấp, chưa rõ nguyên nhân |
-| 05 | Segment users for budget allocation | Ngân sách có hạn, cần phân bổ đúng |
-| 06 | Find early churn signals | Muốn can thiệp trước khi user inactive |
+| # | File | Nội dung |
+|---|------|----------|
+| 04–06 | SKILL.md | Cohort analysis, budget allocation, early churn signals |
+| 07–09 | SKILL-retention.md | Retention sau lần đổi đầu tiên — chẩn đoán, journey design, meaningful threshold |
 
 → [`prompts.md`](prompts.md)
 
