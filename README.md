@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/stars/thaolst/ai-growth-prompts?style=flat-square&color=facc15&logo=github" alt="stars" />
 </p>
 
-> Prompts tôi dùng thực tế trong công việc growth marketing. Không phải template chung chung - được xây từ kinh nghiệm chạy campaign loyalty và promotion thực chiến, nơi level ngân sách, giới hạn kênh, và hành vi từng segment thực sự ảnh hưởng đến kết quả.
+> Prompts mình dùng thực tế trong công việc growth marketing. Không phải template chung chung - được xây từ kinh nghiệm chạy campaign loyalty và promotion thực chiến, nơi level ngân sách, giới hạn kênh, và hành vi từng segment thực sự ảnh hưởng đến kết quả.
 
 ## Mục lục
 
