@@ -35,7 +35,7 @@ Mỗi prompt có 3 phần:
 
 ## Logic xuyên suốt
 
-Mọi campaign bắt đầu bằng việc xác định level (`00`). Level đó quyết định kênh, asset, và timeline bạn thực sự có. Các prompt từ `01–04` được thiết kế để hoạt động trong giới hạn đó - không phải trong điều kiện lý tưởng.
+Mọi campaign bắt đầu bằng việc xác định level (`00`). Level đó quyết định kênh, asset, và timeline bạn thực sự có. Các prompt từ `01-04` được thiết kế để hoạt động trong giới hạn đó - không phải trong điều kiện lý tưởng.
 
 *Cập nhật khi có prompt mới được kiểm chứng thực tế.*
 
@@ -64,7 +64,7 @@ Each prompt has three parts:
 
 ### Underlying logic
 
-Every campaign starts with a level decision (`00`). That level defines what channels, assets, and timeline you actually have. The prompts in `01–04` are calibrated to work within those constraints - not in ideal conditions.
+Every campaign starts with a level decision (`00`). That level defines what channels, assets, and timeline you actually have. The prompts in `01-04` are calibrated to work within those constraints - not in ideal conditions.
 
 *Updated as new prompts are tested in practice.*
 
