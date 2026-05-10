@@ -16,9 +16,10 @@ Thiết kế voucher phù hợp với segment user và cấp độ campaign.
 ```
 Cần thiết kế bộ voucher cho campaign loyalty.
 
-Cấp độ campaign: [S / M]
+Cấp độ campaign: [S / M / L / XL]
 Nếu S: chỉ in-app + owned out-app
 Nếu M: thêm [kênh paid cụ thể]
+Nếu L / XL: bạn cung cấp brief concept — agency thiết kế
 
 Hồ sơ segment:
 - Số dư điểm: [thấp / trung bình / cao]
@@ -45,7 +46,7 @@ Ngân sách voucher mỗi user: [ước lượng / hoặc "hẹp / vừa / linh 
 **Khi nào dùng:** Có 2–3 hướng, cần chọn nhanh.
 
 ```
-Đang chọn giữa các hướng voucher cho campaign [S / M].
+Đang chọn giữa các hướng voucher cho campaign [S / M / L / XL].
 
 Phương án A: [mô tả ngắn]
 Phương án B: [mô tả ngắn]
@@ -69,9 +70,7 @@ Yêu cầu:
 **Khi nào dùng:** Giữa campaign, redemption rate không đạt mục tiêu. Cần chẩn đoán nhanh.
 
 ```
-Cấp độ campaign: [S / M]
-
-Voucher đang chạy:
+Cấp độ campaign: [S / M / L / XL]
 - Loại và điều kiện: [mô tả]
 - Audience: [segment]
 - Kênh đang dùng: [in-app / push / owned social / paid]
@@ -113,9 +112,10 @@ At S level, fewer channels means the voucher mechanic itself carries more weight
 ```
 I need to design a voucher set for a loyalty campaign.
 
-Campaign level: [S / M]
+Campaign level: [S / M / L / XL]
 If S: channels are in-app + owned out-app only
 If M: channels include in-app, owned out-app, and [specify 1–2 paid channels]
+If L / XL: you brief the concept — agency designs
 
 Segment profile:
 - Points balance: [low / mid / high — or approximate range]
@@ -148,7 +148,7 @@ Please suggest:
 **When to use:** 2–3 directions are on the table, need to pick one fast.
 
 ```
-I'm choosing between voucher directions for a [S / M] campaign.
+I'm choosing between voucher directions for a [S / M / L / XL] campaign.
 
 Option A: [brief description]
 Option B: [brief description]
@@ -173,7 +173,7 @@ Please:
 **When to use:** Mid-campaign, redemption rate isn't hitting target. Need fast diagnosis.
 
 ```
-Campaign level: [S / M]
+Campaign level: [S / M / L / XL]
 
 Voucher running:
 - Type and conditions: [brief description]

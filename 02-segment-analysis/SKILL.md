@@ -25,7 +25,7 @@ Tuần 4:   38%
 Tuần 8:   29%
 Tuần 12:  22%
 
-Cấp độ campaign có thể chạy: [S / M]
+Cấp độ campaign có thể chạy: [S / M / L / XL]
 
 Phân tích:
 1. Điểm rớt mạnh nhất — user đang làm gì ở giai đoạn đó?
@@ -44,7 +44,7 @@ Phân tích:
 ```
 Cần ưu tiên segment nào để target.
 
-Cấp độ: [S / M]
+Cấp độ: [S / M / L / XL]
 Ngân sách: [ước lượng]
 Kênh:
 - S: in-app + owned out-app
@@ -73,7 +73,7 @@ Mục tiêu: [tăng MAU / kéo user lapsed / tăng tần suất]
 ```
 Muốn xác định user có nguy cơ rời bỏ sớm để can thiệp.
 
-Cấp độ: [S / M]
+Cấp độ: [S / M / L / XL]
 Công cụ can thiệp:
 - S: push notification, in-app banner, in-app mechanic
 - M: thêm [paid retargeting / owned social / email]
@@ -121,7 +121,7 @@ Week 4:   38%
 Week 8:   29%
 Week 12:  22%
 
-Campaign level I can run in response: [S / M]
+Campaign level I can run in response: [S / M / L / XL]
 
 Please analyze:
 1. Steepest drop point — what are users likely doing at that stage?
@@ -140,7 +140,7 @@ Please analyze:
 ```
 I need to prioritize which user segments to target.
 
-Campaign level: [S / M]
+Campaign level: [S / M / L / XL]
 Available budget: [approximate]
 Channels available at this level:
 - S: in-app + owned out-app
@@ -169,7 +169,7 @@ Please suggest:
 ```
 I want to identify at-risk users early enough to intervene.
 
-Campaign level for intervention: [S / M]
+Campaign level for intervention: [S / M / L / XL]
 Intervention options available:
 - S: push notification, in-app banner, in-app mechanic
 - M: above + [paid retargeting / owned social / email]

@@ -9,7 +9,7 @@ Game và engagement mechanic — thường dùng nhất ở cấp M, nơi ngân 
 ```
 Cần thiết kế game mechanic cho loyalty program.
 
-Cấp độ: [S / M]
+Cấp độ: [S / M / L / XL]
 Ngân sách: [ước lượng]
 
 Ràng buộc cấp độ:
@@ -44,7 +44,7 @@ Audience mục tiêu:
 **Khi nào dùng:** Game đã live, engagement thấp hơn kỳ vọng, cần chẩn đoán nhanh.
 
 ```
-Cấp độ game này được xây cho: [S / M]
+Cấp độ game: [S / M / L / XL]
 
 Funnel:
 Bước 1 – [tên]: [users / %]
@@ -82,7 +82,7 @@ Game and engagement mechanics — most relevant at M level where budget supports
 ```
 I need to design a game mechanic for a loyalty program.
 
-Campaign level: [S / M]
+Campaign level: [S / M / L / XL]
 Budget range: [approximate]
 
 Level-specific constraints:
@@ -117,7 +117,7 @@ Please suggest:
 **When to use:** Game is live, engagement is lower than expected, need fast diagnosis.
 
 ```
-Campaign level this game was built for: [S / M]
+Campaign level: [S / M / L / XL]
 
 Funnel data:
 Step 1 – [step name]: [users / %]
