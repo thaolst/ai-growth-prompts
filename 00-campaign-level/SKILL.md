@@ -70,10 +70,10 @@ Yêu cầu:
 
 ## Thảo luận
 
-Framework này được xây từ kinh nghiệm chạy hàng trăm campaign tại một
-công ty fintech ở Việt Nam. Nhưng mỗi công ty phân loại khác nhau.
+Framework này được xây từ kinh nghiệm chạy campaign thực tế.
+Nhưng mỗi nơi phân loại khác nhau.
 
-- Ở công ty bạn, phân loại campaign thế nào? Giống hay khác?
+- Ở chỗ bạn, phân loại campaign thế nào?
 - Điều khó nhất khi xác định level là gì?
 - Chia sẻ cách của bạn — mình rất muốn học hỏi.
 
@@ -151,9 +151,9 @@ Based on this:
 
 ## Discussion
 
-This framework is built from running hundreds of campaigns at a fintech
-company in Vietnam. Every company draws the lines differently.
+This framework is built from running real campaigns.
+Every company draws the lines differently.
 
-- How do you classify campaigns where you work?
+- How do you classify campaigns at your company?
 - What's the hardest part about getting the level right?
 - Share your approach — I'd love to learn.
