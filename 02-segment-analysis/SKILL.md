@@ -2,6 +2,12 @@
 
 Hiểu ai cần target và target thế nào — trong phạm vi kênh cho phép ở mỗi cấp độ campaign.
 
+| Cấp độ | Dữ liệu có sẵn | Phân tích được |
+|--------|---------------|----------------|
+| **S** | Cohort, RFM cơ bản | Phân khúc hành vi, chọn 1 nhóm |
+| **M** | Thêm dữ liệu kênh paid | Multi-segment, phân bổ budget |
+| **L** | Full data + research | Nghiên cứu định tính + định lượng |
+
 ## Prompt 04 · Phân tích cohort drop để tìm điểm can thiệp
 
 **Khi nào dùng:** Dữ liệu retention cho thấy drop-off nhưng chưa rõ nguyên nhân và cách xử lý.
