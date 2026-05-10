@@ -79,7 +79,7 @@ Nhưng mỗi nơi phân loại khác nhau.
 
 ---
 
-# 00 · Decide campaign level
+## 00 · Decide campaign level
 
 Start here. Get the level wrong and everything downstream is miscalibrated.
 Biggest mistake: treating an M campaign like "just another S", then scrambling

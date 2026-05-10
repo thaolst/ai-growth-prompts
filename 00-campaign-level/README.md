@@ -13,7 +13,7 @@ Nội dung chi tiết + prompt → `SKILL.md`
 
 ---
 
-# 00 · Campaign level
+## 00 · Campaign level
 
 Start here. The level determines budget, channels, deliverables, and timeline.
 Get this wrong and everything downstream is miscalibrated.
