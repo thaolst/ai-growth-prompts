@@ -11,7 +11,7 @@ campaign M như thể nó chỉ là S, rồi giữa đường mới cuống lên
 | **S** | < 1B VND/tháng | In-app + owned out-app | Copy content + Design |
 | **M** | > 1B VND media | Trên + 1–2 kênh paid | + Comm planning + Media plan |
 | **L** | > 3B VND media | Full channels | + Concept creative + PM |
-| **XL** | Campaign công ty | Full channels | + All of the above |
+| **XL** | Campaign doanh nghiệp | Full channels | + All of the above |
 
 ## Cấp độ S
 
