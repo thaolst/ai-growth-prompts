@@ -1,33 +1,33 @@
-# 00 · Campaign Level / Xác định cấp độ campaign
+# 00 · Xác định cấp độ campaign / Campaign Level
 
-**EN:** Start here before every campaign. The level determines budget, channels,
-deliverables, and timeline. Get this wrong and everything downstream is
-miscalibrated.
+**VI:** Bắt đầu tại đây. Level quyết định ngân sách, kênh, đầu việc, và timeline.
+Chọn sai thì toàn bộ execution sau đó bị lệch.
 
-**VI:** Bắt đầu từ đây trước mọi campaign. Level quyết định ngân sách, kênh,
-đầu việc, và timeline. Chọn sai thì toàn bộ execution sau đó bị lệch.
+**EN:** Start here. The level determines budget, channels, deliverables, and
+timeline. Get this wrong and everything downstream is miscalibrated.
 
 ---
 
-## Framework / Khung phân loại
+## Framework
 
-| Level | Budget | Channels | Assets |
-|-------|--------|----------|--------|
-| **S** | < 1B VND/month | In-app + owned out-app | Content + Design |
+| Level | Ngân sách / Budget | Kênh / Channels | Đầu việc / Assets |
+|-------|-------------------|-----------------|-------------------|
+| **S** | < 1B VND/tháng | In-app + owned out-app | Content + Design |
 | **M** | > 1B VND media | + 1–2 paid channels | + Comm planning + Media plan |
 | **L** | > 3B VND media | Full channels | + Concept creative + PM |
-| **XL** | Company campaign | Full channels | + All of the above |
+| **XL** | Campaign công ty | Full channels | + All of the above |
 
-## When to use / Khi nào dùng
+## Khi nào dùng / When to use
 
-- **Before briefing anyone** — level first, then brief
 - **Trước khi brief bất kỳ ai** — xác định level trước, rồi mới brief
+- **Before briefing anyone** — level first, then brief
 
-## Prompt inside / Prompt trong folder này
+## Prompt trong folder
 
-→ `SKILL.md` — Prompt 00: Classify campaign level
+→ `SKILL.md` — Prompt 00: Phân loại campaign / Classify campaign level
 
-## Contribute / Đóng góp
+## Đóng góp / Contribute
 
-Cách bạn phân loại campaign ở công ty bạn có khác không? Mở issue hoặc
-thảo luận — mình rất muốn học hỏi.
+Cách bạn phân loại campaign ở công ty bạn có khác không? Mở issue hoặc thảo luận.
+
+How do you classify campaigns at your company? Open an issue or discussion.
