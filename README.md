@@ -30,7 +30,7 @@ Mỗi prompt có 3 phần:
 | [`00-campaign-level`](./00-campaign-level) | Bắt đầu tại đây. Xác định level S/M/L trước mọi thứ. |
 | [`01-voucher-design`](./01-voucher-design) | Thiết kế voucher theo segment, không theo cảm tính. |
 | [`02-segment-analysis`](./02-segment-analysis) | Target ai, can thiệp lúc nào, phân bổ thế nào. |
-| [`03-game-meu`](./03-game-meu) | Loop engagement giúp user quay lại. |
+| [`03-game-mechanics`](./03-game-mechanics) | Loop engagement giúp user quay lại. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Plan truyền thông và brief design theo từng level. |
 
 ## Logic xuyên suốt
@@ -59,7 +59,7 @@ Each prompt has three parts:
 | [`00-campaign-level`](./00-campaign-level) | Start here. Decide S/M/L before anything else. |
 | [`01-voucher-design`](./01-voucher-design) | Design vouchers by segment, not by assumption. |
 | [`02-segment-analysis`](./02-segment-analysis) | Who to target, when to intervene, how to allocate. |
-| [`03-game-meu`](./03-game-meu) | Engagement loops that bring users back. |
+| [`03-game-mechanics`](./03-game-mechanics) | Engagement loops that bring users back. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning and design briefs by level. |
 
 ### Underlying logic
