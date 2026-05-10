@@ -1,16 +1,10 @@
-# 00 · Xác định cấp độ campaign / Campaign Level
-
----
-
-## 🇻🇳 Tiếng Việt
-
-### Tổng quan
+# 00 · Xác định cấp độ campaign
 
 Bắt đầu tại đây. Level quyết định ngân sách, kênh, đầu việc, và timeline.
 Chọn sai thì toàn bộ execution sau đó bị lệch. Sai lầm lớn nhất: coi
 campaign M như thể nó chỉ là S, rồi giữa đường mới cuống lên.
 
-### Framework
+## Framework
 
 | Cấp độ | Ngân sách | Kênh | Đầu việc chính |
 |---------|-----------|------|----------------|
@@ -19,32 +13,37 @@ campaign M như thể nó chỉ là S, rồi giữa đường mới cuống lên
 | **L** | > 3B VND media | Full channels | + Concept creative + PM |
 | **XL** | Campaign công ty | Full channels | + All of the above |
 
-### Các cấp độ
+## Cấp độ S
 
-**S** — BAU. Chỉ có in-app + owned, không paid.
+S là BAU. Chỉ có in-app + owned, không paid.
 Đầu ra = copy + design, không cần concept creative hay media planning.
 
-**M** — Campaign cần nhiều hơn copy với banner: launch tính năng mới,
-tiếp cận nhóm user mới, xây thói quen mới.
+## Cấp độ M
 
-Đầu ra đi kèm:
+M dành cho campaign cần nhiều hơn copy với banner: launch tính năng mới,
+tiếp cận nhóm user mới, xây thói quen mới cho user hiện tại.
+
+Đầu ra:
 - Communication framework (message hierarchy, audience x channel x phase)
 - Media plan (kênh paid nào, ngân sách, phasing)
 - Campaign creative idea
 - Bộ asset: awareness (video + banner + social) + conversion (banner set)
 
-Timeline: 4–6 tuần (không shoot), 4–8 tuần (có shoot). Tối đa 12 tuần.
+Timeline chuẩn bị: 4–6 tuần nếu không shoot, 4–8 tuần nếu có shoot.
+Tổng thời gian campaign tối đa 12 tuần.
 
-**L & XL** — Vai trò chuyển từ người làm thành người cung cấp input.
+## Cấp độ L và XL
+
+Ở L, vai trò thay đổi. Bạn không còn là người làm — bạn cung cấp input.
 Campaign có PM riêng, agency partners, cross-functional team.
 
 Khi nào lên L:
 - Strategic agenda của công ty, không chỉ promotion
 - Budget > 3B VND/tháng chỉ riêng media
 - Nhiều team tham gia (product, brand, comms, legal)
-- Ảnh hưởng brand dài hạn
+- Ảnh hưởng brand dài hạn, không chỉ conversion ngắn hạn
 
-### Prompt: Phân loại campaign
+## Prompt: Phân loại campaign
 
 **Khi nào dùng:** Ngay từ đầu, trước khi brief bất kỳ ai.
 
@@ -65,21 +64,28 @@ Bối cảnh hiện tại:
 Yêu cầu:
 1. Đề xuất level (S / M / L / XL) kèm lý do
 2. Cảnh báo nếu budget và mục tiêu không khớp
-3. Xác định ngày launch sớm nhất
+3. Xác định ngày launch sớm nhất có thể
 4. Một việc cần quyết định trước khi brief
 ```
 
+## Thảo luận
+
+Framework này được xây từ kinh nghiệm chạy hàng trăm campaign tại một
+công ty fintech ở Việt Nam. Nhưng mỗi công ty phân loại khác nhau.
+
+- Ở công ty bạn, phân loại campaign thế nào? Giống hay khác?
+- Điều khó nhất khi xác định level là gì?
+- Chia sẻ cách của bạn — mình rất muốn học hỏi.
+
 ---
 
-## 🇬🇧 English
-
-### Overview
+# 00 · Decide campaign level
 
 Start here. Get the level wrong and everything downstream is miscalibrated.
 Biggest mistake: treating an M campaign like "just another S", then scrambling
 halfway through.
 
-### Framework
+## Framework
 
 | Tier | Budget | Channels | Key deliverables |
 |------|--------|----------|------------------|
@@ -88,13 +94,15 @@ halfway through.
 | **L** | > 3B VND media | Full channels | + Concept creative + PM |
 | **XL** | Company campaign | Full channels | + All of the above |
 
-### Tiers
+## S tier
 
-**S** — Business-as-usual. In-app and owned channels only.
+S is business-as-usual. In-app and owned channels only.
 Deliverables = content copy + design — no concept creative, no media planning.
 
-**M** — Campaigns that need more than copy and a banner: launching a new
-feature, entering a new segment, building a new habit.
+## M tier
+
+M is for campaigns that need more than copy and a banner: launching a new
+feature, entering a new user segment, building a new habit.
 
 Deliverables:
 - Communication framework (message hierarchy, audience x channel x phase)
@@ -102,18 +110,21 @@ Deliverables:
 - Campaign creative idea
 - Asset set: awareness (video + banner + social) + conversion (banner set)
 
-Prep timeline: 4–6 weeks (no shoot), 4–8 weeks (with shoot). Max 12 weeks.
+Prep timeline: 4–6 weeks without shooting, 4–8 weeks with shooting.
+Total campaign window up to 12 weeks.
 
-**L & XL** — Your role shifts from executor to input provider. The campaign
-has a dedicated PM, agency partners, and cross-functional team.
+## L & XL tiers
+
+At L, your role shifts from executor to input provider. The campaign has a
+dedicated PM, agency partners, and cross-functional team.
 
 Escalate to L when:
 - Strategic company agenda, not just a promotion
 - Budget > 3B VND/month on media alone
 - Multiple teams involved (product, brand, comms, legal)
-- Long-term brand impact
+- Long-term brand impact, not short-term conversion
 
-### Prompt: Classify campaign level
+## Prompt: Classify campaign level
 
 **When to use:** At the very beginning, before briefing anyone.
 
@@ -138,20 +149,11 @@ Based on this:
 4. One thing to decide before briefing anyone
 ```
 
----
+## Discussion
 
-## Thảo luận / Discussion
+This framework is built from running hundreds of campaigns at a fintech
+company in Vietnam. Every company draws the lines differently.
 
-Framework này được xây từ kinh nghiệm thực tế tại một công ty fintech
-Việt Nam. Nhưng mỗi công ty phân loại khác nhau.
-
-This framework is built from real experience at a Vietnamese fintech company.
-Every company draws the lines differently.
-
-**Câu hỏi cho bạn / Questions for you:**
-- Ở công ty bạn, phân loại campaign thế nào?
-  How do you classify campaigns where you work?
-- Điều khó nhất khi xác định level là gì?
-  What's the hardest part about getting the level right?
-- Chia sẻ cách của bạn — mình rất muốn học hỏi.
-  Share your approach — I'd love to learn.
+- How do you classify campaigns where you work?
+- What's the hardest part about getting the level right?
+- Share your approach — I'd love to learn.
