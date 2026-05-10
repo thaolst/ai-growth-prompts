@@ -94,7 +94,7 @@ Bạn phân tích segment như thế nào? Tín hiệu churn nào bạn thấy c
 
 ---
 
-# 02 · Segment analysis
+## 02 · Segment analysis
 
 Understand who to target and how — within the reach available at each campaign level.
 

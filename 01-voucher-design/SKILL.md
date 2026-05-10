@@ -89,7 +89,7 @@ Bạn thiết kế voucher thế nào ở công ty bạn? Kinh nghiệm nào b�
 
 ---
 
-# 01 · Voucher design
+## 01 · Voucher design
 
 Design vouchers that fit both the user segment and the campaign level.
 At S level, fewer channels means the voucher mechanic itself carries more weight.

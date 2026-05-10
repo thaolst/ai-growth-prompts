@@ -1,4 +1,4 @@
-# 04 · Communication & creative brief
+## 04 · Communication & creative brief
 
 Ở cấp S: bạn có content + design. Không cần comm planning hay media planning.
 Ở cấp M: thêm communication planning và media planning.
@@ -160,7 +160,7 @@ Bạn làm việc với agency thế nào? Ở campaign L, phần nào khó nh�
 
 ---
 
-# 04 · Communication & creative brief
+## 04 · Communication & creative brief
 
 At S level: you own content + design. No comm planning or media planning needed.
 At M level: adds communication planning and media planning as formal deliverables.

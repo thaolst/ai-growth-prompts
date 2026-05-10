@@ -71,7 +71,7 @@ Bạn đã dùng game mechanic nào cho loyalty? Cái nào hiệu quả nhất? 
 
 ---
 
-# 03 · Game mechanics & engagement
+## 03 · Game mechanics & engagement
 
 Game and engagement mechanics — most relevant at M level where budget supports the complexity. At S, mechanics need to be lightweight and self-contained.
 
