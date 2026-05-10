@@ -16,22 +16,11 @@ L      > 3B VND media      Full channels                + Concept creative + PM
 XL     Company campaign    Full channels                + All of the above
 ```
 
-## S tier breakdown (by complexity, not budget)
+## S tier
 
-S looks simple but it's not one bucket. I classify S by how complex the
-deliverables are:
-
-| Sub-type | What it is | Example |
-|----------|------------|---------|
-| **S1** | Pure QC — review existing assets for accuracy | Check in-app banner copy against latest promotion terms |
-| **S2** | Adaptation — resize / translate / localise | Take a desktop banner and make mobile, social, email versions |
-| **S3** | New simple asset — one layout, one message | A single in-app banner announcing a promotion |
-| **S4** | New complex asset — multiple layouts or skill sets | Animated banner + video + OOH + social posts with celebs |
-| **S5** | New theme — multiple assets as a set, shared toolkit | A mini campaign with its own visual theme, multiple touch points |
-
-**Why this matters:** S1–S3 can be self-serve or worked directly with the
-creative team. S4 needs resource planning. S5 needs a small concept phase
-before execution starts.
+S is for business-as-usual campaigns. Channels limited to in-app and owned
+out-app. Assets = content copy + design — no concept creative, no media
+planning.
 
 ## M tier
 
@@ -86,11 +75,10 @@ Current context:
 - What's the team's current workload? [light / normal / heavy]
 
 Based on this, please:
-1. Recommend the level (S / M / L) with reasoning
-2. If S, also recommend S1–S5 sub-type
-3. Flag if budget and goal seem misaligned — better to know now
-4. Identify the earliest realistic launch date from today
-5. Name one thing to decide before briefing anyone
+1. Recommend the level (S / M / L / XL) with reasoning
+2. Flag if budget and goal seem misaligned — better to know now
+3. Identify the earliest realistic launch date from today
+4. Name one thing to decide before briefing anyone
 ```
 
 ---

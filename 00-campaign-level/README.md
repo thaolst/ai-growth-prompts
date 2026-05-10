@@ -16,6 +16,7 @@ miscalibrated.
 | **S** | < 1B VND/month | In-app + owned out-app | Content + Design |
 | **M** | > 1B VND media | + 1–2 paid channels | + Comm planning + Media plan |
 | **L** | > 3B VND media | Full channels | + Concept creative + PM |
+| **XL** | Company campaign | Full channels | + All of the above |
 
 ## When to use / Khi nào dùng
 
@@ -24,7 +25,7 @@ miscalibrated.
 
 ## Prompt inside / Prompt trong folder này
 
-→ `SKILL.md` — Prompt 00: Classify campaign level with sub-type (S1–S5)
+→ `SKILL.md` — Prompt 00: Classify campaign level
 
 ## Contribute / Đóng góp
 
