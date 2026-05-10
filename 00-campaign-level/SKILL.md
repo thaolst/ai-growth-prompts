@@ -1,76 +1,159 @@
-# 00 · Decide campaign level first
+# 00 · Xác định cấp độ campaign
 
-This is the starting point for every campaign. Get the level wrong and everything downstream — assets, timeline, channels, team — is miscalibrated.
+Bắt đầu tại đây. Level quyết định ngân sách, kênh, đầu việc, và timeline.
+Chọn sai thì toàn bộ execution sau đó bị lệch. Sai lầm lớn nhất: coi
+campaign M như thể nó chỉ là S, rồi giữa đường mới cuống lên.
 
-The framework has 4 levels. Most loyalty and promotion campaigns land on S or M.
+## Framework
+
+| Cấp độ | Ngân sách | Kênh | Đầu việc chính |
+|---------|-----------|------|----------------|
+| **S** | < 1B VND/tháng | In-app + owned out-app | Copy content + Design |
+| **M** | > 1B VND media | Trên + 1–2 kênh paid | + Comm planning + Media plan |
+| **L** | > 3B VND media | Full channels | + Concept creative + PM |
+| **XL** | Campaign doanh nghiệp | Full channels | + All of the above |
+
+## Cấp độ S
+
+S là BAU. Chỉ có in-app + owned, không paid.
+Đầu ra = copy + design, không cần concept creative hay media planning.
+
+## Cấp độ M
+
+M dành cho campaign cần nhiều hơn copy với banner: launch tính năng mới,
+tiếp cận nhóm user mới, xây thói quen mới cho user hiện tại.
+
+Đầu ra:
+- Communication framework (message hierarchy, audience x channel x phase)
+- Media plan (kênh paid nào, ngân sách, phasing)
+- Campaign creative idea
+- Bộ asset: awareness (video + banner + social) + conversion (banner set)
+
+Timeline chuẩn bị: 4–6 tuần nếu không shoot, 4–8 tuần nếu có shoot.
+Tổng thời gian campaign tối đa 12 tuần.
+
+## Cấp độ L và XL
+
+Ở L, vai trò thay đổi. Bạn không còn là người làm — bạn cung cấp input.
+Campaign có PM riêng, agency partners, cross-functional team.
+
+Khi nào lên L:
+- Strategic agenda của công ty, không chỉ promotion
+- Budget > 3B VND/tháng chỉ riêng media
+- Nhiều team tham gia (product, brand, comms, legal)
+- Ảnh hưởng brand dài hạn, không chỉ conversion ngắn hạn
+
+## Prompt: Phân loại campaign
+
+**Khi nào dùng:** Ngay từ đầu, trước khi brief bất kỳ ai.
 
 ```
-Level  Nature                     Budget/month   Channels                         Assets
-─────  ─────────────────────────  ─────────────  ───────────────────────────────  ────────────────────────────────
-S      Business As Usual          < 500M VND     In-app + owned out-app           Content + Design
-M      Special Promo / Launch     < 1B VND       Above + 1–2 paid media channels  + Comm planning + Media planning
-L      Branding / Strategic       > 1B VND       Full channels                    + Concept creative + PM
-XL     Company Campaign           > 1B VND       Full channels                    + All of the above
+Phân loại campaign để xác định cấp độ phù hợp.
+
+Tổng quan:
+- Campaign là gì: [push voucher cho user inactive / launch game mới / promo mùa vụ]
+- Ngân sách mỗi tháng: [số tiền]
+- Thời gian dự kiến: [2 tuần / 1 tháng]
+- Mục tiêu: [reactivate user lapsed / drive first-time redemption / ...]
+- Độc lập hay thuộc initiative lớn hơn?
+
+Bối cảnh hiện tại:
+- Có campaign lớn nào chạy song song? [có / không]
+- Team đang tải nặng không? [nhẹ / bình thường / nặng]
+
+Yêu cầu:
+1. Đề xuất level (S / M / L / XL) kèm lý do
+2. Cảnh báo nếu budget và mục tiêu không khớp
+3. Xác định ngày launch sớm nhất có thể
+4. Một việc cần quyết định trước khi brief
 ```
+
+## Thảo luận
+
+Framework này được xây từ kinh nghiệm chạy campaign thực tế.
+Nhưng mỗi nơi phân loại khác nhau.
+
+- Ở chỗ bạn, phân loại campaign thế nào?
+- Điều khó nhất khi xác định level là gì?
+- Chia sẻ cách của bạn — mình rất muốn học hỏi.
 
 ---
 
-## Prompt 00 · Classify campaign level before starting
+# 00 · Decide campaign level
 
-**When to use:** At the very beginning, before briefing anyone or designing anything.
+Start here. Get the level wrong and everything downstream is miscalibrated.
+Biggest mistake: treating an M campaign like "just another S", then scrambling
+halfway through.
+
+## Framework
+
+| Tier | Budget | Channels | Key deliverables |
+|------|--------|----------|------------------|
+| **S** | < 1B VND/month | In-app + owned out-app | Content copy + Design |
+| **M** | > 1B VND media | Above + 1–2 paid channels | + Comm planning + Media plan |
+| **L** | > 3B VND media | Full channels | + Concept creative + PM |
+| **XL** | Company campaign | Full channels | + All of the above |
+
+## S tier
+
+S is business-as-usual. In-app and owned channels only.
+Deliverables = content copy + design — no concept creative, no media planning.
+
+## M tier
+
+M is for campaigns that need more than copy and a banner: launching a new
+feature, entering a new user segment, building a new habit.
+
+Deliverables:
+- Communication framework (message hierarchy, audience x channel x phase)
+- Media plan (which paid channels, budget split, phasing)
+- Campaign creative idea
+- Asset set: awareness (video + banner + social) + conversion (banner set)
+
+Prep timeline: 4–6 weeks without shooting, 4–8 weeks with shooting.
+Total campaign window up to 12 weeks.
+
+## L & XL tiers
+
+At L, your role shifts from executor to input provider. The campaign has a
+dedicated PM, agency partners, and cross-functional team.
+
+Escalate to L when:
+- Strategic company agenda, not just a promotion
+- Budget > 3B VND/month on media alone
+- Multiple teams involved (product, brand, comms, legal)
+- Long-term brand impact, not short-term conversion
+
+## Prompt: Classify campaign level
+
+**When to use:** At the very beginning, before briefing anyone.
 
 ```
-I need to classify a campaign to determine the right level of execution.
+Classify a campaign to determine the right level of execution.
 
-Campaign overview:
-- What is it: [e.g. monthly voucher push for inactive users /
-               new game mechanic launch / seasonal promotion]
-- Estimated budget: [amount in VND per month]
+Overview:
+- What is it: [monthly voucher push / new game launch / seasonal promo]
+- Estimated budget per month: [amount]
 - Expected duration: [e.g. 2 weeks / 1 month]
-- Business goal: [e.g. recover lapsed users / drive first-time redemption /
-                  support a product milestone]
-- Is this tied to a larger company initiative or standalone? [standalone / tied to ___]
+- Business goal: [recover lapsed users / drive first-time redemption / ...]
+- Standalone or part of a larger initiative?
 
-Current quarter context:
-- Any L or XL campaigns running in parallel? [yes / no / not sure]
-- How many S campaigns already active? [number]
+Current context:
+- Any large campaigns running in parallel? [yes / no]
+- Team's current workload? [light / normal / heavy]
 
-Based on this, please:
-1. Recommend the appropriate campaign level (S / M / L) with reasoning
-2. Flag if the budget and goal are misaligned
-   (e.g. goals that require M-level reach but only S-level budget)
-3. List what's included at that level:
-   channels available, asset types, who owns what
-4. Identify the earliest possible launch date given prep duration:
-   S simple = 3–4 weeks, S complex = 5–6 weeks, M = ~2 months
-5. One decision the team needs to make before briefing begins
+Based on this:
+1. Recommend level (S / M / L / XL) with reasoning
+2. Flag misalignment between budget and goals
+3. Identify earliest realistic launch date
+4. One thing to decide before briefing anyone
 ```
 
-**What good output looks like:**
-- Clear level recommendation with reasoning, not a range
-- Honest flag if goals don't match budget — better to know now
-- Concrete prep timeline from today's date
-- The one blocker to resolve before moving forward
+## Discussion
 
----
+This framework is built from running real campaigns.
+Every company draws the lines differently.
 
-## How level affects everything downstream
-
-Once the level is set, use the corresponding prompts:
-
-| If level is... | Use these prompts |
-|----------------|-------------------|
-| S | 01 (voucher), 02 (segment), 04-S (content + design brief only) |
-| M | 01 (voucher), 02 (segment), 03 (game), 04-M (+ comm planning + media) |
-| L / XL | Hand off to Marketing Manager — your role shifts to input provider |
-
-**For S campaigns specifically:**
-- Channels are in-app and owned out-app only — don't plan for paid media
-- Assets = content copy + design (not concept creative)
-- You work directly with in-house creative and media team via Jira
-- Keep asset scope simple: complex assets push prep to 5–6 weeks
-
-**For M campaigns:**
-- Budget threshold is the trigger, not just ambition
-- Adds communication planning and media planning as deliverables
-- 1–2 paid channels need to be scoped and booked early
+- How do you classify campaigns at your company?
+- What's the hardest part about getting the level right?
+- Share your approach — I'd love to learn.

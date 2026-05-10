@@ -1,27 +1,27 @@
-# 00 · Campaign Level / Xác định cấp độ campaign
+# 00 · Xác định cấp độ campaign
 
-**EN:** Start here before every campaign. The level you choose determines your budget ceiling, available channels, asset scope, and prep timeline. Getting this wrong means everything downstream is miscalibrated.
+Bắt đầu tại đây. Level quyết định ngân sách, kênh, đầu việc, và timeline.
+Chọn sai thì toàn bộ execution sau đó bị lệch.
 
-**VI:** Bắt đầu từ đây trước mọi campaign. Level bạn chọn quyết định ngân sách, kênh truyền thông, asset cần làm, và timeline chuẩn bị. Chọn sai level thì toàn bộ execution sau đó bị lệch.
+| Level | Ngân sách | Kênh | Đầu việc |
+|-------|-----------|------|----------|
+| **S** | < 1B VND/tháng | In-app + owned out-app | Content + Design |
+| **M** | > 1B VND media | + 1–2 kênh paid | + Comm planning + Media plan |
+| **L** | > 3B VND media | Full channels | + Concept creative + PM |
 
----
-
-## Framework
-
-| Level | Nature / Tính chất | Budget / Ngân sách | Channels / Kênh | Assets |
-|-------|-------------------|-------------------|-----------------|--------|
-| **S** | Business As Usual | < 500M VND/month | In-app + owned out-app | Content + Design |
-| **M** | Special Promo / New Launch | < 1B VND/month | Above + 1–2 paid channels | + Comm planning + Media planning |
-| **L** | Branding / Strategic | > 1B VND/month | Full channels | + Concept creative + PM |
-| **XL** | Company Campaign | > 1B VND/month | Full channels | All of the above |
+Nội dung chi tiết + prompt → `SKILL.md`
 
 ---
 
-## When to use / Khi nào dùng
+# 00 · Campaign level
 
-- **Before briefing anyone** — level first, then brief
-- **Trước khi brief bất kỳ ai** — xác định level trước, rồi mới brief
+Start here. The level determines budget, channels, deliverables, and timeline.
+Get this wrong and everything downstream is miscalibrated.
 
-## Prompt inside / Prompt trong folder này
+| Level | Budget | Channels | Assets |
+|-------|--------|----------|--------|
+| **S** | < 1B VND/month | In-app + owned out-app | Content + Design |
+| **M** | > 1B VND media | + 1–2 paid channels | + Comm planning + Media plan |
+| **L** | > 3B VND media | Full channels | + Concept creative + PM |
 
-→ [`prompts.md`](prompts.md) — Prompt 00: Classify campaign level before starting
+Full content + prompt → `SKILL.md`
