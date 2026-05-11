@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here.
 
+## [0.2.0] — 2026-05-11
+
+### Added
+- `05-n8n-automation/` — n8n workflow automation skill
+  - SKILL.md: phân tích workflow flight search (Gemini + SerpAPI + Telegram)
+  - Adapt pattern cho growth marketing: competitor monitor, campaign tracking, feedback alert
+  - Prompt thiết kế workflow automation + cost estimate + scale guide
+- `.markdownlint.json` — allowed to be empty
+
+---
+
 ## [0.1.0] — 2026-05-10
 
 ### Added

@@ -32,6 +32,7 @@ Mỗi prompt có 3 phần:
 | [`02-segment-analysis`](./02-segment-analysis) | Target ai, can thiệp lúc nào, phân bổ thế nào. |
 | [`03-game-mechanics`](./03-game-mechanics) | Loop engagement giúp user quay lại. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Plan truyền thông và brief design theo từng level. |
+| [`05-n8n-automation`](./05-n8n-automation) | Workflow automation với n8n + AI — monitor, alert, scale. |
 
 ## Logic xuyên suốt
 
