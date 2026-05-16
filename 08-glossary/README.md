@@ -2,9 +2,402 @@
 
 ## Tiếng Việt
 
-80+ thuật ngữ growth marketing - định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được. Từ AARRR đến Zero-Party Data.
+80+ thuật ngữ growth marketing — định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được. Từ AARRR đến Zero-Party Data.
 
 Dùng glossary này khi gặp thuật ngữ lạ trong các prompt khác, hoặc để ôn lại định nghĩa trước buổi phỏng vấn.
+
+---
+
+## A
+
+**AARRR (Pirate Metrics)**
+Phễu tăng trưởng 5 giai đoạn: Acquisition → Activation → Retention → Revenue → Referral.
+*do Dave McClure đặt ra*
+
+**Activation (Kích hoạt)**
+Thời điểm người dùng trải nghiệm giá trị cốt lõi của sản phẩm (khoảnh khắc "Aha!").
+*Ví dụ: Slack — gửi tin nhắn đầu tiên.*
+
+**Acquisition (Tiếp cận)**
+Quá trình đưa người dùng khám phá và dùng thử sản phẩm.
+*Kênh: SEO, quảng cáo trả phí, content marketing, referral, đối tác.*
+
+**A/B Testing (Thử nghiệm A/B)**
+So sánh hai phiên bản (A vs B) để xem phiên bản nào hiệu quả hơn trên một metric cụ thể.
+
+**Aha Moment**
+Điểm kích hoạt quan trọng nơi người dùng nhận ra giá trị của sản phẩm.
+*Ví dụ: Facebook — 7 bạn bè trong 10 ngày.*
+
+---
+
+## B
+
+**B2B (Business-to-Business)**
+Bán sản phẩm/dịch vụ cho doanh nghiệp khác.
+
+**B2C (Business-to-Consumer)**
+Bán sản phẩm/dịch vụ trực tiếp cho người tiêu dùng.
+
+**Bounce Rate (Tỷ lệ thoát)**
+% người truy cập rời đi mà không thực hiện hành động nào.
+
+**Bundling (Gói gộp)**
+Kết hợp nhiều sản phẩm/dịch vụ vào một gói ưu đãi.
+
+---
+
+## C
+
+**CAC (Chi phí thu hút khách hàng)**
+Tổng chi phí để có được một khách hàng trả tiền.
+`CAC = Tổng chi phí Sales & Marketing / Số khách hàng mới`
+
+**Churn (Tỷ lệ rời bỏ)**
+% khách hàng ngừng sử dụng sản phẩm trong một khoảng thời gian.
+*Churn tháng = Người dùng mất trong tháng / Người dùng đầu tháng*
+
+**Conversion Rate (Tỷ lệ chuyển đổi)**
+% người dùng hoàn thành hành động mong muốn.
+*Ví dụ: 5% khách truy cập mua hàng = tỷ lệ chuyển đổi 5%.*
+
+**Cohort Analysis (Phân tích nhóm)**
+Theo dõi hành vi của một nhóm người dùng bắt đầu cùng thời điểm.
+*Ví dụ: "Bao nhiêu % cohort tháng 3 vẫn hoạt động trong tháng 4?"*
+
+**CPC (Chi phí mỗi click)**
+Giá phải trả cho mỗi click trong quảng cáo trả phí.
+
+**CPI / CPA (Chi phí mỗi lượt cài đặt / Chi phí mỗi lượt thu hút)**
+Giá phải trả cho mỗi lượt cài đặt app hoặc mỗi lượt thu hút người dùng.
+
+**CTR (Tỷ lệ nhấp chuột)**
+% người nhấp vào link hoặc CTA sau khi thấy nó.
+
+**CLV / LTV (Giá trị vòng đời khách hàng)**
+Tổng doanh thu một khách hàng mang lại trong suốt mối quan hệ với sản phẩm.
+`LTV = Giá trị đơn hàng trung bình × Tần suất mua × Tuổi thọ khách hàng`
+
+---
+
+## D
+
+**DAU (Người dùng hoạt động hàng ngày)**
+Số người dùng duy nhất tương tác với sản phẩm trong một ngày.
+
+**DAU/MAU Ratio (Độ bám dính)**
+Thước đo mức độ tương tác hàng ngày.
+*(Càng cao càng dính. Tốt: 50%+. Xuất sắc: 80%+)*
+
+**Drop-off (Điểm rơi)**
+Nơi người dùng rời khỏi phễu. Khoảng cách giữa các giai đoạn.
+
+**D2C (Direct-to-Consumer)**
+Bán trực tiếp cho khách hàng không qua trung gian.
+
+---
+
+## E
+
+**Engagement (Tương tác)**
+Mức độ người dùng tương tác tích cực với sản phẩm.
+
+**Evergreen Content (Nội dung trường tồn)**
+Nội dung vẫn giữ giá trị lâu sau khi xuất bản.
+
+**Experimentation (Thực nghiệm)**
+Kiểm tra có hệ thống để cải thiện metric growth.
+
+---
+
+## F
+
+**First Click / First Purchase (Lần click/mua đầu tiên)**
+Lần chuyển đổi đầu tiên sau khi tiếp cận — quan trọng cho activation.
+
+**Free Trial (Dùng thử miễn phí)**
+Cho người dùng trải nghiệm sản phẩm trước khi trả tiền.
+
+**Freemium**
+Bản miễn phí cơ bản + bản trả phí cao cấp.
+
+**Frequency (Tần suất)**
+Người dùng tương tác bao nhiêu lần trong một khoảng thời gian.
+
+---
+
+## G
+
+**Gamification (Trò chơi hóa)**
+Áp dụng cơ chế game (điểm, huy hiệu, bảng xếp hạng) vào ngữ cảnh không phải game.
+
+**Growth Engine (Cỗ máy tăng trưởng)**
+Sự kết hợp của kênh, loop, và quy trình thúc đẩy tăng trưởng có thể mở rộng.
+
+**Growth Hacking**
+Chiến lược sáng tạo, chi phí thấp để thu hút và giữ chân người dùng.
+*(thuật ngữ do Sean Ellis đặt ra)*
+
+**Growth Loop (Vòng lặp tăng trưởng)**
+Một chu kỳ tự củng cố nơi output lại trở thành input.
+*Ví dụ: Viral loop — người dùng mời → người mới → mời thêm.*
+
+---
+
+## H
+
+**Habit (Thói quen)**
+Hành vi được thực hiện tự động với ít suy nghĩ có ý thức.
+
+**Hook Model**
+Khung 4 bước của Nir Eyal: Trigger → Action → Variable Reward → Investment.
+
+**Heatmap (Bản đồ nhiệt)**
+Biểu diễn trực quan nơi người dùng click, cuộn, hoặc di chuột trên trang.
+
+---
+
+## I
+
+**ICE Score**
+Khung ưu tiên: Impact × Confidence × Ease (mỗi tiêu chí 1-10).
+
+**Impressions (Lượt hiển thị)**
+Số lần quảng cáo hoặc nội dung được hiển thị.
+
+**Incentive (Khuyến khích)**
+Phần thưởng được thiết kế để khuyến khích một hành vi cụ thể.
+
+**Intent (Ý định)**
+Điều người dùng đang cố gắng đạt được.
+
+---
+
+## J
+
+**JTBD (Jobs to Be Done)**
+Khung câu hỏi: "Người dùng đã 'thuê' sản phẩm của bạn để làm công việc gì?"
+*do Clayton Christensen đặt ra*
+
+---
+
+## K
+
+**K-Factor (Hệ số lan truyền)**
+Số người dùng mới mà mỗi người dùng hiện tại mang lại.
+*K > 1 = tăng trưởng viral. K < 1 = cần quảng cáo trả phí.*
+`K = Số lời mời gửi đi × Tỷ lệ chuyển đổi lời mời`
+
+**KPI (Chỉ số hiệu suất chính)**
+Một giá trị đo lường cho thấy mức độ đạt được mục tiêu kinh doanh.
+
+---
+
+## L
+
+**Landing Page (Trang đích)**
+Một trang độc lập được thiết kế cho một mục tiêu chuyển đổi cụ thể.
+
+**Leakage (Rò rỉ)**
+Người dùng rời bỏ ở các giai đoạn khác nhau của phễu. Tập trung bịt lỗ rò lớn nhất.
+
+**LTV / CAC Ratio (Tỷ lệ giá trị / chi phí)**
+Giá trị mỗi khách hàng mang lại so với chi phí để có được họ.
+*Khỏe mạnh: 3:1+. Tuyệt vời: 5:1+.*
+
+**Loyalty Program (Chương trình khách hàng thân thiết)**
+Hệ thống thưởng cho sự tương tác/mua hàng lặp lại.
+
+---
+
+## M
+
+**MAU (Người dùng hoạt động hàng tháng)**
+Số người dùng duy nhất tương tác với sản phẩm trong một tháng.
+
+**Marketplace (Chợ)**
+Nền tảng kết nối người mua và người bán. (Uber, Airbnb, eBay, Fiverr)
+
+**Momentum (Đà tăng trưởng)**
+Tăng trưởng gia tốc — thường được thúc đẩy bởi hiệu ứng mạng lưới kép.
+
+**MoM (Month-over-Month)**
+So sánh metric tháng này với tháng trước.
+
+---
+
+## N
+
+**Network Effects (Hiệu ứng mạng lưới)**
+Sản phẩm càng giá trị khi càng nhiều người dùng.
+*Trực tiếp: Càng nhiều người dùng = càng giá trị (WhatsApp). Gián tiếp: Càng nhiều nguồn cung = càng giá trị (Uber).*
+
+**North Star Metric**
+Một metric duy nhất thể hiện giá trị cốt lõi mà sản phẩm mang lại.
+*do Sean Ellis đặt ra*
+
+**NPS (Net Promoter Score)**
+Đo lường lòng trung thành của khách hàng trên thang 0-10.
+*Promoters (9-10) - Detractors (0-6) = NPS*
+
+---
+
+## O
+
+**Onboarding**
+Quá trình hướng dẫn người dùng mới đến khoảnh khắc "Aha!" đầu tiên.
+
+**Omnichannel**
+Trải nghiệm nhất quán trên tất cả các kênh (app, web, cửa hàng, SMS, email).
+
+**Organic Growth (Tăng trưởng tự nhiên)**
+Tăng trưởng từ nguồn không trả phí (truyền miệng, SEO, viral).
+
+---
+
+## P
+
+**Payback Period (Thời gian hoàn vốn)**
+Thời gian cần để thu hồi CAC từ một khách hàng.
+*CAC = 300k, Doanh thu tháng = 50k → Payback = 6 tháng*
+
+**Personalization (Cá nhân hóa)**
+Tùy chỉnh trải nghiệm người dùng dựa trên hành vi, sở thích hoặc dữ liệu cá nhân.
+
+**PLG (Product-Led Growth)**
+Tăng trưởng dẫn dắt bởi chính sản phẩm — không phải sales hay marketing.
+*Ví dụ: Slack, Canva, Notion, Zoom*
+
+**Power Users (Người dùng cao cấp)**
+Nhóm người dùng tương tác nhiều nhất, có giá trị nhất.
+
+**PR (Public Relations)**
+Quản lý nhận thức công chúng và truyền thông.
+
+**Push Notification (Thông báo đẩy)**
+Tin nhắn gửi đến thiết bị người dùng ngoài lúc dùng app.
+
+---
+
+## Q
+
+*(Không có thuật ngữ phổ biến cho Q — dùng "Query" cho search marketing hoặc "Qualified Lead" cho sales.)*
+
+---
+
+## R
+
+**Reactivation (Tái kích hoạt)**
+Đưa người dùng đã rời bỏ hoặc ngưng hoạt động quay lại.
+
+**Referral (Giới thiệu)**
+Khuyến khích người dùng hiện tại đưa người dùng mới.
+
+**Retention (Giữ chân)**
+Giữ người dùng tương tác theo thời gian.
+
+**Retargeting (Nhắm lại)**
+Hiển thị quảng cáo cho người dùng đã truy cập nhưng chưa chuyển đổi.
+
+**Revenue (Doanh thu)**
+Tiền thu được từ người dùng/khách hàng.
+
+**ROI (Lợi tức đầu tư)**
+`(Lợi nhuận - Chi phí) / Chi phí`
+
+**RICE Score**
+Ưu tiên: Reach × Impact × Confidence × Effort (effort nghịch đảo).
+
+---
+
+## S
+
+**Segmentation (Phân khúc)**
+Chia người dùng thành các nhóm dựa trên hành vi, nhân khẩu học hoặc thuộc tính.
+
+**SEO (Tối ưu hóa công cụ tìm kiếm)**
+Cải thiện khả năng hiển thị trên công cụ tìm kiếm tự nhiên.
+
+**SaaS (Software as a Service)**
+Mô hình phân phối phần mềm dạng thuê bao.
+
+**SMS Marketing**
+Tiếp thị qua tin nhắn văn bản. Tỷ lệ mở cao, khối lượng thấp hơn.
+
+**Stickiness (Độ bám dính)**
+Mức độ người dùng quay lại thường xuyên. Đo bằng DAU/MAU.
+
+**SMART Goals**
+Cụ thể (Specific), Đo lường được (Measurable), Khả thi (Achievable), Liên quan (Relevant), Có thời hạn (Time-bound).
+
+---
+
+## T
+
+**Triggers (Tác nhân)**
+Tín hiệu thúc đẩy hành động người dùng. Bên ngoài (thông báo, email) hoặc Bên trong (cảm xúc, thói quen).
+
+**Time to Value (TTV) - Thời gian để thấy giá trị**
+Bao lâu để người dùng mới trải nghiệm giá trị cốt lõi.
+
+**TAM / SAM / SOM**
+- TAM: Tổng thị trường có thể phục vụ (tất cả mọi người)
+- SAM: Thị trường bạn có thể tiếp cận
+- SOM: Thị trường bạn có thể chiếm được
+
+---
+
+## U
+
+**UGC (User-Generated Content) - Nội dung người dùng tạo**
+Nội dung do người dùng tạo — đánh giá, template, bài đăng, video.
+
+**Unit Economics (Kinh tế đơn vị)**
+Doanh thu và chi phí trên mỗi khách hàng cá nhân.
+
+**UPI (Unique Point of Interaction)**
+Một điểm chạm duy nhất, có thể đo lường giữa người dùng và sản phẩm.
+
+---
+
+## V
+
+**Viral Coefficient (K-Factor) - Hệ số lan truyền**
+Số người dùng mới mỗi người dùng hiện tại mang lại. K > 1 = viral.
+
+**Viral Loop (Vòng lặp lan truyền)**
+Một growth loop được thúc đẩy bởi chia sẻ giữa người dùng.
+
+**Virality (Tính lan truyền)**
+Xu hướng sản phẩm/thông điệp lan truyền nhanh chóng.
+
+**Volume (Khối lượng)**
+Số lượng người dùng hoặc giao dịch tại một giai đoạn nhất định.
+
+---
+
+## W
+
+**WAU (Người dùng hoạt động hàng tuần)**
+Số người dùng duy nhất tương tác trong một tuần.
+
+**Word-of-Mouth (WoM) - Truyền miệng**
+Giới thiệu tự nhiên từ người này sang người khác.
+
+**WOW (Week-over-Week)**
+So sánh metric tuần này với tuần trước.
+
+---
+
+## Z
+
+**Zero-Party Data (Dữ liệu zero-party)**
+Dữ liệu người dùng chủ động và có ý thức chia sẻ với thương hiệu.
+*Ví dụ: Sở thích, ý định mua hàng, thông tin cá nhân.*
+
+---
+
+*Mới học growth? Bắt đầu với [growth frameworks](../06-growth-frameworks/README.md), sau đó khám phá [campaign prompts](../00-campaign-level/README.md).*
 
 ---
 

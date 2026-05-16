@@ -8,6 +8,145 @@ Mỗi framework có phần giải thích ngắn gọn, ví dụ thực tế, và
 
 ---
 
+## 1. AARRR (Pirate Metrics)
+
+**Người tạo:** Dave McClure / 500 Startups
+
+Phễu tăng trưởng kinh điển — mọi chiến lược growth đều ánh xạ vào ít nhất một giai đoạn.
+
+```
+Acquisition → Activation → Retention → Revenue → Referral
+```
+
+- **Acquisition (Tiếp cận):** Người dùng tìm thấy bạn bằng cách nào? (SEO, quảng cáo trả phí, viral, content, đối tác)
+- **Activation (Kích hoạt):** Khi nào người dùng trải nghiệm khoảnh khắc "Aha!"?
+- **Retention (Giữ chân):** Người dùng có quay lại sau ngày 1, tuần 1, tháng 1 không?
+- **Revenue (Doanh thu):** Họ có trả tiền không? Bao nhiêu? Bao lâu một lần?
+- **Referral (Giới thiệu):** Họ có rủ người khác không?
+
+**Khi nào dùng:** Luôn luôn. Map mọi thí nghiệm vào một giai đoạn cụ thể của AARRR.
+
+---
+
+## 2. North Star Metric
+
+**Người tạo:** Sean Ellis
+
+Một metric duy nhất thể hiện giá trị cốt lõi mà sản phẩm mang lại cho khách hàng. Nó giúp mọi team hướng về cùng một mục tiêu.
+
+**Ví dụ:**
+- **Spotify:** Thời gian nghe nhạc
+- **Airbnb:** Số đêm được đặt
+- **Facebook:** Người dùng hoạt động hàng ngày
+- **Slack:** Số tin nhắn được gửi
+
+**Khi nào dùng:** Khi team đang tối ưu cho nhiều metric mâu thuẫn và cần một hướng đi chung.
+
+---
+
+## 3. Growth Loops
+
+**Người tạo:** Brian Balfour / Reforge
+
+Thay vì phễu tuyến tính (AARRR), growth loops là hệ thống khép kín nơi output quay lại làm input.
+
+**4 Loại:**
+
+- **Viral Loop:** Người dùng → Mời → Người mới → Mời tiếp...
+  - *Dropbox:* Giới thiệu bạn bè để mở thêm dung lượng
+- **Content Loop:** Tạo nội dung → Thu hút traffic → Chuyển đổi → Tạo thêm nội dung...
+  - *HubSpot:* Blog → Đăng ký → Thêm nội dung
+- **Paid Loop:** Chi tiêu → Tiếp cận → Chuyển đổi → Thu về → Chi thêm...
+  - *Uber:* Tiếp cận → Chuyến đi → Doanh thu → Tái tiếp cận
+- **Sales Loop:** Tiếp cận → Demo → Chốt → Giới thiệu → Tiếp cận thêm...
+  - *Salesforce:* Chương trình giới thiệu cho doanh nghiệp
+
+**Khi nào dùng:** Khi bạn muốn tăng trưởng theo cấp số nhân, không phải tuyến tính.
+
+---
+
+## 4. Hook Model
+
+**Người tạo:** Nir Eyal
+
+Bốn bước xây dựng sản phẩm tạo thói quen.
+
+```
+Trigger → Action → Variable Reward → Investment
+```
+
+- **Trigger:** Bên ngoài (thông báo) hoặc Bên trong (buồn chán)
+- **Action:** Hành vi đơn giản nhất (chạm, vuốt, gõ)
+- **Variable Reward:** Phần thưởng không thể đoán trước (có gì trong feed của tôi?)
+- **Investment:** Người dùng đầu tư thứ gì đó (dữ liệu, nội dung, thời gian) → tăng khả năng quay lại
+
+**Khi nào dùng:** Khi thiết kế retention loop và tính năng tạo thói quen.
+
+---
+
+## 5. ICE / RICE Prioritization
+
+**Người tạo:** Sean Ellis (ICE) / Intercom (RICE)
+
+Chấm điểm từng thí nghiệm growth để quyết định làm cái nào trước.
+
+**ICE Score:**
+```
+Impact × Confidence × Ease
+```
+(Mỗi tiêu chí chấm 1-10)
+
+**RICE Score:**
+```
+Reach × Impact × Confidence × Effort
+```
+(Effort tính bằng person-weeks, nghịch đảo)
+
+**Khi nào dùng:** Bất kỳ lúc nào bạn có nhiều ý tưởng hơn khả năng thực hiện.
+
+---
+
+## 6. Flywheel Effect
+
+**Người tạo:** Jim Collins (điều chỉnh cho growth)
+
+Năng lượng tích lũy từ một vòng quay sẽ tiếp sức cho vòng quay tiếp theo. Thay vì đẩy mạnh hơn, hãy giảm ma sát trong hệ thống growth của bạn.
+
+**Ví dụ (Amazon):**
+Lựa chọn tốt hơn → Nhiều khách hơn → Nhiều người bán hơn → Lựa chọn tốt hơn
+
+**Khi nào dùng:** Khi cần hiểu tại sao growth của bạn đang tăng tốc hay chậm lại.
+
+---
+
+## 7. Jobs to Be Done (JTBD)
+
+**Người tạo:** Clayton Christensen
+
+Người dùng không mua sản phẩm; họ "thuê" sản phẩm để làm một công việc.
+
+**Câu hỏi cần đặt:**
+- Người dùng đã "thuê" sản phẩm của bạn để làm công việc gì?
+- "Sản phẩm cạnh tranh" họ sẽ dùng nếu không có bạn là gì?
+- Khi nào họ "sa thải" sản phẩm của bạn?
+
+**Khi nào dùng:** Quyết định sản phẩm, messaging, và thiết kế activation.
+
+---
+
+## 8. Hook → Habit → Loyalty
+
+**Kết hợp các model:**
+- Hook đưa họ vào (Hook Model)
+- Habit giữ họ quay lại (Retention loops)
+- Loyalty biến họ thành người ủng hộ (NPS, referral)
+
+---
+
+*Next: Apply these frameworks to real campaigns. See [../01-voucher-design](../01-voucher-design) for practical examples.*
+
+---
+
 ## English
 
 The mental models that power every great growth strategy. Learn them once, apply them everywhere.
