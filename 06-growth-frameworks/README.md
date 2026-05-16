@@ -1,7 +1,14 @@
 # Growth Frameworks & Mental Models
 
-> **VI:** Các mental model growth cốt lõi — AARRR, North Star, Growth Loops, Hook Model. Học một lần, dùng mãi mãi.
-> **EN:** The mental models that power every great growth strategy. Learn them once, apply them everywhere.
+## Tiếng Việt
+
+Các mental model growth cốt lõi - AARRR, North Star, Growth Loops, Hook Model. Học một lần, dùng mãi mãi.
+
+---
+
+## English
+
+The mental models that power every great growth strategy. Learn them once, apply them everywhere.
 
 ---
 
@@ -9,7 +16,7 @@
 
 **Creator:** Dave McClure / 500 Startups
 
-The classic growth funnel — every growth strategy maps to at least one of these stages.
+The classic growth funnel - every growth strategy maps to at least one of these stages.
 
 ```
 Acquisition → Activation → Retention → Revenue → Referral

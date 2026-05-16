@@ -34,7 +34,7 @@ Tổng thời gian campaign tối đa 12 tuần.
 
 ## Cấp độ L và XL
 
-Ở L, vai trò thay đổi. Bạn không còn là người làm — bạn cung cấp input.
+Ở L, vai trò thay đổi. Bạn không còn là người làm - bạn cung cấp input.
 Campaign có PM riêng, agency partners, cross-functional team.
 
 Khi nào lên L:
@@ -75,7 +75,7 @@ Nhưng mỗi nơi phân loại khác nhau.
 
 - Ở chỗ bạn, phân loại campaign thế nào?
 - Điều khó nhất khi xác định level là gì?
-- Chia sẻ cách của bạn — mình rất muốn học hỏi.
+- Chia sẻ cách của bạn - mình rất muốn học hỏi.
 
 ---
 
@@ -97,7 +97,7 @@ halfway through.
 ## S tier
 
 S is business-as-usual. In-app and owned channels only.
-Deliverables = content copy + design — no concept creative, no media planning.
+Deliverables = content copy + design - no concept creative, no media planning.
 
 ## M tier
 
@@ -156,4 +156,4 @@ Every company draws the lines differently.
 
 - How do you classify campaigns at your company?
 - What's the hardest part about getting the level right?
-- Share your approach — I'd love to learn.
+- Share your approach - I'd love to learn.

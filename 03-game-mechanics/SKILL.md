@@ -1,6 +1,6 @@
 # 03 · Game mechanics & tương tác
 
-Game và engagement mechanic — thường dùng nhất ở cấp M, nơi ngân sách hỗ trợ độ phức tạp. Ở cấp S, mechanic cần đơn giản và tự hoạt động được trong in-app.
+Game và engagement mechanic - thường dùng nhất ở cấp M, nơi ngân sách hỗ trợ độ phức tạp. Ở cấp S, mechanic cần đơn giản và tự hoạt động được trong in-app.
 
 ## Prompt 07 · Thiết kế game mechanic theo cấp độ
 
@@ -30,11 +30,11 @@ Audience mục tiêu:
 - [Họ là ai và hành vi hiện tại]
 
 Đề xuất:
-1. 3 mechanic — phù hợp độ phức tạp của [S/M]
+1. 3 mechanic - phù hợp độ phức tạp của [S/M]
    S: đơn giản, in-house creative làm trong 3–6 tuần
    M: có thể layered hơn, supported by comm planning
 2. Mỗi mechanic: user flow, return loop, chi phí điểm ước tính
-3. Mechanic nào phù hợp nhất với cấp độ và audience — tại sao
+3. Mechanic nào phù hợp nhất với cấp độ và audience - tại sao
 4. Rủi ro và cách giảm thiểu trong ràng buộc của cấp độ
 5. Metrics theo dõi ở ngày 14 và ngày 30
 ```
@@ -58,7 +58,7 @@ Bối cảnh:
 
 Phân tích:
 1. Bước nào mất nhiều user nhất?
-2. 3 giả thuyết — cụ thể cho mechanic, không chung chung
+2. 3 giả thuyết - cụ thể cho mechanic, không chung chung
 3. Test nhanh nhất cho mỗi giả thuyết trong ràng buộc [S/M]:
    - S: đổi copy / điều chỉnh reward / đơn giản hóa flow (không paid boost)
    - M: có thể test với paid traffic push để cô lập biến
@@ -73,7 +73,7 @@ Bạn đã dùng game mechanic nào cho loyalty? Cái nào hiệu quả nhất? 
 
 ## 03 · Game mechanics & engagement
 
-Game and engagement mechanics — most relevant at M level where budget supports the complexity. At S, mechanics need to be lightweight and self-contained.
+Game and engagement mechanics - most relevant at M level where budget supports the complexity. At S, mechanics need to be lightweight and self-contained.
 
 ## Prompt 07 · Design a game mechanic for a given campaign level
 
@@ -103,11 +103,11 @@ Target audience:
 - [Who they are and their current behavior pattern]
 
 Please suggest:
-1. 3 mechanics — calibrated to [S/M] complexity and asset scope
+1. 3 mechanics - calibrated to [S/M] complexity and asset scope
    S: simple enough for in-house creative in 3–6 weeks
    M: can be more layered, supported by comm planning
 2. For each: user flow, return loop, estimated point cost
-3. Which fits this level and audience best — and why
+3. Which fits this level and audience best - and why
 4. Risks and how to reduce them within this level's constraints
 5. Metrics to track at day 14 and day 30
 ```
@@ -131,7 +131,7 @@ Additional context:
 
 Please analyze:
 1. Which step loses the most users?
-2. 3 hypotheses for why — specific to the mechanic, not generic
+2. 3 hypotheses for why - specific to the mechanic, not generic
 3. Fastest test for each hypothesis within [S/M] constraints:
    - S: copy change / reward adjustment / flow simplification (no paid boost)
    - M: can test with a paid traffic push to isolate the variable

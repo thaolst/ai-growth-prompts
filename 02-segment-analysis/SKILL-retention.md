@@ -10,21 +10,21 @@
 
 ## When to use / Khi nào dùng
 
-**EN:** Use when your redemption rate looks healthy but monthly returning redeemers are flat or declining. The problem isn't acquisition — it's habit formation after the first transaction.
+**EN:** Use when your redemption rate looks healthy but monthly returning redeemers are flat or declining. The problem isn't acquisition - it's habit formation after the first transaction.
 
-**VI:** Dùng khi redemption rate nhìn ổn nhưng returning redeemer hàng tháng không tăng hoặc giảm. Vấn đề không phải là kéo user vào — mà là tạo thói quen sau lần giao dịch đầu tiên.
+**VI:** Dùng khi redemption rate nhìn ổn nhưng returning redeemer hàng tháng không tăng hoặc giảm. Vấn đề không phải là kéo user vào - mà là tạo thói quen sau lần giao dịch đầu tiên.
 
 ---
 
 ## Core insight / Insight cốt lõi
 
-**EN:** First redemption ≠ loyalty. Loyalty starts at the second redemption. Most programs over-invest in acquisition and under-invest in the D1–D30 window after first redemption — the window where habit forms or dies.
+**EN:** First redemption ≠ loyalty. Loyalty starts at the second redemption. Most programs over-invest in acquisition and under-invest in the D1–D30 window after first redemption - the window where habit forms or dies.
 
-**VI:** Đổi voucher lần đầu không phải loyalty. Loyalty bắt đầu từ lần thứ hai. Hầu hết chương trình đầu tư quá nhiều vào acquisition và quá ít vào khoảng D1–D30 sau lần đổi đầu — khoảng thời gian thói quen hình thành hoặc biến mất.
+**VI:** Đổi voucher lần đầu không phải loyalty. Loyalty bắt đầu từ lần thứ hai. Hầu hết chương trình đầu tư quá nhiều vào acquisition và quá ít vào khoảng D1–D30 sau lần đổi đầu - khoảng thời gian thói quen hình thành hoặc biến mất.
 
 ---
 
-## Prompt 01 — Diagnose the drop after first redemption
+## Prompt 01 - Diagnose the drop after first redemption
 
 **EN:** Use when you see high first-time redemption but low return rate in the following month.
 **VI:** Dùng khi lần đổi đầu cao nhưng tỷ lệ quay lại tháng sau thấp.
@@ -56,7 +56,7 @@ Please diagnose:
 
 ---
 
-## Prompt 02 — Design the post-redemption journey
+## Prompt 02 - Design the post-redemption journey
 
 **EN:** Use when diagnosis is done and you need to design what happens after a user redeems for the first time.
 **VI:** Dùng khi đã chẩn đoán xong và cần thiết kế trải nghiệm sau lần đổi đầu tiên.
@@ -69,17 +69,17 @@ Context:
 - Current points balance after redemption: [approximate range]
 - Distance to next meaningful reward: [e.g. "500 points away from next voucher tier"]
 - Campaign level: [S / M]
-- Available touchpoints: [push / in-app / owned social / paid — per level]
+- Available touchpoints: [push / in-app / owned social / paid - per level]
 
 Goals:
 - Primary: get user to redeem again within [30 / 60] days
 - Secondary: increase points balance visibility and perceived progress
 
 Please design:
-1. D1 touchpoint — what happens the day after first redemption?
+1. D1 touchpoint - what happens the day after first redemption?
    (acknowledgment, progress nudge, or next challenge?)
-2. D7 touchpoint — if user hasn't returned, what's the re-engagement trigger?
-3. D30 touchpoint — last chance before user is considered lapsed
+2. D7 touchpoint - if user hasn't returned, what's the re-engagement trigger?
+3. D30 touchpoint - last chance before user is considered lapsed
 4. What "progress signal" should the user see every time they open the app?
    (points balance / streak / distance to reward / tier status)
 5. One mechanic that makes the second redemption feel easier than the first
@@ -88,17 +88,17 @@ Please design:
 **What good output looks like / Output tốt trông như thế nào:**
 - Journey has clear timing (D1, D7, D30) not vague "follow up"
 - Each touchpoint has a specific message angle, not just "remind them"
-- Progress signal is concrete — not "show something motivating"
+- Progress signal is concrete - not "show something motivating"
 
 ---
 
-## Prompt 03 — Identify the meaningful threshold for your program
+## Prompt 03 - Identify the meaningful threshold for your program
 
-**EN:** Use when you suspect there's a points balance or engagement level that separates users who stay from users who leave — but you haven't confirmed it yet.
-**VI:** Dùng khi bạn nghi ngờ có một ngưỡng số dư điểm hoặc mức engagement mà ở đó user có xu hướng ở lại hoặc rời đi — nhưng chưa xác nhận được.
+**EN:** Use when you suspect there's a points balance or engagement level that separates users who stay from users who leave - but you haven't confirmed it yet.
+**VI:** Dùng khi bạn nghi ngờ có một ngưỡng số dư điểm hoặc mức engagement mà ở đó user có xu hướng ở lại hoặc rời đi - nhưng chưa xác nhận được.
 
 ```
-I want to find the "meaningful threshold" in my loyalty program —
+I want to find the "meaningful threshold" in my loyalty program -
 the point balance or behavior milestone where user retention improves significantly.
 
 Data I have:

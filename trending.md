@@ -1,6 +1,6 @@
 # 🔥 Trending in Growth Marketing
 
-> What's happening now in growth — updated regularly. Follow the links for full reads.
+> What's happening now in growth - updated regularly. Follow the links for full reads.
 
 ---
 
@@ -12,7 +12,7 @@
 - **Action:** Audit your own retention curves. Where's the drop-off? Focus there.
 
 ### 2. AI-Native Growth Teams
-- **Why now:** AI tools are moving from "nice to have" to "core infrastructure" for growth teams — from personalized push notifications to dynamic pricing engines.
+- **Why now:** AI tools are moving from "nice to have" to "core infrastructure" for growth teams - from personalized push notifications to dynamic pricing engines.
 - **Follow:** Brian Balfour's take on [AI × Growth](https://brianbalfour.com/)
 - **Action:** Map your growth stack. Identify 3 manual tasks AI can automate today.
 

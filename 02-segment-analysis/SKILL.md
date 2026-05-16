@@ -1,6 +1,6 @@
 # 02 · Phân tích segment
 
-Hiểu ai cần target và target thế nào — trong phạm vi kênh cho phép ở mỗi cấp độ campaign.
+Hiểu ai cần target và target thế nào - trong phạm vi kênh cho phép ở mỗi cấp độ campaign.
 
 | Cấp độ | Dữ liệu có sẵn | Phân tích được |
 |--------|---------------|----------------|
@@ -15,7 +15,7 @@ Hiểu ai cần target và target thế nào — trong phạm vi kênh cho phép
 ```
 Dữ liệu retention của một cohort loyalty:
 
-[Paste dữ liệu — CSV, bảng, hoặc số liệu]
+[Paste dữ liệu - CSV, bảng, hoặc số liệu]
 
 Ví dụ:
 Tuần 0:   100%
@@ -28,8 +28,8 @@ Tuần 12:  22%
 Cấp độ campaign có thể chạy: [S / M / L / XL]
 
 Phân tích:
-1. Điểm rớt mạnh nhất — user đang làm gì ở giai đoạn đó?
-2. W0→W1 vs W1→W2 — cái nào đáng lo hơn và tại sao?
+1. Điểm rớt mạnh nhất - user đang làm gì ở giai đoạn đó?
+2. W0→W1 vs W1→W2 - cái nào đáng lo hơn và tại sao?
 3. 3 giả thuyết hành vi cụ thể cho drop
 4. Cho mỗi giả thuyết, một thử nghiệm phù hợp [S/M]:
    - S: in-app mechanic hoặc owned channel test, 1–2 tuần
@@ -60,15 +60,15 @@ Dữ liệu mỗi user:
 Mục tiêu: [tăng MAU / kéo user lapsed / tăng tần suất]
 
 Đề xuất:
-1. 3–4 segment tối đa — đủ để thực thi với kênh hiện có
+1. 3–4 segment tối đa - đủ để thực thi với kênh hiện có
 2. Mỗi segment: đặc điểm, % ngân sách, loại voucher phù hợp, lý do
-3. Segment nào nên bỏ qua ở mức ngân sách này — và tại sao
+3. Segment nào nên bỏ qua ở mức ngân sách này - và tại sao
 4. Nếu chỉ target 1 segment: chọn ai và tại sao?
 ```
 
 ## Prompt 06 · Tìm tín hiệu churn sớm để can thiệp
 
-**Khi nào dùng:** Muốn can thiệp trước khi user ngừng hoạt động — ở cấp S, chỉ dùng owned channels và in-app mechanic.
+**Khi nào dùng:** Muốn can thiệp trước khi user ngừng hoạt động - ở cấp S, chỉ dùng owned channels và in-app mechanic.
 
 ```
 Muốn xác định user có nguy cơ rời bỏ sớm để can thiệp.
@@ -87,7 +87,7 @@ Tín hiệu có thể theo dõi:
 Đề xuất:
 1. Tín hiệu nào dự đoán churn mạnh nhất?
 2. Combination tín hiệu tốt nhất cho cảnh báo sớm
-3. Ngưỡng cảnh báo cụ thể — không quá sớm (tốn công), không quá muộn (vô ích)
+3. Ngưỡng cảnh báo cụ thể - không quá sớm (tốn công), không quá muộn (vô ích)
 4. Can thiệp theo mức rủi ro, chỉ dùng kênh của [S/M]:
    - Thấp → [hành động nhẹ]
    - Trung bình → [hành động mạnh hơn]
@@ -102,7 +102,7 @@ Bạn phân tích segment như thế nào? Tín hiệu churn nào bạn thấy c
 
 ## 02 · Segment analysis
 
-Understand who to target and how — within the reach available at each campaign level.
+Understand who to target and how - within the reach available at each campaign level.
 
 ## Prompt 04 · Analyze cohort drop to find intervention points
 
@@ -111,7 +111,7 @@ Understand who to target and how — within the reach available at each campaign
 ```
 Here is retention data for a loyalty program cohort:
 
-[Paste data — CSV, table, or written numbers]
+[Paste data - CSV, table, or written numbers]
 
 Example:
 Week 0:   100%
@@ -124,8 +124,8 @@ Week 12:  22%
 Campaign level I can run in response: [S / M / L / XL]
 
 Please analyze:
-1. Steepest drop point — what are users likely doing at that stage?
-2. W0→W1 vs W1→W2 — which is more concerning and why?
+1. Steepest drop point - what are users likely doing at that stage?
+2. W0→W1 vs W1→W2 - which is more concerning and why?
 3. 3 specific behavioral hypotheses for the drop
 4. For each hypothesis, one experiment sized for [S/M]:
    - S: in-app mechanic or owned channel test, 1–2 weeks
@@ -156,15 +156,15 @@ Data I have per user:
 Goal: [grow MAU / recover lapsed users / increase frequency]
 
 Please suggest:
-1. 3–4 segments max — needs to be executable with available channels
+1. 3–4 segments max - needs to be executable with available channels
 2. For each: characteristics, budget share, best voucher type, reasoning
-3. Which segment(s) to skip at this budget level — and why
+3. Which segment(s) to skip at this budget level - and why
 4. If budget only allows targeting 1 segment, which one and why?
 ```
 
 ## Prompt 06 · Find early churn signals for proactive intervention
 
-**When to use:** Want to intervene before users go inactive — at S level, this relies entirely on owned channels and in-app mechanics.
+**When to use:** Want to intervene before users go inactive - at S level, this relies entirely on owned channels and in-app mechanics.
 
 ```
 I want to identify at-risk users early enough to intervene.
@@ -184,7 +184,7 @@ Signals I can track:
 Please suggest:
 1. Which signals are strongest predictors of churn?
 2. Best signal combination for an early warning threshold
-3. Specific threshold values — not too early (wasted effort), not too late (useless)
+3. Specific threshold values - not too early (wasted effort), not too late (useless)
 4. Intervention per risk tier, using only channels available at [S/M]:
    - Low risk → [lightweight action]
    - Medium risk → [stronger action]

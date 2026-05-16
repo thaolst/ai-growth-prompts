@@ -1,7 +1,14 @@
 # Growth Glossary / Thuật ngữ Growth
 
-> **VI:** 80+ thuật ngữ growth marketing — định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được.
-> **EN:** Key terms every growth marketer should know. Concise, practical definitions with real examples.
+## Tiếng Việt
+
+80+ thuật ngữ growth marketing - định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được.
+
+---
+
+## English
+
+Key terms every growth marketer should know. Concise, practical definitions with real examples.
 
 ---
 
@@ -13,7 +20,7 @@ The five-stage growth funnel: Acquisition → Activation → Retention → Reven
 
 **Activation**
 The moment a user experiences the core value of your product (the "Aha!" moment).
-*Example: Slack — sending your first message.*
+*Example: Slack - sending your first message.*
 
 **Acquisition**
 The process of getting users to discover and try your product.
@@ -24,7 +31,7 @@ Comparing two versions (A vs B) to see which performs better on a specific metri
 
 **Aha Moment**
 The key activation point where users realize why your product is valuable.
-*Example: Facebook — 7 friends in 10 days.*
+*Example: Facebook - 7 friends in 10 days.*
 
 ---
 
@@ -110,7 +117,7 @@ Systematic testing to improve growth metrics.
 ## F
 
 **First Click / First Purchase**
-The first conversion after acquisition — critical for activation.
+The first conversion after acquisition - critical for activation.
 
 **Free Trial**
 Letting users try your product before paying.
@@ -137,7 +144,7 @@ Creative, low-cost strategies to acquire and retain users.
 
 **Growth Loop**
 A self-reinforcing cycle where output feeds input.
-*Example: Viral loop — user invites → new user → invites more.*
+*Example: Viral loop - user invites → new user → invites more.*
 
 ---
 
@@ -216,7 +223,7 @@ Unique users who engage with your product in a month.
 A platform connecting buyers and sellers. (Uber, Airbnb, eBay, Fiverr)
 
 **Momentum**
-Accelerating growth — often driven by compounding network effects.
+Accelerating growth - often driven by compounding network effects.
 
 **MoM (Month-over-Month)**
 Comparing this month's metric to last month's.
@@ -262,7 +269,7 @@ Time needed to earn back the CAC from a customer.
 Tailoring the user experience based on individual behavior, preferences, or data.
 
 **PLG (Product-Led Growth)**
-Growth driven by the product itself — not sales or marketing.
+Growth driven by the product itself - not sales or marketing.
 *Example: Slack, Canva, Notion, Zoom*
 
 **Power Users**
@@ -341,7 +348,7 @@ How long it takes a new user to experience core value.
 ## U
 
 **UGC (User-Generated Content)**
-Content created by users — reviews, templates, posts, videos.
+Content created by users - reviews, templates, posts, videos.
 
 **Unit Economics**
 Revenue and cost per individual customer.

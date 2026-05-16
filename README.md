@@ -25,13 +25,13 @@
 
 Mỗi prompt có 3 phần:
 
-- **Khi nào dùng** — tình huống cụ thể
-- **Prompt** — copy và điền `[...]` với context thực tế
-- **Ví dụ output** — output đúng trông như thế nào
+- **Khi nào dùng** - tình huống cụ thể
+- **Prompt** - copy và điền `[...]` với context thực tế
+- **Ví dụ output** - output đúng trông như thế nào
 
 ## Cấu trúc
 
-### Campaign Toolbox — Prompt thực hành
+### Campaign Toolbox - Prompt thực hành
 
 | Thư mục | Mô tả |
 |---|---|
@@ -42,7 +42,7 @@ Mỗi prompt có 3 phần:
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning và design brief theo từng cấp độ. |
 | [`05-automation`](./05-n8n-automation) | Prompt xây automation cho growth: monitor đối thủ, campaign alert, feedback tracking. |
 
-### Knowledge Base — Nền tảng lý thuyết
+### Knowledge Base - Nền tảng lý thuyết
 
 | Thư mục | Mô tả |
 |---|---|
@@ -84,9 +84,9 @@ Hầu hết tài liệu growth marketing hoặc quá hàn lâm, hoặc quá tool
 
 Each prompt has three parts:
 
-- **When to use** — the specific situation it's built for
-- **Prompt** — copy and fill in `[...]` with your actual context
-- **Example output** — what a good output looks like
+- **When to use** - the specific situation it's built for
+- **Prompt** - copy and fill in `[...]` with your actual context
+- **Example output** - what a good output looks like
 
 ## Structure
 
@@ -127,12 +127,12 @@ The Knowledge Base folders (`06-09`) provide the theoretical foundation. Use the
 
 ## Why This Exists
 
-Most growth marketing resources are either too academic or too tool-specific. This repo bridges the gap — it's what I actually use when designing campaigns.
+Most growth marketing resources are either too academic or too tool-specific. This repo bridges the gap - it's what I actually use when designing campaigns.
 
 ---
 
 ## License
 
-MIT — use freely, share widely.
+MIT - use freely, share widely.
 
 *If this helps you, [star the repo](https://github.com/thaolst/ai-growth-prompts) ⭐*

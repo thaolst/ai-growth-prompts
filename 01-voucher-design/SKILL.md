@@ -19,7 +19,7 @@ Cần thiết kế bộ voucher cho campaign loyalty.
 Cấp độ campaign: [S / M / L / XL]
 Nếu S: chỉ in-app + owned out-app
 Nếu M: thêm [kênh paid cụ thể]
-Nếu L / XL: bạn cung cấp brief concept — agency thiết kế
+Nếu L / XL: bạn cung cấp brief concept - agency thiết kế
 
 Hồ sơ segment:
 - Số dư điểm: [thấp / trung bình / cao]
@@ -34,10 +34,10 @@ Mục tiêu với segment này:
 Ngân sách voucher mỗi user: [ước lượng / hoặc "hẹp / vừa / linh hoạt"]
 
 Đề xuất:
-1. 3 phương án voucher — phù hợp segment và phạm vi kênh của cấp độ đó
+1. 3 phương án voucher - phù hợp segment và phạm vi kênh của cấp độ đó
    (cấp S: voucher tự hoạt động được, không cần paid reach)
 2. Tại sao từng phương án phù hợp với hành vi segment
-3. Logic trigger — gửi khi nào, qua kênh nào
+3. Logic trigger - gửi khi nào, qua kênh nào
 4. Cách đo hiệu quả ở ngày 7 và ngày 14
 ```
 
@@ -82,7 +82,7 @@ Kết quả:
 - Điểm rớt: [user dừng ở bước nào?]
 
 Chẩn đoán:
-1. Điểm yếu nhất — giá trị voucher, điều kiện, kênh, hay segment?
+1. Điểm yếu nhất - giá trị voucher, điều kiện, kênh, hay segment?
 2. Ở cấp [S/M], có thể thay đổi thực tế gì trong 3 ngày tới?
    (Không thêm kênh mới ở cấp S. Không thay đổi concept giữa campaign.)
 3. Nếu chỉ được chọn một thứ: đó là gì?
@@ -90,7 +90,7 @@ Chẩn đoán:
 
 ## Thảo luận
 
-Bạn thiết kế voucher thế nào ở công ty bạn? Kinh nghiệm nào bạn thấy hiệu quả nhất — voucher mạnh hay trigger đúng?
+Bạn thiết kế voucher thế nào ở công ty bạn? Kinh nghiệm nào bạn thấy hiệu quả nhất - voucher mạnh hay trigger đúng?
 
 ---
 
@@ -115,10 +115,10 @@ I need to design a voucher set for a loyalty campaign.
 Campaign level: [S / M / L / XL]
 If S: channels are in-app + owned out-app only
 If M: channels include in-app, owned out-app, and [specify 1–2 paid channels]
-If L / XL: you brief the concept — agency designs
+If L / XL: you brief the concept - agency designs
 
 Segment profile:
-- Points balance: [low / mid / high — or approximate range]
+- Points balance: [low / mid / high - or approximate range]
 - Transaction frequency: [e.g. 1–2x per month]
 - Recent behavior: [e.g. redeemed food vouchers, hasn't used game features]
 - Days since last activity: [number]
@@ -127,19 +127,19 @@ Goal with this segment:
 - [e.g. re-engage lapsed users / increase redemption frequency /
    drive first transaction]
 
-Voucher budget per user: [approximate — or "tight / moderate / flexible"]
+Voucher budget per user: [approximate - or "tight / moderate / flexible"]
 
 Please suggest:
 1. 3 voucher options suited to both the segment and the level's channel scope
    (at S level: vouchers that work without paid media amplification)
 2. Why each fits their behavioral pattern
-3. Trigger logic — when to send, through which available channel
+3. Trigger logic - when to send, through which available channel
 4. How to measure effectiveness at day 7 and day 14
 ```
 
 **What good output looks like:**
 - Options designed for the available channels, not idealized ones
-- At S level: mechanic is self-contained — doesn't depend on paid reach to work
+- At S level: mechanic is self-contained - doesn't depend on paid reach to work
 - Trigger is specific (day + behavior condition + channel)
 - Metrics match what's actually trackable at that level
 
@@ -165,7 +165,7 @@ Risk to avoid: [cannibalizing active users / high abuse potential]
 Please:
 1. Which option fits best given the level constraints and KPI? Why?
 2. What breaks down at S level that might work at M?
-3. Final recommendation — one option, clear reason
+3. Final recommendation - one option, clear reason
 ```
 
 ## Prompt 03 · Diagnose an underperforming voucher campaign
@@ -178,7 +178,7 @@ Campaign level: [S / M / L / XL]
 Voucher running:
 - Type and conditions: [brief description]
 - Audience: [segment description]
-- Channels used: [in-app banner / push / owned social / paid — per level]
+- Channels used: [in-app banner / push / owned social / paid - per level]
 - Days running: [number]
 
 Results so far:
@@ -187,7 +187,7 @@ Results so far:
 - Drop-off point: [where in the funnel are users stopping?]
 
 Please diagnose:
-1. Most likely failure point — voucher value, conditions, channel, or segment fit?
+1. Most likely failure point - voucher value, conditions, channel, or segment fit?
 2. At [S/M] level, what can realistically change in the next 3 days?
    (No new channels at S. No concept creative changes mid-campaign.)
 3. If only one thing: what is it?
@@ -200,4 +200,4 @@ Please diagnose:
 
 ## Discussion
 
-How do you design vouchers at your company? What works better in your experience — a strong voucher value or smart trigger logic?
+How do you design vouchers at your company? What works better in your experience - a strong voucher value or smart trigger logic?

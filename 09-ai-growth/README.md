@@ -1,7 +1,14 @@
 # AI × Growth Marketing
 
-> **VI:** AI đang thay đổi growth marketing thế nào — từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
-> **EN:** How AI is reshaping growth marketing — from personalization at scale to automated experimentation. Practical frameworks, not hype.
+## Tiếng Việt
+
+AI đang thay đổi growth marketing thế nào - từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
+
+---
+
+## English
+
+How AI is reshaping growth marketing - from personalization at scale to automated experimentation. Practical frameworks, not hype.
 
 ---
 
@@ -152,4 +159,4 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 
 ---
 
-*For practical AI × Growth prompts, see the other folders in this repo — especially [01-voucher-design](../01-voucher-design) and [03-game-mechanics](../03-game-mechanics).*
+*For practical AI × Growth prompts, see the other folders in this repo - especially [01-voucher-design](../01-voucher-design) and [03-game-mechanics](../03-game-mechanics).*

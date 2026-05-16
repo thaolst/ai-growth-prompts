@@ -8,11 +8,11 @@
 
 | Book | Author | Why It Matters |
 |---|---|---|
-| [Hacking Growth](https://www.goodreads.com/book/show/39644071-hacking-growth) | Sean Ellis & Morgan Brown | The original growth playbook — coined the term "growth hacker" |
+| [Hacking Growth](https://www.goodreads.com/book/show/39644071-hacking-growth) | Sean Ellis & Morgan Brown | The original growth playbook - coined the term "growth hacker" |
 | [The Cold Start Problem](https://www.goodreads.com/book/show/53286719-the-cold-start-problem) | Andrew Chen | Network effects, marketplace growth, and how to reach escape velocity |
-| [Obviously Awesome](https://www.goodreads.com/book/show/40621232-obviously-awesome) | April Dunford | Positioning — the most underrated growth skill |
+| [Obviously Awesome](https://www.goodreads.com/book/show/40621232-obviously-awesome) | April Dunford | Positioning - the most underrated growth skill |
 | [Play Bigger](https://www.goodreads.com/book/show/29027484-play-bigger) | Al Ramadan et al. | Category creation as a growth strategy |
-| [Contagious](https://www.goodreads.com/book/show/15801976-contagious) | Jonah Berger | Why things go viral — STEPPS framework |
+| [Contagious](https://www.goodreads.com/book/show/15801976-contagious) | Jonah Berger | Why things go viral - STEPPS framework |
 | [Hooked](https://www.goodreads.com/book/show/22668729-hooked) | Nir Eyal | The Hook Model: Trigger → Action → Reward → Investment |
 | [Influencer](https://www.goodreads.com/book/show/25658190-influencer) | Jonah Berger | Practical persuasion science for marketing |
 | [The Mom Test](https://www.goodreads.com/book/show/52283963-the-mom-test) | Rob Fitzpatrick | How to validate growth hypotheses without bias |
@@ -36,11 +36,11 @@
 
 | Podcast | Why Listen |
 |---|---|
-| [Lenny's Podcast](https://www.lennyspodcast.com/) | Weekly growth leader interviews — practical, not theoretical |
-| [The Growth Show](https://www.hubspot.com/the-growth-show) | HubSpot — stories of how companies grew |
+| [Lenny's Podcast](https://www.lennyspodcast.com/) | Weekly growth leader interviews - practical, not theoretical |
+| [The Growth Show](https://www.hubspot.com/the-growth-show) | HubSpot - stories of how companies grew |
 | [Noah Kagan Presents](https://okdork.com/podcast/) | Actionable growth tactics from Sumo founder |
 | [Uncensored Advice](https://www.uncensoredadvice.com/) | Transparent startup marketing stories |
-| [Masters of Scale](https://mastersofscale.com/) | Reid Hoffman — scaling principles |
+| [Masters of Scale](https://mastersofscale.com/) | Reid Hoffman - scaling principles |
 
 ---
 
@@ -62,12 +62,12 @@
 
 | Tool/Framework | Use Case |
 |---|---|
-| **AARRR (Pirate Metrics)** | Dave McClure — classic funnel from Acquisition → Revenue |
-| **ICE Score** | Sean Ellis — prioritize growth experiments (Impact, Confidence, Ease) |
-| **RICE Score** | Intercom — ICE + Reach |
-| **Growth Loops** | Brian Balfour / Reforge — viral, content, paid, sales loops |
-| **North Star Metric** | Sean Ellis — single metric that drives sustainable growth |
-| **JTBD Framework** | Clayton Christensen — Jobs to Be Done for feature prioritization |
+| **AARRR (Pirate Metrics)** | Dave McClure - classic funnel from Acquisition → Revenue |
+| **ICE Score** | Sean Ellis - prioritize growth experiments (Impact, Confidence, Ease) |
+| **RICE Score** | Intercom - ICE + Reach |
+| **Growth Loops** | Brian Balfour / Reforge - viral, content, paid, sales loops |
+| **North Star Metric** | Sean Ellis - single metric that drives sustainable growth |
+| **JTBD Framework** | Clayton Christensen - Jobs to Be Done for feature prioritization |
 
 ---
 

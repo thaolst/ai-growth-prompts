@@ -1,11 +1,18 @@
 # Case Studies (Public)
 
-> **VI:** Câu chuyện growth công khai từ các công ty lớn. Không có data nội bộ. Học từ cái đã được kiểm chứng.
-> **EN:** Publicly available growth stories. No internal data. Learn from what works — and what doesn't.
+## Tiếng Việt
+
+Câu chuyện growth công khai từ các công ty lớn. Không có data nội bộ. Học từ cái đã được kiểm chứng.
 
 ---
 
-## Duolingo — Gamification That Works
+## English
+
+Publicly available growth stories. No internal data. Learn from what works - and what doesn't.
+
+---
+
+## Duolingo - Gamification That Works
 
 **What they did:** Turned language learning into a game with streaks, leagues, and push notifications.
 
@@ -17,13 +24,13 @@
 
 **Results:** 73M MAU, 6.6M paid subscribers.
 
-**Why it matters:** Duolingo proved gamification isn't dead — it just needs to target user psychology, not just badges.
+**Why it matters:** Duolingo proved gamification isn't dead - it just needs to target user psychology, not just badges.
 
 **Source:** Lenny's Podcast with Jorge Mazal (ex-Duolingo VP of Product)
 
 ---
 
-## Canva — Freemium to Enterprise
+## Canva - Freemium to Enterprise
 
 **What they did:** Made design accessible to everyone, then built a path from free → pro → enterprise.
 
@@ -41,7 +48,7 @@
 
 ---
 
-## Notion — Viral Template Economy
+## Notion - Viral Template Economy
 
 **What they did:** Built a productivity tool where users create and share templates, driving organic growth.
 
@@ -53,13 +60,13 @@
 
 **Results:** 100M+ users, $10B valuation.
 
-**Why it matters:** Notion's growth is almost entirely organic — a masterclass in content-driven virality.
+**Why it matters:** Notion's growth is almost entirely organic - a masterclass in content-driven virality.
 
 **Source:** Lenny's Newsletter, public interviews
 
 ---
 
-## Spotify Wrapped — The Ultimate Retention Loop
+## Spotify Wrapped - The Ultimate Retention Loop
 
 **What they did:** Year-end personalized audio summary that users can't wait to share.
 
@@ -71,13 +78,13 @@
 
 **Results:** 100M+ shares, massive PR coverage annually.
 
-**Why it matters:** Wrapped shows that retention isn't just about bringing users back — it's about giving them something worth sharing.
+**Why it matters:** Wrapped shows that retention isn't just about bringing users back - it's about giving them something worth sharing.
 
 **Source:** Public Spotify blogs, media coverage
 
 ---
 
-## Dropbox — The OG Referral Program
+## Dropbox - The OG Referral Program
 
 **What they did:** Give users free storage for referring friends.
 

@@ -1,17 +1,23 @@
-# 05 · Automation Prompts — Growth Marketing Workflows
+# 05 - Automation Prompts
 
-> Prompt để xây automation cho growth marketing — từ theo dõi đối thủ, campaign, phản hồi khách hàng.
+# Tiếng Việt
 
-Automation prompts that turn manual monitoring loops into self-running workflows.
+> Prompt xay automation cho growth marketing: competitor monitor, campaign alert, feedback sentiment tracker.
 
 ## Skills
 
-| File | Mô tả |
+| File | Mo ta |
 |------|-------|
-| [`SKILL.md`](./SKILL.md) | 3 prompt automation: competitor monitor, campaign alert, feedback sentiment |
+| [`SKILL.md`](./SKILL.md) | 3 prompt automation trong growth marketing |
 
 ---
 
-## 05 · Automation Prompts — Growth Marketing Workflows
+# English
 
-> Prompts for building growth marketing automations — competitor monitoring, campaign alerts, customer feedback tracking.
+> Prompts for building growth marketing automations: competitor monitoring, campaign alerts, customer feedback tracking.
+
+## Skills
+
+| File | Description |
+|------|-------------|
+| [`SKILL.md`](./SKILL.md) | 3 growth automation prompt templates |
