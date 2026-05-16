@@ -1,6 +1,7 @@
-# AI Ã— Growth Marketing
+# AI × Growth Marketing
 
-> How AI is reshaping growth marketing â€” from personalization at scale to automated experimentation. Practical frameworks, not hype.
+> **VI:** AI đang thay đổi growth marketing thế nào — từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
+> **EN:** How AI is reshaping growth marketing — from personalization at scale to automated experimentation. Practical frameworks, not hype.
 
 ---
 
@@ -15,9 +16,9 @@
 ## 1. AI for Personalization
 
 **What's changed:**
-- Rule-based segmentation â†’ Predictive segmentation
-- Batch campaigns â†’ Real-time personalization
-- Guess-and-check â†’ ML-powered recommendation
+- Rule-based segmentation → Predictive segmentation
+- Batch campaigns → Real-time personalization
+- Guess-and-check → ML-powered recommendation
 
 **Use cases:**
 - **Content personalization:** Dynamic landing pages, product recommendations
@@ -35,9 +36,9 @@ You're a growth marketer. Given user segment [describe], design 3 personalized o
 ## 2. AI for Segmentation
 
 **What's changed:**
-- Static RFM segments â†’ Dynamic behavioral clusters
-- Manual tagging â†’ Automated attribute extraction
-- Historical segments â†’ Predictive segments (who will churn, who will convert)
+- Static RFM segments → Dynamic behavioral clusters
+- Manual tagging → Automated attribute extraction
+- Historical segments → Predictive segments (who will churn, who will convert)
 
 **Use cases:**
 - **Churn prediction:** Which users will drop off next month
@@ -55,9 +56,9 @@ Given these user behavior patterns [data], identify the top 3 segments that are 
 ## 3. AI for Campaign Optimization
 
 **What's changed:**
-- Manual A/B testing â†’ Auto-optimized multivariate tests
-- Static campaigns â†’ Dynamic budget allocation
-- Post-campaign analysis â†’ Real-time optimization
+- Manual A/B testing → Auto-optimized multivariate tests
+- Static campaigns → Dynamic budget allocation
+- Post-campaign analysis → Real-time optimization
 
 **Use cases:**
 - **Budget allocation:** Auto-shift budget from underperforming to overperforming channels
@@ -75,9 +76,9 @@ Design a campaign optimization flow that: 1) launches 3 creative variants per se
 ## 4. AI for Predictive Analytics
 
 **What's changed:**
-- Reactive analysis â†’ Predictive forecasting
-- Historical reporting â†’ Real-time anomaly detection
-- Manual insight extraction â†’ Automated pattern discovery
+- Reactive analysis → Predictive forecasting
+- Historical reporting → Real-time anomaly detection
+- Manual insight extraction → Automated pattern discovery
 
 **Use cases:**
 - **LTV prediction:** Predict customer lifetime value at sign-up
@@ -95,8 +96,8 @@ Based on this campaign data [describe], forecast the expected ROI for the next 3
 ## 5. AI x Game Mechanics
 
 **What's changed:**
-- Fixed loyalty programs â†’ Dynamic, personalized gamification
-- One-size-fits-all challenges â†’ Individualized goals
+- Fixed loyalty programs → Dynamic, personalized gamification
+- One-size-fits-all challenges → Individualized goals
 
 **Use cases:**
 - **Dynamic milestones:** Each user sees milestones calibrated to their behavior
@@ -114,19 +115,19 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 ## 6. AI in the Growth Stack
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚        AI Layer                â”‚
-â”‚  (personalization, prediction,  â”‚
-â”‚   optimization, generation)    â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚      Growth Stack              â”‚
-â”‚  (analytics, campaigns,         â”‚
-â”‚   CRM, testing tools)          â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚      Data Infrastructure       â”‚
-â”‚  (CDP, data warehouse, event    â”‚
-â”‚   tracking)                    â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++---------------------------------+
+|        AI Layer                 |
+|  (personalization, prediction,   |
+|   optimization, generation)     |
++---------------------------------+
+|      Growth Stack               |
+|  (analytics, campaigns,          |
+|   CRM, testing tools)           |
++---------------------------------+
+|      Data Infrastructure        |
+|  (CDP, data warehouse, event     |
+|   tracking)                     |
++---------------------------------+
 ```
 
 **Key principle:** AI augments, not replaces, the growth stack. Data quality determines AI output quality.
@@ -151,4 +152,4 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 
 ---
 
-*For practical AI Ã— Growth prompts, see the other folders in this repo â€” especially [01-voucher-design](../01-voucher-design) and [03-game-mechanics](../03-game-mechanics).*
+*For practical AI × Growth prompts, see the other folders in this repo — especially [01-voucher-design](../01-voucher-design) and [03-game-mechanics](../03-game-mechanics).*

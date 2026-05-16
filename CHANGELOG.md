@@ -2,6 +2,19 @@
 
 All notable changes to this project are documented here.
 
+## [0.3.0] — 2026-05-16
+
+### Fixed
+- **05-n8n-automation/** — Rewritten completely. Removed flight search workflow reference + tác giả bên ngoài. Nội dung mới: 3 prompt automation thuần growth (competitor monitor, campaign alert, feedback sentiment).
+- **Encoding mojibake** — Fixed UTF-8/cp1252 mojibake across 6 files: README.md, 06-growth-frameworks, 07-case-studies, 08-glossary, 09-ai-growth, references.md, trending.md. Em dashes (—), arrows (→), emoji, box-drawing characters restored.
+- **Bilingual (VI + EN)**:
+  - README.md: Added full Vietnamese section at top (parallel with English)
+  - 06-09 folders: Added VI intro lines to every README
+  - CONTRIBUTING.md: Updated folder structure to include 05-09
+- Removed all external references (Nguyen Thieu Toan, n8n community template)
+
+---
+
 ## [0.2.0] — 2026-05-11
 
 ### Added

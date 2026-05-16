@@ -1,18 +1,19 @@
-# Growth Glossary
+# Growth Glossary / Thuật ngữ Growth
 
-> Key terms every growth marketer should know. Concise, practical definitions with real examples.
+> **VI:** 80+ thuật ngữ growth marketing — định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được.
+> **EN:** Key terms every growth marketer should know. Concise, practical definitions with real examples.
 
 ---
 
 ## A
 
 **AARRR (Pirate Metrics)**
-The five-stage growth funnel: Acquisition â†’ Activation â†’ Retention â†’ Revenue â†’ Referral.
+The five-stage growth funnel: Acquisition → Activation → Retention → Revenue → Referral.
 *coined by Dave McClure*
 
 **Activation**
 The moment a user experiences the core value of your product (the "Aha!" moment).
-*Example: Slack â€” sending your first message.*
+*Example: Slack — sending your first message.*
 
 **Acquisition**
 The process of getting users to discover and try your product.
@@ -23,7 +24,7 @@ Comparing two versions (A vs B) to see which performs better on a specific metri
 
 **Aha Moment**
 The key activation point where users realize why your product is valuable.
-*Example: Facebook â€” 7 friends in 10 days.*
+*Example: Facebook — 7 friends in 10 days.*
 
 ---
 
@@ -72,7 +73,7 @@ Price paid per app install or per user acquisition.
 
 **CLV / LTV (Customer Lifetime Value)**
 Total revenue a customer generates over their entire relationship with your product.
-`LTV = Average Order Value Ã— Purchase Frequency Ã— Customer Lifespan`
+`LTV = Average Order Value × Purchase Frequency × Customer Lifespan`
 
 ---
 
@@ -109,7 +110,7 @@ Systematic testing to improve growth metrics.
 ## F
 
 **First Click / First Purchase**
-The first conversion after acquisition â€” critical for activation.
+The first conversion after acquisition — critical for activation.
 
 **Free Trial**
 Letting users try your product before paying.
@@ -136,7 +137,7 @@ Creative, low-cost strategies to acquire and retain users.
 
 **Growth Loop**
 A self-reinforcing cycle where output feeds input.
-*Example: Viral loop â€” user invites â†’ new user â†’ invites more.*
+*Example: Viral loop — user invites → new user → invites more.*
 
 ---
 
@@ -146,7 +147,7 @@ A self-reinforcing cycle where output feeds input.
 A behavior done automatically with minimal conscious thought.
 
 **Hook Model**
-Nir Eyal's 4-step framework: Trigger â†’ Action â†’ Variable Reward â†’ Investment.
+Nir Eyal's 4-step framework: Trigger → Action → Variable Reward → Investment.
 
 **Heatmap**
 Visual representation of where users click, scroll, or hover on a page.
@@ -156,7 +157,7 @@ Visual representation of where users click, scroll, or hover on a page.
 ## I
 
 **ICE Score**
-Prioritization framework: Impact Ã— Confidence Ã— Ease (each 1-10).
+Prioritization framework: Impact × Confidence × Ease (each 1-10).
 
 **Impressions**
 Number of times an ad or content is displayed.
@@ -182,7 +183,7 @@ Framework that asks: "What job did the user hire your product to do?"
 **K-Factor (Viral Coefficient)**
 Number of new users each existing user brings in.
 *K > 1 = viral growth. K < 1 = needs paid acquisition.*
-`K = Invites Sent Ã— Conversion Rate of Invites`
+`K = Invites Sent × Conversion Rate of Invites`
 
 **KPI (Key Performance Indicator)**
 A measurable value that shows how effectively you're achieving business objectives.
@@ -215,7 +216,7 @@ Unique users who engage with your product in a month.
 A platform connecting buyers and sellers. (Uber, Airbnb, eBay, Fiverr)
 
 **Momentum**
-Accelerating growth â€” often driven by compounding network effects.
+Accelerating growth — often driven by compounding network effects.
 
 **MoM (Month-over-Month)**
 Comparing this month's metric to last month's.
@@ -255,13 +256,13 @@ Growth from non-paid sources (word-of-mouth, SEO, virality).
 
 **Payback Period**
 Time needed to earn back the CAC from a customer.
-*CAC = 300k, Monthly Revenue = 50k â†’ Payback = 6 months*
+*CAC = 300k, Monthly Revenue = 50k → Payback = 6 months*
 
 **Personalization**
 Tailoring the user experience based on individual behavior, preferences, or data.
 
 **PLG (Product-Led Growth)**
-Growth driven by the product itself â€” not sales or marketing.
+Growth driven by the product itself — not sales or marketing.
 *Example: Slack, Canva, Notion, Zoom*
 
 **Power Users**
@@ -296,7 +297,7 @@ Money generated from users/customers.
 `(Gain from Investment - Cost of Investment) / Cost of Investment`
 
 **RICE Score**
-Prioritization: Reach Ã— Impact Ã— Confidence Ã— Effort (effort inverted).
+Prioritization: Reach × Impact × Confidence × Effort (effort inverted).
 
 ---
 
@@ -340,7 +341,7 @@ How long it takes a new user to experience core value.
 ## U
 
 **UGC (User-Generated Content)**
-Content created by users â€” reviews, templates, posts, videos.
+Content created by users — reviews, templates, posts, videos.
 
 **Unit Economics**
 Revenue and cost per individual customer.

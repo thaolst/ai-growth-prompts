@@ -1,6 +1,6 @@
-# ðŸ”¥ Trending in Growth Marketing
+# 🔥 Trending in Growth Marketing
 
-> What's happening now in growth â€” updated regularly. Follow the links for full reads.
+> What's happening now in growth — updated regularly. Follow the links for full reads.
 
 ---
 
@@ -12,8 +12,8 @@
 - **Action:** Audit your own retention curves. Where's the drop-off? Focus there.
 
 ### 2. AI-Native Growth Teams
-- **Why now:** AI tools are moving from "nice to have" to "core infrastructure" for growth teams â€” from personalized push notifications to dynamic pricing engines.
-- **Follow:** Brian Balfour's take on [AI Ã— Growth](https://brianbalfour.com/)
+- **Why now:** AI tools are moving from "nice to have" to "core infrastructure" for growth teams — from personalized push notifications to dynamic pricing engines.
+- **Follow:** Brian Balfour's take on [AI × Growth](https://brianbalfour.com/)
 - **Action:** Map your growth stack. Identify 3 manual tasks AI can automate today.
 
 ### 3. Super-App Thinking
@@ -33,18 +33,18 @@
 
 ---
 
-## ðŸ“ˆ Weekly Signals
+## 📈 Weekly Signals
 
 | Signal | Source | Insight |
 |---|---|---|
 | Organic traffic shifts | [Kevin Indig](https://growthunhinged.com/) | Google AI Overviews are changing click-through rates |
 | Platform changes | [Andrew Chen](https://andrewchen.com/) | Apple ATT still reshaping mobile acquisition |
-| Behavioral economics | [Nir Eyal](https://www.nirandfar.com/) | Hook Model: Trigger â†’ Action â†’ Reward â†’ Investment |
+| Behavioral economics | [Nir Eyal](https://www.nirandfar.com/) | Hook Model: Trigger → Action → Reward → Investment |
 | Community-led growth | [Lenny's Newsletter](https://www.lennysnewsletter.com/) | Circle, Substack, Discord driving retention |
 
 ---
 
-## ðŸ† All-Time Classics (Always Relevant)
+## 🏆 All-Time Classics (Always Relevant)
 
 | Concept | Source |
 |---|---|

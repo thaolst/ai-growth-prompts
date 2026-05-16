@@ -4,22 +4,22 @@
 
 ---
 
-## ðŸ“š Books
+## 📚 Books
 
 | Book | Author | Why It Matters |
 |---|---|---|
-| [Hacking Growth](https://www.goodreads.com/book/show/39644071-hacking-growth) | Sean Ellis & Morgan Brown | The original growth playbook â€” coined the term "growth hacker" |
+| [Hacking Growth](https://www.goodreads.com/book/show/39644071-hacking-growth) | Sean Ellis & Morgan Brown | The original growth playbook — coined the term "growth hacker" |
 | [The Cold Start Problem](https://www.goodreads.com/book/show/53286719-the-cold-start-problem) | Andrew Chen | Network effects, marketplace growth, and how to reach escape velocity |
-| [Obviously Awesome](https://www.goodreads.com/book/show/40621232-obviously-awesome) | April Dunford | Positioning â€” the most underrated growth skill |
+| [Obviously Awesome](https://www.goodreads.com/book/show/40621232-obviously-awesome) | April Dunford | Positioning — the most underrated growth skill |
 | [Play Bigger](https://www.goodreads.com/book/show/29027484-play-bigger) | Al Ramadan et al. | Category creation as a growth strategy |
-| [Contagious](https://www.goodreads.com/book/show/15801976-contagious) | Jonah Berger | Why things go viral â€” STEPPS framework |
-| [Hooked](https://www.goodreads.com/book/show/22668729-hooked) | Nir Eyal | The Hook Model: Trigger â†’ Action â†’ Reward â†’ Investment |
+| [Contagious](https://www.goodreads.com/book/show/15801976-contagious) | Jonah Berger | Why things go viral — STEPPS framework |
+| [Hooked](https://www.goodreads.com/book/show/22668729-hooked) | Nir Eyal | The Hook Model: Trigger → Action → Reward → Investment |
 | [Influencer](https://www.goodreads.com/book/show/25658190-influencer) | Jonah Berger | Practical persuasion science for marketing |
 | [The Mom Test](https://www.goodreads.com/book/show/52283963-the-mom-test) | Rob Fitzpatrick | How to validate growth hypotheses without bias |
 
 ---
 
-## ðŸ“° Newsletters
+## 📰 Newsletters
 
 | Newsletter | Author | Why Read |
 |---|---|---|
@@ -32,19 +32,19 @@
 
 ---
 
-## ðŸŽ™ï¸ Podcasts
+## 🎙️ Podcasts
 
 | Podcast | Why Listen |
 |---|---|
-| [Lenny's Podcast](https://www.lennyspodcast.com/) | Weekly growth leader interviews â€” practical, not theoretical |
-| [The Growth Show](https://www.hubspot.com/the-growth-show) | HubSpot â€” stories of how companies grew |
+| [Lenny's Podcast](https://www.lennyspodcast.com/) | Weekly growth leader interviews — practical, not theoretical |
+| [The Growth Show](https://www.hubspot.com/the-growth-show) | HubSpot — stories of how companies grew |
 | [Noah Kagan Presents](https://okdork.com/podcast/) | Actionable growth tactics from Sumo founder |
 | [Uncensored Advice](https://www.uncensoredadvice.com/) | Transparent startup marketing stories |
-| [Masters of Scale](https://mastersofscale.com/) | Reid Hoffman â€” scaling principles |
+| [Masters of Scale](https://mastersofscale.com/) | Reid Hoffman — scaling principles |
 
 ---
 
-## ðŸ“ Blogs & Websites
+## 📝 Blogs & Websites
 
 | Site | Focus |
 |---|---|
@@ -58,20 +58,20 @@
 
 ---
 
-## ðŸ“Š Tools & Frameworks
+## 📊 Tools & Frameworks
 
 | Tool/Framework | Use Case |
 |---|---|
-| **AARRR (Pirate Metrics)** | Dave McClure â€” classic funnel from Acquisition â†’ Revenue |
-| **ICE Score** | Sean Ellis â€” prioritize growth experiments (Impact, Confidence, Ease) |
-| **RICE Score** | Intercom â€” ICE + Reach |
-| **Growth Loops** | Brian Balfour / Reforge â€” viral, content, paid, sales loops |
-| **North Star Metric** | Sean Ellis â€” single metric that drives sustainable growth |
-| **JTBD Framework** | Clayton Christensen â€” Jobs to Be Done for feature prioritization |
+| **AARRR (Pirate Metrics)** | Dave McClure — classic funnel from Acquisition → Revenue |
+| **ICE Score** | Sean Ellis — prioritize growth experiments (Impact, Confidence, Ease) |
+| **RICE Score** | Intercom — ICE + Reach |
+| **Growth Loops** | Brian Balfour / Reforge — viral, content, paid, sales loops |
+| **North Star Metric** | Sean Ellis — single metric that drives sustainable growth |
+| **JTBD Framework** | Clayton Christensen — Jobs to Be Done for feature prioritization |
 
 ---
 
-## ðŸ”— Influencers to Follow
+## 🔗 Influencers to Follow
 
 | Name | Platform | Why |
 |---|---|---|

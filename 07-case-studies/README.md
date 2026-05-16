@@ -1,36 +1,37 @@
 # Case Studies (Public)
 
-> Publicly available growth stories. No internal data. Learn from what works â€” and what doesn't.
+> **VI:** Câu chuyện growth công khai từ các công ty lớn. Không có data nội bộ. Học từ cái đã được kiểm chứng.
+> **EN:** Publicly available growth stories. No internal data. Learn from what works — and what doesn't.
 
 ---
 
-## Duolingo â€” Gamification That Works
+## Duolingo — Gamification That Works
 
 **What they did:** Turned language learning into a game with streaks, leagues, and push notifications.
 
 **Key tactics:**
 - **Streak system:** Users don't want to break the streak. Loss aversion > reward seeking.
-- **Leaderboards:** Weekly leagues create competition â†’ more sessions.
+- **Leaderboards:** Weekly leagues create competition → more sessions.
 - **Smart notifications:** "You'll lose your streak" is 3x more effective than "Come practice."
 - **Path redesign:** Simplified the learning path to reduce cognitive load.
 
 **Results:** 73M MAU, 6.6M paid subscribers.
 
-**Why it matters:** Duolingo proved gamification isn't dead â€” it just needs to target user psychology, not just badges.
+**Why it matters:** Duolingo proved gamification isn't dead — it just needs to target user psychology, not just badges.
 
 **Source:** Lenny's Podcast with Jorge Mazal (ex-Duolingo VP of Product)
 
 ---
 
-## Canva â€” Freemium to Enterprise
+## Canva — Freemium to Enterprise
 
-**What they did:** Made design accessible to everyone, then built a path from free â†’ pro â†’ enterprise.
+**What they did:** Made design accessible to everyone, then built a path from free → pro → enterprise.
 
 **Key tactics:**
 - **Zero friction onboarding:** No sign-up needed to start designing.
 - **Template ecosystem:** User-created templates feed back into the platform (content loop).
 - **Free first, pay later:** Core design tools are free. Pay for brand kits, backgrounds, team features.
-- **Education â†’ Adoption:** Canva Design School created a new generation of users.
+- **Education → Adoption:** Canva Design School created a new generation of users.
 
 **Results:** 190M MAU, $3B+ revenue.
 
@@ -40,25 +41,25 @@
 
 ---
 
-## Notion â€” Viral Template Economy
+## Notion — Viral Template Economy
 
 **What they did:** Built a productivity tool where users create and share templates, driving organic growth.
 
 **Key tactics:**
-- **Templates as content:** Users publish templates â†’ others discover Notion â†’ create more templates.
+- **Templates as content:** Users publish templates → others discover Notion → create more templates.
 - **Community-led growth:** Reddit, Twitter, YouTube tutorials created an ecosystem.
 - **Free for personal use:** Low switching cost to try.
 - **Network effects:** The more people use Notion in your team, the more valuable it becomes.
 
 **Results:** 100M+ users, $10B valuation.
 
-**Why it matters:** Notion's growth is almost entirely organic â€” a masterclass in content-driven virality.
+**Why it matters:** Notion's growth is almost entirely organic — a masterclass in content-driven virality.
 
 **Source:** Lenny's Newsletter, public interviews
 
 ---
 
-## Spotify Wrapped â€” The Ultimate Retention Loop
+## Spotify Wrapped — The Ultimate Retention Loop
 
 **What they did:** Year-end personalized audio summary that users can't wait to share.
 
@@ -66,17 +67,17 @@
 - **Personalization at scale:** Every user gets a unique, shareable experience.
 - **Social currency:** Sharing Wrapped = showing your music taste = free marketing for Spotify.
 - **Annual anticipation:** Users wait all year. The event itself becomes a retention mechanism.
-- **Data storytelling:** Raw data (minutes listened) â†’ emotional narrative.
+- **Data storytelling:** Raw data (minutes listened) → emotional narrative.
 
 **Results:** 100M+ shares, massive PR coverage annually.
 
-**Why it matters:** Wrapped shows that retention isn't just about bringing users back â€” it's about giving them something worth sharing.
+**Why it matters:** Wrapped shows that retention isn't just about bringing users back — it's about giving them something worth sharing.
 
 **Source:** Public Spotify blogs, media coverage
 
 ---
 
-## Dropbox â€” The OG Referral Program
+## Dropbox — The OG Referral Program
 
 **What they did:** Give users free storage for referring friends.
 

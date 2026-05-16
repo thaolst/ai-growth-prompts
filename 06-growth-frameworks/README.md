@@ -1,6 +1,7 @@
 # Growth Frameworks & Mental Models
 
-> The mental models that power every great growth strategy. Learn them once, apply them everywhere.
+> **VI:** Các mental model growth cốt lõi — AARRR, North Star, Growth Loops, Hook Model. Học một lần, dùng mãi mãi.
+> **EN:** The mental models that power every great growth strategy. Learn them once, apply them everywhere.
 
 ---
 
@@ -8,10 +9,10 @@
 
 **Creator:** Dave McClure / 500 Startups
 
-The classic growth funnel â€” every growth strategy maps to at least one of these stages.
+The classic growth funnel — every growth strategy maps to at least one of these stages.
 
 ```
-Acquisition â†’ Activation â†’ Retention â†’ Revenue â†’ Referral
+Acquisition → Activation → Retention → Revenue → Referral
 ```
 
 - **Acquisition:** How do users find you? (SEO, paid, viral, content, partnerships)
@@ -48,13 +49,13 @@ Instead of a linear funnel (AARRR), growth loops are closed systems where the ou
 
 **4 Types:**
 
-- **Viral Loop:** User â†’ Invite â†’ New User â†’ Invite...
+- **Viral Loop:** User → Invite → New User → Invite...
   - *Dropbox:* Referrals unlocked storage
-- **Content Loop:** Create Content â†’ Get Traffic â†’ Convert Users â†’ Create More Content...
-  - *HubSpot:* Blog â†’ Sign up â†’ More content
-- **Paid Loop:** Spend â†’ Acquire â†’ Convert â†’ Earn â†’ Spend More...
-  - *Uber:* Acquisition â†’ Trip â†’ Revenue â†’ Re-acquire
-- **Sales Loop:** Outreach â†’ Demo â†’ Close â†’ Referral â†’ More Outreach...
+- **Content Loop:** Create Content → Get Traffic → Convert Users → Create More Content...
+  - *HubSpot:* Blog → Sign up → More content
+- **Paid Loop:** Spend → Acquire → Convert → Earn → Spend More...
+  - *Uber:* Acquisition → Trip → Revenue → Re-acquire
+- **Sales Loop:** Outreach → Demo → Close → Referral → More Outreach...
   - *Salesforce:* Referral programs for enterprise
 
 **When to use:** When you want compounding, not linear, growth.
@@ -68,13 +69,13 @@ Instead of a linear funnel (AARRR), growth loops are closed systems where the ou
 A four-step process that builds habit-forming products.
 
 ```
-Trigger â†’ Action â†’ Variable Reward â†’ Investment
+Trigger → Action → Variable Reward → Investment
 ```
 
 - **Trigger:** External (notification) or Internal (boredom)
 - **Action:** Simplest behavior (tap, scroll, type)
 - **Variable Reward:** Unpredictable payoff (what's in my feed?)
-- **Investment:** User puts something in (data, content, time) â†’ increases likelihood of returning
+- **Investment:** User puts something in (data, content, time) → increases likelihood of returning
 
 **When to use:** Designing retention loops and habit-forming features.
 
@@ -88,13 +89,13 @@ Score each growth experiment to decide what to run first.
 
 **ICE Score:**
 ```
-Impact Ã— Confidence Ã— Ease
+Impact × Confidence × Ease
 ```
 (Each scored 1-10)
 
 **RICE Score:**
 ```
-Reach Ã— Impact Ã— Confidence Ã— Effort
+Reach × Impact × Confidence × Effort
 ```
 (Effort in person-weeks, inverted)
 
@@ -109,7 +110,7 @@ Reach Ã— Impact Ã— Confidence Ã— Effort
 Energy stored in one rotation powers the next. Instead of pushing harder, reduce friction in your growth system.
 
 **Example (Amazon):**
-Better selection â†’ More customers â†’ More sellers â†’ Better selection
+Better selection → More customers → More sellers → Better selection
 
 **When to use:** Understanding why your growth is accelerating or decelerating.
 
@@ -130,7 +131,7 @@ People don't buy products; they hire them to do a job.
 
 ---
 
-## 8. Hook â†’ Habit â†’ Loyalty
+## 8. Hook → Habit → Loyalty
 
 **Combining models:**
 - Hook gets them in (Hook Model)

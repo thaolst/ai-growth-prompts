@@ -1,13 +1,17 @@
-# 05 · n8n Automation — AI Workflows for Growth Marketing
+# 05 · Automation Prompts — Growth Marketing Workflows
 
-Automation workflows built with n8n, Gemini, and third-party APIs,
-adapted for growth marketing use cases.
+> Prompt để xây automation cho growth marketing — từ theo dõi đối thủ, campaign, phản hồi khách hàng.
+
+Automation prompts that turn manual monitoring loops into self-running workflows.
 
 ## Skills
 
 | File | Mô tả |
 |------|-------|
-| [`SKILL.md`](./SKILL.md) | Phân tích workflow n8n + Gemini + SerpAPI — mẫu cho marketing alerts |
-| *(coming soon)* | Automated campaign performance monitoring |
-| *(coming soon)* | Competitor intelligence alerts |
-| *(coming soon)* | Customer segment change detection |
+| [`SKILL.md`](./SKILL.md) | 3 prompt automation: competitor monitor, campaign alert, feedback sentiment |
+
+---
+
+## 05 · Automation Prompts — Growth Marketing Workflows
+
+> Prompts for building growth marketing automations — competitor monitoring, campaign alerts, customer feedback tracking.

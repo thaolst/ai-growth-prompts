@@ -24,6 +24,11 @@ Prompt có thể bằng **tiếng Việt hoặc tiếng Anh**. Nếu được, t
 02-segment-analysis/   — Target ai, can thiệp lúc nào
 03-game-mechanics/     — Loop engagement & game mechanics
 04-comm-and-brief/     — Plan truyền thông & design brief
+05-automation/         — Prompt xây automation growth marketing
+06-growth-frameworks/  — Mental model growth cốt lõi
+07-case-studies/       — Case study từ công ty lớn
+08-glossary/           — Thuật ngữ growth marketing
+09-ai-growth/          — AI × Growth Marketing
 ```
 
 Muốn thêm folder mới? Tạo issue trước để thảo luận.
