@@ -2,13 +2,17 @@
 
 ## Tiếng Việt
 
-80+ thuật ngữ growth marketing - định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được.
+80+ thuật ngữ growth marketing - định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được. Từ AARRR đến Zero-Party Data.
+
+Dùng glossary này khi gặp thuật ngữ lạ trong các prompt khác, hoặc để ôn lại định nghĩa trước buổi phỏng vấn.
 
 ---
 
 ## English
 
-Key terms every growth marketer should know. Concise, practical definitions with real examples.
+Key terms every growth marketer should know. Concise, practical definitions with real examples. From AARRR to Zero-Party Data.
+
+Use this glossary when you encounter unfamiliar terms in other prompts, or to refresh definitions before an interview.
 
 ---
 

@@ -4,11 +4,15 @@
 
 AI đang thay đổi growth marketing thế nào - từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
 
+Bảy phần: personalization, segmentation, campaign optimization, predictive analytics, game mechanics, growth stack, và limitation/rủi ro. Mỗi phần có prompt để thử ngay.
+
 ---
 
 ## English
 
 How AI is reshaping growth marketing - from personalization at scale to automated experimentation. Practical frameworks, not hype.
+
+Seven sections: personalization, segmentation, campaign optimization, predictive analytics, game mechanics, growth stack, and limitations/risks. Each section includes a prompt to try now.
 
 ---
 

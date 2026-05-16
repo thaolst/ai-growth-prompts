@@ -2,13 +2,17 @@
 
 ## Tiếng Việt
 
-Câu chuyện growth công khai từ các công ty lớn. Không có data nội bộ. Học từ cái đã được kiểm chứng.
+Câu chuyện growth công khai từ các công ty lớn: Duolingo, Canva, Notion, Spotify, Dropbox. Không có data nội bộ. Học từ cái đã được kiểm chứng ngoài thị trường.
+
+Mỗi case study phân tích: họ đã làm gì, tactic chính, kết quả, và tại sao nó quan trọng với growth marketer.
 
 ---
 
 ## English
 
-Publicly available growth stories. No internal data. Learn from what works - and what doesn't.
+Publicly available growth stories from major companies: Duolingo, Canva, Notion, Spotify, Dropbox. No internal data. Learn from what works and what doesn't in the real market.
+
+Each case study covers: what they did, key tactics, results, and why it matters for growth marketers.
 
 ---
 

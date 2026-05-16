@@ -2,11 +2,11 @@
 
 ## Tiếng Việt
 
-> Prompt xay automation cho growth marketing: competitor monitor, campaign alert, feedback sentiment tracker.
+> Prompt để xây automation cho growth marketing: competitor monitor, campaign alert, feedback sentiment tracker.
 
 ## Skills
 
-| File | Mo ta |
+| File | Mô tả |
 |------|-------|
 | [`SKILL.md`](./SKILL.md) | 3 prompt automation trong growth marketing |
 

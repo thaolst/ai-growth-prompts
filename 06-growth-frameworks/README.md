@@ -2,13 +2,17 @@
 
 ## Tiếng Việt
 
-Các mental model growth cốt lõi - AARRR, North Star, Growth Loops, Hook Model. Học một lần, dùng mãi mãi.
+Các mental model growth cốt lõi mà mọi growth marketer cần biết: AARRR, North Star, Growth Loops, Hook Model, ICE/RICE, Flywheel, JTBD. Học một lần, áp dụng mãi mãi.
+
+Mỗi framework có phần giải thích ngắn gọn, ví dụ thực tế, và khi nào nên dùng. Dùng phần này để xây nền tảng tư duy trước khi vào prompt thực hành.
 
 ---
 
 ## English
 
 The mental models that power every great growth strategy. Learn them once, apply them everywhere.
+
+Each framework includes a brief explanation, real examples, and when to use it. Use this section to build your mental foundation before diving into practical prompts.
 
 ---
 

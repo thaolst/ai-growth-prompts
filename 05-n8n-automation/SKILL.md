@@ -2,106 +2,106 @@
 
 ## Tiếng Việt
 
-## Prompt 01 - Xay competitor promotion monitor
+## Prompt 01 - Xây competitor promotion monitor
 
-**Khi nao dung:** Muon tu dong theo doi khuyen mai doi thu, biet ngay khi doi thu ra deal moi, thay doi chien luoc.
+**Khi nào dùng:** Muốn tự động theo dõi khuyến mãi đối thủ, biết ngay khi đối thủ ra deal mới, thay đổi chiến lược.
 
 ```
-Toi can thiet ke mot automation monitor de theo doi khuyen mai doi thu.
+Tôi cần thiết kế một automation monitor để theo dõi khuyến mãi đối thủ.
 
 Use case:
-- Theo doi [ten doi thu 1], [ten doi thu 2]
-- Tan suat: [moi ngay / moi tuan]
-- Kenh monitor: [web scraping / Google Search / app store description / social]
+- Theo dõi [tên đối thủ 1], [tên đối thủ 2]
+- Tần suất: [mỗi ngày / mỗi tuần]
+- Kênh monitor: [web scraping / Google Search / app store description / social]
 
-Toi muon automation:
-1. Tu dong crawl hoac search thong tin khuyen mai moi nhat
-2. So sanh voi campaign hien tai cua toi
-3. Gui alert vao [Telegram / Slack / email] neu:
-   - Doi thu giam > [X]% so voi thang truoc
-   - Doi thu ra hinh thuc promotion moi
-   - Muc uu dai cao hon campaign cua toi > [Y]%
-4. Luu lich su de detect trend theo thang
+Tôi muốn automation:
+1. Tự động crawl hoặc search thông tin khuyến mãi mới nhất
+2. So sánh với campaign hiện tại của tôi
+3. Gửi alert vào [Telegram / Slack / email] nếu:
+   - Đối thủ giảm > [X]% so với tháng trước
+   - Đối thủ ra hình thức promotion mới
+   - Mức ưu đãi cao hơn campaign của tôi > [Y]%
+4. Lưu lịch sử để detect trend theo tháng
 
-Output mong doi moi lan chay:
+Output mong đợi mỗi lần chạy:
 (COMPETITOR ALERT box)
 ```
 
-**Prompt phu: uoc luong chi phi**
+**Prompt phụ: ước lượng chi phí**
 
 ```
-Voi thiet ke tren, uoc luong:
-1. So API call moi thang
-2. Chi phi uoc tinh (neu dung free tier duoc bao nhieu %)
-3. Thoi gian build (voi nguoi biet automation co ban)
-4. Cach scale tu 2 doi thu len 10 doi thu
+Với thiết kế trên, ước lượng:
+1. Số API call mỗi tháng
+2. Chi phí ước tính (nếu dùng free tier được bao nhiêu %)
+3. Thời gian build (với người biết automation cơ bản)
+4. Cách scale từ 2 đối thủ lên 10 đối thủ
 ```
 
 ---
 
-## Prompt 02 - Xay campaign performance auto-alert
+## Prompt 02 - Xây campaign performance auto-alert
 
-**Khi nao dung:** Campaign dang chay, can tu dong phat hien khi metric xuong duoi threshold ma khong can ngoi dashboard.
+**Khi nào dùng:** Campaign đang chạy, cần tự động phát hiện khi metric xuống dưới threshold mà không cần ngồi dashboard.
 
 ```
-Toi can automation monitor cho campaign dang chay.
+Tôi cần automation monitor cho campaign đang chạy.
 
 Campaign:
-- Ten: [mo ta]
-- KPI chinh: [redemption rate / CTR / conversion rate]
+- Tên: [mô tả]
+- KPI chính: [redemption rate / CTR / conversion rate]
 - Target: [VD: redemption rate > 8%]
-- Threshold alert: [VD: neu xuong duoi 5% -> canh bao]
-- Tan suat check: [moi gio / moi ngay]
+- Threshold alert: [VD: nếu xuống dưới 5% -> cảnh báo]
+- Tần suất check: [mỗi giờ / mỗi ngày]
 
-Nguon du lieu:
-- [Google Sheets / dashboard API / CSV upload dinh ky]
+Nguồn dữ liệu:
+- [Google Sheets / dashboard API / CSV upload định kỳ]
 
-Yeu cau automation:
-1. Lay du lieu tu nguon moi [gio/ngay]
-2. So sanh actual vs target
-3. Phan loai muc do:
-   - Xanh: tren target -> no action
-   - Vang: duoi target nhung > threshold -> ghi log, khong alert
-   - Do: duoi threshold -> alert ngay voi context
-4. Alert gom: metric hien tai, target, gap, de xuat hanh dong dau tien
-5. Cuoi campaign: tu dong generate summary report
+Yêu cầu automation:
+1. Lấy dữ liệu từ nguồn mỗi [giờ/ngày]
+2. So sánh actual vs target
+3. Phân loại mức độ:
+   - Xanh: trên target -> no action
+   - Vàng: dưới target nhưng > threshold -> ghi log, không alert
+   - Đỏ: dưới threshold -> alert ngay với context
+4. Alert gồm: metric hiện tại, target, gap, đề xuất hành động đầu tiên
+5. Cuối campaign: tự động generate summary report
 ```
 
 ---
 
-## Prompt 03 - Xay customer feedback sentiment tracker
+## Prompt 03 - Xây customer feedback sentiment tracker
 
-**Khi nao dung:** Co nhieu review / feedback tu user (app store, Zalo, social), can AI doc va canh bao khi sentiment xau bat thuong.
+**Khi nào dùng:** Có nhiều review / feedback từ user (app store, Zalo, social), cần AI đọc và cảnh báo khi sentiment xấu bất thường.
 
 ```
-Toi can automation phan tich sentiment tu feedback user.
+Tôi cần automation phân tích sentiment từ feedback user.
 
-Nguon feedback:
+Nguồn feedback:
 - [App store reviews / Zalo OA comments / social mentions / survey response]
-- So luong: [khoang X feedback/tuan]
+- Số lượng: [khoảng X feedback/tuần]
 
-Yeu cau:
-1. AI doc tung feedback va phan loai:
+Yêu cầu:
+1. AI đọc từng feedback và phân loại:
    - Sentiment: [positive / neutral / negative]
-   - Chu de: [VD: voucher / game / app crash / giao hang / CSKH]
-   - Muc do nghiem trong: [thap / trung / cao]
-2. Alert neu:
-   - Negative sentiment spike > [X]% trong 1 ngay
-   - Cung mot chu de negative xuat hien > [Y] lan/tuan
-   - Bat ky feedback nao tagged "cao" (app crash, mat tien, security)
+   - Chủ đề: [VD: voucher / game / app crash / giao hàng / CSKH]
+   - Mức độ nghiêm trọng: [thấp / trung / cao]
+2. Alert nếu:
+   - Negative sentiment spike > [X]% trong 1 ngày
+   - Cùng một chủ đề negative xuất hiện > [Y] lần/tuần
+   - Bất kỳ feedback nào tagged "cao" (app crash, mất tiền, security)
 3. Weekly summary:
-   - Top 3 van de duoc mention nhieu nhat
-   - Sentiment trend (so voi tuan truoc)
-   - Goi y hanh dong cho tung van de
+   - Top 3 vấn đề được mention nhiều nhất
+   - Sentiment trend (so với tuần trước)
+   - Gợi ý hành động cho từng vấn đề
 ```
 
 ---
 
 ## Notes
 
-- Cac prompt tren khong yeu cau tool cu the (co the dung n8n, Make, Python script, hoac Zapier)
-- Tap trung vao *logic va output*, khong phai implementation chi tiet
-- Scale tu nho -> lon: bat dau voi 1 use case, kiem tra ROI truoc khi mo rong
+- Các prompt trên không yêu cầu tool cụ thể (có thể dùng n8n, Make, Python script, hoặc Zapier)
+- Tập trung vào *logic và output*, không phải implementation chi tiết
+- Scale từ nhỏ -> lớn: bắt đầu với 1 use case, kiểm tra ROI trước khi mở rộng
 
 ---
 
