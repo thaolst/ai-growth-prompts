@@ -1,36 +1,36 @@
 # 01 - Segment + Offer Designer
 
-> Tá»± Ä‘á»™ng phÃ¢n nhÃ³m user vÃ  thiáº¿t káº¿ offer theo tá»«ng segment báº±ng AI.
+> Tu dong phan nhom user va thiet ke offer theo tung segment bang AI.
 
 ---
 
-## Khi nÃ o dÃ¹ng
+## Khi nao dung
 
-- Báº¡n cÃ³ data user trong spreadsheet hoáº·c database
-- Cáº§n design offer khÃ¡c nhau cho tá»«ng nhÃ³m user
-- Muá»‘n AI gá»£i Ã½ offer dá»±a trÃªn hÃ nh vi thá»±c táº¿, khÃ´ng pháº£i phá»ng Ä‘oÃ¡n
-
----
-
-## CÃ¡ch hoáº¡t Ä‘á»™ng
-
-```
-1. Äá»c data user   2. AI phÃ¢n nhÃ³m     3. AI design offer   4. Xuáº¥t ra sheet
-   (Sheets/DB)        (GPT/Claude)         (GPT/Claude)         (Google Sheet)
-```
+- Ban co data user trong spreadsheet hoac database
+- Can design offer khac nhau cho tung nhom user
+- Muon AI goi y offer dua tren hanh vi thuc te, khong phai phong doan
 
 ---
 
-## CÃ¡c node (tá»«ng bÆ°á»›c)
+## Cach hoat dong
 
-### BÆ°á»›c 1: Äá»c dá»¯ liá»‡u user
-- **Node:** Google Sheets / MySQL / PostgreSQL
-- **Input:** User data gá»“m cÃ¡c cá»™t: `user_id`, `last_activity`, `total_spend`, `frequency`, `segment_history`
-- **Máº«u:** Tá»‘i thiá»ƒu 100-1000 user Ä‘á»ƒ phÃ¢n nhÃ³m cÃ³ Ã½ nghÄ©a
+1. Doc data user (Sheets/DB)
+2. AI phan nhom (GPT/Claude)
+3. AI design offer (GPT/Claude)
+4. Xuat ra sheet (Google Sheet)
 
-### BÆ°á»›c 2: AI phÃ¢n nhÃ³m (segmentation)
-- **Node:** OpenAI / Claude
-- **Prompt (English for AI):**
+---
+
+## Cac node
+
+### Buoc 1: Doc du lieu user
+- Node: Google Sheets / MySQL / PostgreSQL
+- Input: User data gom cac cot: user_id, last_activity, total_spend, frequency, segment_history
+- Mau: Toi thieu 100-1000 user de phan nhom co y nghia
+
+### Buoc 2: AI phan nhom (segmentation)
+- Node: OpenAI / Claude
+- Prompt:
 ```
 You are a growth marketing analyst. Segment these users into 3-5 groups based on:
 - Recency (last activity)
@@ -47,11 +47,11 @@ For each segment, provide:
 User data: {{ $json.data }}
 ```
 
-### BÆ°á»›c 3: AI thiáº¿t káº¿ offer
-- **Node:** OpenAI / Claude
-- **Prompt:**
+### Buoc 3: AI thiet ke offer
+- Node: OpenAI / Claude
+- Prompt:
 ```
-You are a voucher/campaign designer. For this segment, design 3 offer variants:
+You are a voucher/campaign designer. For this segment, design 3 offer variants.
 
 Segment: {{ $json.segment_name }}
 Traits: {{ $json.traits }}
@@ -63,42 +63,42 @@ Each variant must include:
 4. CAC estimate (low/medium)
 5. Urgency mechanic (time limit, limited quantity)
 
-Budget constraint: Low cost per user (~2k VND or equivalent)
+Budget constraint: Low cost per user (~2k VND)
 ```
 
-### BÆ°á»›c 4: Xuáº¥t káº¿t quáº£
-- **Node:** Google Sheets
-- **Output columns:** `segment_name`, `traits`, `offer_variant_1`, `offer_variant_2`, `offer_variant_3`, `recommended_action`
+### Buoc 4: Xuat ket qua
+- Node: Google Sheets
+- Output columns: segment_name, traits, offer_variant_1, offer_variant_2, offer_variant_3, recommended_action
 
 ---
 
-## HÆ°á»›ng dáº«n setup
+## Huong dan setup
 
-1. Táº¡o Google Sheet chá»©a data user
-2. Add OpenAI API key vÃ o n8n credentials
+1. Tao Google Sheet chua data user
+2. Add OpenAI API key vao n8n credentials
 3. Import workflow JSON
-4. Config Sheet ID + range á»Ÿ BÆ°á»›c 1
-5. Cháº¡y thá»­ manual trÆ°á»›c, sau Ä‘Ã³ schedule hÃ ng tuáº§n
+4. Config Sheet ID + range o Buoc 1
+5. Chay thu manual truoc, sau do schedule hang tuan
 
 ---
 
-## VÃ­ dá»¥ output
+## Vi du output
 
-| Segment | Äáº·c Ä‘iá»ƒm | Offer 1 | Offer 2 | Chá»n |
-|---|---|---|---|---|
-| High-value Lapsed | Active 6mo trÆ°á»›c, spent >500k, ngÆ°ng | Giáº£m 15k cho booking Ä‘áº§u | Táº·ng 5k Xu + free ship | Offer 1 |
-| New Low-frequency | Active <3mo, spent <100k, 1-2 láº§n mua | Free ship 0Ä‘ cho Ä‘Æ¡n 20k+ | Giáº£m 5k hoÃ¡ Ä‘Æ¡n 50k+ | Offer 1 |
-| Frequent DXTT User | Active thÃ¡ng nÃ y, DXTT 3x+ | Táº·ng 3k Xu booking tiáº¿p | Giáº£m 10k DXTT tiáº¿p | Offer 2 |
-
----
-
-## Máº¹o custom
-
-- **Lá»‹ch cháº¡y:** HÃ ng tuáº§n hoáº·c 2 tuáº§n/láº§n
-- **Segment:** Äiá»u chá»‰nh AI prompt theo sáº£n pháº©m cá»§a báº¡n (DXTT, e-commerce, travel...)
-- **Offer variants:** Cháº¡y A/B test Ä‘á»ƒ validate gá»£i Ã½ cá»§a AI
-- **Data source:** Thay Google Sheets báº±ng SQL/API cho real-time
+| Segment | Dac diem | Offer 1 | Offer 2 |
+|---|---|---|---|
+| High-value Lapsed | Active 6mo truoc, spent >500k, ngung | Giam 15k cho booking dau | Tang 5k Xu + free ship |
+| New Low-frequency | Active <3mo, spent <100k | Free ship 0d cho don 20k+ | Giam 5k hoa don 50k+ |
+| Frequent DXTT User | Active thang nay, DXTT 3x+ | Tang 3k Xu booking tiep | Giam 10k DXTT tiep |
 
 ---
 
-*Káº¿ tiáº¿p: [Campaign Monitor + Alert](./02-campaign-monitor.md)*
+## Meo custom
+
+- Lich chay: Hang tuan hoac 2 tuan/lan
+- Segment: Dieu chinh AI prompt theo san pham cua ban
+- Offer variants: Chay A/B test de validate goi y cua AI
+- Data source: Thay Google Sheets bang SQL/API cho real-time
+
+---
+
+*Ke tiep: Campaign Monitor + Alert*
