@@ -2,9 +2,11 @@
 
 ## Tiếng Việt
 
-AI đang thay đổi growth marketing thế nào — từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
+AI đang thay đổi growth marketing thế nào - từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
 
 Bảy phần: personalization, segmentation, campaign optimization, predictive analytics, game mechanics, growth stack, và limitation/rủi ro. Mỗi phần có prompt để thử ngay.
+
+👉 **Prompt thực hành:** [`SKILL.md`](./SKILL.md) — 4 prompt: personalization, campaign analysis, A/B test design, outcome prediction.
 
 ---
 
@@ -155,7 +157,7 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 
 ---
 
-*Xem các prompt thực hành AI × Growth ở các folder khác — đặc biệt là [01-voucher-design](../01-voucher-design) và [03-game-mechanics](../03-game-mechanics).*
+*Xem các prompt thực hành AI × Growth ở các folder khác - đặc biệt là [01-voucher-design](../01-voucher-design) và [03-game-mechanics](../03-game-mechanics).*
 
 ---
 

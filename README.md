@@ -1,131 +1,130 @@
 # ai-growth-prompts
 
-> Prompts mÃ¬nh dÃ¹ng thá»±c táº¿ trong growth marketing. KhÃ´ng template chung chung -- xÃ¢y tá»« kinh nghiá»‡m cháº¡y campaign loyalty vÃ  promotion thá»±c chiáº¿n.
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/thaolst/ai-growth-prompts?label=version&color=4ade80&style=flat-square" alt="version" />
+  <img src="https://img.shields.io/github/license/thaolst/ai-growth-prompts?color=60a5fa&style=flat-square" alt="license" />
+  <img src="https://img.shields.io/github/last-commit/thaolst/ai-growth-prompts?color=a78bfa&style=flat-square" alt="last commit" />
+  <img src="https://img.shields.io/github/stars/thaolst/ai-growth-prompts?style=flat-square&color=facc15&logo=github" alt="stars" />
+  <img src="https://img.shields.io/badge/ai-growth--marketing-blue?style=flat-square" alt="topic" />
+</p>
+
+> Prompts được kiểm chứng từ chạy campaign thực tế, không template chung chung.
+> Built from running loyalty and promotion campaigns where budget levels, channel constraints, and segment behavior actually matter.
 
 ---
 
-## Má»¥c lá»¥c
+# Tiếng Việt
 
-- [CÃ¡ch dÃ¹ng](#cach-dung)
-- [Cáº¥u trÃºc](#cau-truc)
-- [Knowledge Base](#knowledge-base)
-- [n8n Growth Workflows](#n8n-growth-workflows)
-- [Logic xuyÃªn suá»‘t](#logic-xuyen-suot)
+## Mục lục
 
----
+- [Cách dùng](#cách-dùng)
+- [Cấu trúc](#cấu-trúc)
+- [Nguyên lý](#nguyên-lý)
 
-## CÃ¡ch dÃ¹ng
+## Cách dùng
 
-Má»—i prompt cÃ³ 3 pháº§n:
+Mỗi prompt có 3 phần:
 
-- **Khi nÃ o dÃ¹ng** -- tÃ¬nh huá»‘ng cá»¥ thá»ƒ
-- **Prompt** -- copy vÃ  Ä‘iá»n `[...]` theo thá»±c táº¿
-- **VÃ­ dá»¥ output** -- output trÃ´ng nhÆ° tháº¿ nÃ o
+- **Khi nào dùng** - tình huống cụ thể
+- **Prompt** - copy và điền `[...]` với context thực tế
+- **Ví dụ output** - output đúng trông như thế nào
 
----
+## Cấu trúc
 
-## Cáº¥u trÃºc
+### Campaign Toolbox - Prompt thực hành
 
-### Campaign Toolbox (prompts thá»±c chiáº¿n)
-
-| Folder | MÃ´ táº£ |
+| Thư mục | Mô tả |
 |---|---|
-| `00-campaign-level` | Báº¯t Ä‘áº§u táº¡i Ä‘Ã¢y. XÃ¡c Ä‘á»‹nh level S/M/L trÆ°á»›c má»i thá»©. |
-| `01-voucher-design` | Thiáº¿t káº¿ voucher theo segment, khÃ´ng theo cáº£m tÃ­nh. |
-| `02-segment-analysis` | Target ai, can thiá»‡p lÃºc nÃ o, phÃ¢n bá»• tháº¿ nÃ o. |
-| `03-game-mechanics` | Loop engagement giÃºp user quay láº¡i. |
-| `04-comm-and-brief` | Plan truyá»n thÃ´ng vÃ  brief design theo level. |
-| `05-n8n-automation` | Workflow automation vá»›i n8n + AI. |
+| [`00-campaign-level`](./00-campaign-level) | Bắt đầu tại đây. Quyết định cấp độ S/M/L trước mọi thứ. |
+| [`01-voucher-design`](./01-voucher-design) | Thiết kế voucher theo segment, không theo cảm tính. |
+| [`02-segment-analysis`](./02-segment-analysis) | Target ai, can thiệp lúc nào, phân bổ ngân sách ra sao. |
+| [`03-game-mechanics`](./03-game-mechanics) | Cơ chế game kéo user quay lại. |
+| [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning và design brief theo từng cấp độ. |
+| [`05-automation`](./05-n8n-automation) | Prompt xây automation cho growth: monitor đối thủ, campaign alert, feedback tracking. |
 
-### Knowledge Base (ná»n táº£ng lÃ½ thuyáº¿t)
+### Knowledge Base - Nền tảng lý thuyết
 
-| Folder | MÃ´ táº£ |
-|---|---|
-| `06-growth-frameworks` | Core mental models: AARRR, North Star, Growth Loops, Hook Model, ICE/RICE, JTBD |
-| `07-case-studies` | Growth stories public tá»« Duolingo, Canva, Notion, Spotify, Dropbox |
-| `08-glossary` | 80+ thuáº­t ngá»¯ growth marketing, Ä‘á»‹nh nghÄ©a thá»±c táº¿ |
-| `09-ai-growth` | AI Ä‘ang thay Ä‘á»•i growth tháº¿ nÃ o -- personalization, prediction |
-
-### n8n Growth Workflows (tá»± Ä‘á»™ng hÃ³a)
-
-| Workflow | MÃ´ táº£ |
-|---|---|
-| `10-n8n-growth-workflows/01` | Segment + Offer Designer -- AI tá»± phÃ¢n nhÃ³m vÃ  gá»£i Ã½ offer |
-| `10-n8n-growth-workflows/02` | Campaign Monitor + Alert -- check daily metric, cáº£nh bÃ¡o khi drop |
-| `10-n8n-growth-workflows/03` | A/B Test Analyzer -- AI phÃ¢n tÃ­ch thá»‘ng kÃª, chá»n winner |
-| `10-n8n-growth-workflows/04` | Campaign Brief Generator -- input Ä‘Æ¡n giáº£n, output full brief |
-| `10-n8n-growth-workflows/05` | Churn Signal + Re-engagement -- detect churn, trigger campaign |
+| Thư mục | Mô tả | Skill |
+|---|---|---|
+| [`06-growth-frameworks`](./06-growth-frameworks) | Mental model growth cốt lõi: AARRR, North Star, Growth Loops, Hook, ICE/RICE, JTBD | [`SKILL.md`](./06-growth-frameworks/SKILL.md) |
+| [`07-case-studies`](./07-case-studies) | Câu chuyện growth từ Duolingo, Canva, Notion, Spotify, Dropbox | [`SKILL.md`](./07-case-studies/SKILL.md) |
+| [`08-glossary`](./08-glossary) | 80+ thuật ngữ growth marketing kèm định nghĩa thực tế | [`SKILL.md`](./08-glossary/SKILL.md) |
+| [`09-ai-growth`](./09-ai-growth) | AI đang thay đổi growth marketing thế nào: personalization, prediction, optimization | [`SKILL.md`](./09-ai-growth/SKILL.md) |
 
 ### Resources
 
-| File | MÃ´ táº£ |
+| File | Mô tả |
 |---|---|
-| `references.md` | Reading list: sÃ¡ch, newsletter, podcast, influencers |
-| `trending.md` | Xu hÆ°á»›ng growth marketing Ä‘ang hot |
+| [`references.md`](./references.md) | Sách, newsletter, podcast, influencer được tuyển chọn |
+| [`trending.md`](./trending.md) | Xu hướng growth marketing hiện tại |
+
+## Nguyên lý
+
+Mọi campaign bắt đầu bằng quyết định level ([`00-campaign-level`](./00-campaign-level)). Level đó định nghĩa kênh, ngân sách, timeline bạn thực sự có. Các prompt trong `01-04` được thiết kế để hoạt động trong những ràng buộc đó, không phải điều kiện lý tưởng.
+
+Knowledge Base (`06-09`) cung cấp nền tảng lý thuyết. Dùng để nâng cấp tư duy. Dùng Campaign Toolbox để ra kết quả.
+
+*Cập nhật khi có prompt mới được kiểm chứng thực tế.*
 
 ---
 
-## Logic xuyÃªn suá»‘t
+# English
 
-Má»—i campaign báº¯t Ä‘áº§u báº±ng viá»‡c xÃ¡c Ä‘á»‹nh level (`00`). Level Ä‘Ã³ quyáº¿t Ä‘á»‹nh channel, asset vÃ  timeline báº¡n thá»±c sá»± cÃ³. CÃ¡c prompt tá»« `01-04` Ä‘Æ°á»£c thiáº¿t káº¿ Ä‘á»ƒ hoáº¡t Ä‘á»™ng trong giá»›i háº¡n Ä‘Ã³ -- khÃ´ng pháº£i trong Ä‘iá»u kiá»‡n lÃ½ tÆ°á»Ÿng.
+## Table of Contents
 
-CÃ¡c folder `06-09` lÃ  ná»n táº£ng lÃ½ thuyáº¿t. DÃ¹ng Ä‘á»ƒ nÃ¢ng cáº¥p tÆ° duy. Folder `10` lÃ  workflow thá»±c táº¿ Ä‘á»ƒ cháº¡y automation.
+- [How to Use](#how-to-use)
+- [Structure](#structure)
+- [Underlying Logic](#underlying-logic)
 
-*Cáº­p nháº­t khi cÃ³ prompt má»›i Ä‘Æ°á»£c kiá»ƒm chá»©ng thá»±c táº¿.*
+## How to Use
 
----
+Each prompt has three parts:
 
-## Táº¡i sao repo nÃ y tá»“n táº¡i
+- **When to use** - the specific situation it's built for
+- **Prompt** - copy and fill in `[...]` with your actual context
+- **Example output** - what a good output looks like
 
-Pháº§n lá»›n tÃ i liá»‡u growth marketing hiá»‡n táº¡i hoáº·c:
-- **QuÃ¡ hÃ n lÃ¢m** -- framework mÃ  khÃ´ng cÃ³ cÃ¡ch thá»±c thi
-- **QuÃ¡ tool-specific** -- "10 cÃ¡ch dÃ¹ng Mailchimp"
+## Structure
 
-Repo nÃ y láº¥p khoáº£ng trá»‘ng Ä‘Ã³. ÄÃ¢y lÃ  thá»© mÃ¬nh thá»±c sá»± dÃ¹ng khi design campaign, vÃ  mÃ¬nh cáº­p nháº­t liÃªn tá»¥c khi há»c Ä‘Æ°á»£c Ä‘iá»u má»›i.
+### Campaign Toolbox
+
+| Folder | Description |
+|---|---|
+| [`00-campaign-level`](./00-campaign-level) | Start here. Decide S/M/L before anything else. |
+| [`01-voucher-design`](./01-voucher-design) | Design vouchers by segment, not by assumption. |
+| [`02-segment-analysis`](./02-segment-analysis) | Who to target, when to intervene, how to allocate. |
+| [`03-game-mechanics`](./03-game-mechanics) | Engagement loops that bring users back. |
+| [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning and design briefs by level. |
+| [`05-automation`](./05-n8n-automation) | Automation prompts for competitor monitoring, campaign alerts, feedback tracking. |
+
+### Knowledge Base
+
+| Folder | Description | Skill |
+|---|---|---|
+| [`06-growth-frameworks`](./06-growth-frameworks) | Core growth mental models: AARRR, North Star, Growth Loops, Hook, ICE/RICE, JTBD | [`SKILL.md`](./06-growth-frameworks/SKILL.md) |
+| [`07-case-studies`](./07-case-studies) | Public growth stories from Duolingo, Canva, Notion, Spotify, Dropbox | [`SKILL.md`](./07-case-studies/SKILL.md) |
+| [`08-glossary`](./08-glossary) | 80+ growth marketing terms with practical definitions | [`SKILL.md`](./08-glossary/SKILL.md) |
+| [`09-ai-growth`](./09-ai-growth) | How AI is transforming growth: personalization, prediction, optimization | [`SKILL.md`](./09-ai-growth/SKILL.md) |
+
+### Resources
+
+| File | Description |
+|---|---|
+| [`references.md`](./references.md) | Curated reading list: books, newsletters, podcasts, influencers |
+| [`trending.md`](./trending.md) | What's hot in growth marketing right now |
+
+## Underlying Logic
+
+Every campaign starts with a level decision ([`00-campaign-level`](./00-campaign-level)). That level defines what channels, assets, and timeline you actually have. The prompts in `01-04` are calibrated to work within those constraints, not in ideal conditions.
+
+The Knowledge Base folders (`06-09`) provide the theoretical foundation. Use them to level up your thinking. Use the Campaign Toolbox to get things done.
+
+*Updated as new prompts are tested in practice.*
 
 ---
 
 ## License
 
-MIT -- use freely, share widely.
+MIT - use freely, share widely.
 
-*If this helps you, [star the repo](https://github.com/thaolst/ai-growth-prompts) â­*
-
----
-
-<details>
-<summary>English version</summary>
-
-> Prompts I use in real growth marketing work. Not generic templates -- these come from running loyalty and promotion campaigns at scale, where budget levels, channel constraints, and segment behavior actually matter.
-
-### How to use
-
-Each prompt has three parts:
-
-- **When to use** -- the specific situation it's built for
-- **Prompt** -- copy and fill in `[...]` with your actual context
-- **Example output** -- what a good output looks like
-
-### Structure
-
-| Folder | Description |
-|---|---|
-| `00-campaign-level` | Start here. Decide S/M/L before anything else. |
-| `01-voucher-design` | Design vouchers by segment, not by assumption. |
-| `02-segment-analysis` | Who to target, when to intervene, how to allocate. |
-| `03-game-mechanics` | Engagement loops that bring users back. |
-| `04-comm-and-brief` | Communication planning and design briefs by level. |
-| `05-n8n-automation` | Workflow automation with n8n + AI. |
-| `06-growth-frameworks` | Core mental models. |
-| `07-case-studies` | Public growth stories. |
-| `08-glossary` | Growth marketing terms defined. |
-| `09-ai-growth` | AI transforming growth. |
-| `10-n8n-growth-workflows` | Ready-to-use n8n workflows for growth. |
-
-### Underlying logic
-
-Every campaign starts with a level decision (`00`). That level defines what channels, assets, and timeline you actually have. The prompts in `01-04` are calibrated to work within those constraints -- not in ideal conditions.
-
-*Updated as new prompts are tested in practice.*
-
-</details>
+*If this helps you, [star the repo](https://github.com/thaolst/ai-growth-prompts) ⭐*

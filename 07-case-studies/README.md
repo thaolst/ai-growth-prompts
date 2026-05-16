@@ -6,6 +6,8 @@ Câu chuyện growth công khai từ các công ty lớn: Duolingo, Canva, Notio
 
 Mỗi case study phân tích: họ đã làm gì, tactic chính, kết quả, và tại sao nó quan trọng với growth marketer.
 
+👉 **Prompt thực hành:** [`SKILL.md`](./SKILL.md) — 3 prompt: phân tích case study, so sánh với campaign, tổng hợp playbook.
+
 ---
 
 ## Duolingo — Gamification Có Hiệu Quả

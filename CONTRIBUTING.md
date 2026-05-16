@@ -19,16 +19,16 @@ Prompt có thể bằng **tiếng Việt hoặc tiếng Anh**. Nếu được, t
 ### 2. Folder structure
 
 ```
-00-campaign-level/     - Xác định level S/M/L trước mọi thứ
-01-voucher-design/     - Thiết kế voucher theo segment
-02-segment-analysis/   - Target ai, can thiệp lúc nào
-03-game-mechanics/     - Loop engagement & game mechanics
-04-comm-and-brief/     - Plan truyền thông & design brief
-05-automation/         - Prompt xây automation growth marketing
-06-growth-frameworks/  - Mental model growth cốt lõi
-07-case-studies/       - Case study từ công ty lớn
-08-glossary/           - Thuật ngữ growth marketing
-09-ai-growth/          - AI × Growth Marketing
+00-campaign-level/     — SKILL.md (Xác định level S/M/L)
+01-voucher-design/     — SKILL.md (Thiết kế voucher theo segment)
+02-segment-analysis/   — SKILL.md (Target & can thiệp)
+03-game-mechanics/     — SKILL.md (Game mechanics)
+04-comm-and-brief/     — SKILL.md (Comm plan & brief)
+05-automation/         — SKILL.md (Automation prompts)
+06-growth-frameworks/  — SKILL.md (Prompt mental model growth)
+07-case-studies/       — SKILL.md (Prompt phân tích case study)
+08-glossary/           — SKILL.md (Prompt tra cứu thuật ngữ)
+09-ai-growth/          — SKILL.md (Prompt AI × growth marketing)
 ```
 
 Muốn thêm folder mới? Tạo issue trước để thảo luận.

@@ -2,9 +2,11 @@
 
 ## Tiếng Việt
 
-80+ thuật ngữ growth marketing — định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được. Từ AARRR đến Zero-Party Data.
+80+ thuật ngữ growth marketing - định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được. Từ AARRR đến Zero-Party Data.
 
 Dùng glossary này khi gặp thuật ngữ lạ trong các prompt khác, hoặc để ôn lại định nghĩa trước buổi phỏng vấn.
+
+👉 **Prompt thực hành:** [`SKILL.md`](./SKILL.md) — 3 prompt: giải thích thuật ngữ, so sánh 2 thuật ngữ, từ vựng cho presentation.
 
 ---
 
@@ -16,7 +18,7 @@ Phễu tăng trưởng 5 giai đoạn: Acquisition → Activation → Retention 
 
 **Activation (Kích hoạt)**
 Thời điểm người dùng trải nghiệm giá trị cốt lõi của sản phẩm (khoảnh khắc "Aha!").
-*Ví dụ: Slack — gửi tin nhắn đầu tiên.*
+*Ví dụ: Slack - gửi tin nhắn đầu tiên.*
 
 **Acquisition (Tiếp cận)**
 Quá trình đưa người dùng khám phá và dùng thử sản phẩm.
@@ -27,7 +29,7 @@ So sánh hai phiên bản (A vs B) để xem phiên bản nào hiệu quả hơn
 
 **Aha Moment**
 Điểm kích hoạt quan trọng nơi người dùng nhận ra giá trị của sản phẩm.
-*Ví dụ: Facebook — 7 bạn bè trong 10 ngày.*
+*Ví dụ: Facebook - 7 bạn bè trong 10 ngày.*
 
 ---
 
@@ -113,7 +115,7 @@ Kiểm tra có hệ thống để cải thiện metric growth.
 ## F
 
 **First Click / First Purchase (Lần click/mua đầu tiên)**
-Lần chuyển đổi đầu tiên sau khi tiếp cận — quan trọng cho activation.
+Lần chuyển đổi đầu tiên sau khi tiếp cận - quan trọng cho activation.
 
 **Free Trial (Dùng thử miễn phí)**
 Cho người dùng trải nghiệm sản phẩm trước khi trả tiền.
@@ -140,7 +142,7 @@ Chiến lược sáng tạo, chi phí thấp để thu hút và giữ chân ngư
 
 **Growth Loop (Vòng lặp tăng trưởng)**
 Một chu kỳ tự củng cố nơi output lại trở thành input.
-*Ví dụ: Viral loop — người dùng mời → người mới → mời thêm.*
+*Ví dụ: Viral loop - người dùng mời → người mới → mời thêm.*
 
 ---
 
@@ -219,7 +221,7 @@ Số người dùng duy nhất tương tác với sản phẩm trong một thán
 Nền tảng kết nối người mua và người bán. (Uber, Airbnb, eBay, Fiverr)
 
 **Momentum (Đà tăng trưởng)**
-Tăng trưởng gia tốc — thường được thúc đẩy bởi hiệu ứng mạng lưới kép.
+Tăng trưởng gia tốc - thường được thúc đẩy bởi hiệu ứng mạng lưới kép.
 
 **MoM (Month-over-Month)**
 So sánh metric tháng này với tháng trước.
@@ -265,7 +267,7 @@ Thời gian cần để thu hồi CAC từ một khách hàng.
 Tùy chỉnh trải nghiệm người dùng dựa trên hành vi, sở thích hoặc dữ liệu cá nhân.
 
 **PLG (Product-Led Growth)**
-Tăng trưởng dẫn dắt bởi chính sản phẩm — không phải sales hay marketing.
+Tăng trưởng dẫn dắt bởi chính sản phẩm - không phải sales hay marketing.
 *Ví dụ: Slack, Canva, Notion, Zoom*
 
 **Power Users (Người dùng cao cấp)**
@@ -281,7 +283,7 @@ Tin nhắn gửi đến thiết bị người dùng ngoài lúc dùng app.
 
 ## Q
 
-*(Không có thuật ngữ phổ biến cho Q — dùng "Query" cho search marketing hoặc "Qualified Lead" cho sales.)*
+*(Không có thuật ngữ phổ biến cho Q - dùng "Query" cho search marketing hoặc "Qualified Lead" cho sales.)*
 
 ---
 
@@ -350,7 +352,7 @@ Bao lâu để người dùng mới trải nghiệm giá trị cốt lõi.
 ## U
 
 **UGC (User-Generated Content) - Nội dung người dùng tạo**
-Nội dung do người dùng tạo — đánh giá, template, bài đăng, video.
+Nội dung do người dùng tạo - đánh giá, template, bài đăng, video.
 
 **Unit Economics (Kinh tế đơn vị)**
 Doanh thu và chi phí trên mỗi khách hàng cá nhân.

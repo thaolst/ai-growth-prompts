@@ -6,6 +6,8 @@ Các mental model growth cốt lõi mà mọi growth marketer cần biết: AARR
 
 Mỗi framework có phần giải thích ngắn gọn, ví dụ thực tế, và khi nào nên dùng. Dùng phần này để xây nền tảng tư duy trước khi vào prompt thực hành.
 
+👉 **Prompt thực hành:** [`SKILL.md`](./SKILL.md) — 3 prompt: chọn framework, debug AARRR, ưu tiên ý tưởng ICE.
+
 ---
 
 ## 1. AARRR (Pirate Metrics)
