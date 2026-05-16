@@ -1,41 +1,41 @@
-# 04 â€” Campaign Brief Generator
+# 04 - Campaign Brief Generator
 
-> Input campaign requirements â†’ AI generates full campaign brief â†’ output to Google Doc + Slack notification.
-
----
-
-## When to Use
-
-- You need a structured campaign brief fast
-- You want consistency across all campaign briefs
-- You want AI to suggest channels, budget allocation, and offer types based on campaign goals
+> Input thong tin campaign don gian, AI tao full campaign brief, xuat ra Google Doc + notify team.
 
 ---
 
-## How It Works
+## Khi nao dung
 
-```
-1. Input campaign info  â†’  2. AI generates brief  â†’  3. Output to Google Doc  â†’  4. Notify team
-   (form/webhook)           (GPT/Claude)              (Google Docs API)        (Slack/Telegram)
-```
+- Can campaign brief co cau truc nhanh
+- Muon consistency giua cac brief
+- Muon AI goi y channels, budget allocation, offer types dua tren campaign goals
+
+---
+
+## Cach hoat dong
+
+1. Input campaign info (form/webhook)
+2. AI generate brief (GPT/Claude)
+3. Output to Google Doc (Google Docs API)
+4. Notify team (Slack/Telegram)
 
 ---
 
 ## Input Form
 
-Create a simple n8n webhook form or Google Form with these fields:
+Tao n8n webhook form hoac Google Form voi cac field:
 
 | Field | Example | Type |
 |---|---|---|
-| Campaign name | "Flash Sale T6" | text |
+| Campaign name | Flash Sale T6 | text |
 | Campaign level | S / M / L | dropdown |
-| Target segment | "MAU T4 chÆ°a T5" | text |
+| Target segment | MAU T4 chua T5 | text |
 | Objective | MAU push / Revenue / Retention | dropdown |
 | Budget | 200,000,000 | number |
 | CAC target | 2,000 | number |
 | Timeline | 14 days | text |
-| Channels | "In-app push, SMS, ZNS" | text |
-| Notes | "Æ¯u tiÃªn kÃ©o MAU" | text |
+| Channels | In-app push, SMS, ZNS | text |
+| Notes | Uu tien keo MAU | text |
 
 ---
 
@@ -93,43 +93,39 @@ Output as clean Markdown.
 
 ---
 
-## Example Output
+## Vi du output
 
-```
-# Campaign Brief: Flash Sale T6
+CAMPAIGN BRIEF: Flash Sale T6
 
-## 1. Overview
-- TÃªn: Flash Sale T6 - KÃ­ch hoáº¡t MAU
-- Objective: Push MAU thÃ¡ng 6
-- Target: MAU T4 chÆ°a T5 (pool chÃ­nh)
+1. Overview
+- Ten: Flash Sale T6 - Kich hoat MAU
+- Objective: Push MAU thang 6
+- Target: MAU T4 chua T5 (pool chinh)
 - Level: M (medium)
 - Budget: 200M
-- Target KPI: DRR 3.5%, CAC â‰¤ 2k
+- Target KPI: DRR 3.5%, CAC <= 2k
 
-## 2. Offer Strategy
-- Offer chÃ­nh: Free ship 0Ä‘ (CAC ~1.5k)
-- Upsell: Giáº£m 5k cho booking DXTT Ä‘áº§u tiÃªn (CAC ~2k)
-- Urgency: "Chá»‰ trong 48h" flash CTA
+2. Offer Strategy
+- Offer chinh: Free ship 0d (CAC ~1.5k)
+- Upsell: Giam 5k cho booking DXTT dau tien (CAC ~2k)
+- Urgency: Chi trong 48h flash CTA
 
-## 3. Channel Allocation
-| Channel | % Budget | Volume | CVR expectation |
-|---|---|---|---|
-| In-app push | 40% | 500k | 3.5% |
-| SMS | 35% | 300k | 2.5% |
-| ZNS | 25% | 200k | 4.0% |
-```
+3. Channel Allocation
+- In-app push: 40% budget, 500k volume
+- SMS: 35% budget, 300k volume
+- ZNS: 25% budget, 200k volume
 
 ---
 
 ## Setup
 
-1. Create an n8n webhook for receiving input
-2. Build a simple input form (Typeform, Google Form, or custom HTML)
-3. Connect to OpenAI node with the prompt above
-4. Use Google Docs node to create the document
-5. Notify your Slack/Telegram channel when complete
+1. Tao n8n webhook de nhan input
+2. Build form don gian (Typeform, Google Form, hoac custom HTML)
+3. Ket noi toi OpenAI node voi prompt tren
+4. Dung Google Docs node de tao document
+5. Notify Slack/Telegram channel khi hoan thanh
 
 ---
 
-*Previous: [A/B Test Analyzer](./03-ab-test-analyzer.md)*
-*Next: [Churn Signal + Re-engagement](./05-churn-reengagement.md)*
+*Truoc: A/B Test Analyzer*
+*Ke tiep: Churn Signal + Re-engagement*
