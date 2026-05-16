@@ -1,69 +1,66 @@
 # n8n Growth Workflows
 
-> Workflow n8n sáºµn dÃ¹ng cho growth marketing automation. Import, config, cháº¡y.
-> DÃ nh cho growth team muá»‘n automation mÃ  khÃ´ng cáº§n code.
+> Workflow n8n san dung cho growth marketing automation. Import, config, chay.
+> Danh cho growth team muon automation ma khong can code.
 
 ---
 
-## Táº¡i sao n8n?
+## Tai sao n8n?
 
-- **MÃ£ nguá»“n má»Ÿ** -- tá»± host hoáº·c dÃ¹ng cloud, khÃ´ng lock-in
-- **AI native** -- tÃ­ch há»£p OpenAI/Claude sáºµn, phÃ¹ há»£p AI x Growth
-- **200+ integrations** -- Google Sheets, Telegram, Slack, SQL, APIs
-- **Visual builder** -- non-technical cÅ©ng hiá»ƒu vÃ  chá»‰nh sá»­a Ä‘Æ°á»£c
+- Ma nguon mo -- tu host hoac dung cloud, khong lock-in
+- AI native -- tich hop OpenAI/Claude san, phu hop AI x Growth
+- 200+ integrations -- Google Sheets, Telegram, Slack, SQL, APIs
+- Visual builder -- non-technical cung hieu va chinh sua duoc
 
 ---
 
-## Danh sÃ¡ch workflow
+## Danh sach workflow
 
-| # | Workflow | MÃ´ táº£ | Äá»™ khÃ³ |
+| # | Workflow | Mo ta | Do kho |
 |---|---|---|---|
-| 01 | [Segment + Offer Designer](./01-segment-offer-designer.md) | Tá»± Ä‘á»™ng phÃ¢n nhÃ³m user, thiáº¿t káº¿ offer theo segment | Trung bÃ¬nh |
-| 02 | [Campaign Monitor + Alert](./02-campaign-monitor.md) | Check metric hÃ ng ngÃ y, cáº£nh bÃ¡o khi drop | KhÃ³ |
-| 03 | [A/B Test Analyzer](./03-ab-test-analyzer.md) | Input káº¿t quáº£ test, AI phÃ¢n tÃ­ch, chá»n winner | Dá»… |
-| 04 | [Campaign Brief Generator](./04-campaign-brief-generator.md) | Input thÃ´ng tin Ä‘Æ¡n giáº£n, AI ra full brief | Trung bÃ¬nh |
-| 05 | [Churn Signal + Re-engagement](./05-churn-reengagement.md) | Detect user sáº¯p rá»i bá», trigger campaign kÃ©o vá» | KhÃ³ |
+| 01 | Segment + Offer Designer | Tu dong phan nhom user, thiet ke offer theo segment | Trung binh |
+| 02 | Campaign Monitor + Alert | Check metric hang ngay, canh bao khi drop | Kho |
+| 03 | A/B Test Analyzer | Input ket qua test, AI phan tich, chon winner | De |
+| 04 | Campaign Brief Generator | Input thong tin don gian, AI ra full brief | Trung binh |
+| 05 | Churn Signal + Re-engagement | Detect user sap roi bo, trigger campaign keo ve | Kho |
 
 ---
 
-## CÃ¡ch xÃ i
+## Cach xai
 
-1. **CÃ i n8n** -- `npx n8n` hoáº·c deploy trÃªn Railway/Render/Fly.io
-2. **Import workflow** -- download file `.json`, kÃ©o tháº£ vÃ o n8n editor
-3. **Config credentials** -- thÃªm API keys (OpenAI, Google, Telegram, DB)
-4. **Activate** -- schedule tá»± Ä‘á»™ng cháº¡y sau khi báº­t
+1. Cai n8n -- `npx n8n` hoac deploy tren Railway/Render/Fly.io
+2. Import workflow -- download file .json, keo vao n8n editor
+3. Config credentials -- them API keys (OpenAI, Google, Telegram, DB)
+4. Activate -- schedule tu dong chay sau khi bat
 
 ---
 
-## YÃªu cáº§u
+## Yeu cau
 
-| Tool | Free? | Ghi chÃº |
+| Tool | Free? | Ghi chu |
 |---|---|---|
-| n8n | Free self-host | Cloud ~$20/thÃ¡ng, deploy Railway free |
-| OpenAI API | Pay-per-use | ~$1-5/thÃ¡ng cho growth tasks |
+| n8n | Free self-host | Cloud ~$20/thang, deploy Railway free |
+| OpenAI API | Pay-per-use | ~$1-5/thang cho growth tasks |
 | Google Sheets API | Free | Cho data input/output |
 | Telegram Bot | Free | Cho alerts & notifications |
 
 ---
 
-## Kiáº¿n trÃºc chung
+## Kien truc chung
 
-```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Trigger    â”‚ -> â”‚  Process    â”‚ -> â”‚  Output     â”‚
-â”‚ (schedule   â”‚    â”‚ (AI + logic)â”‚    â”‚ (notify +   â”‚
-â”‚  / webhook) â”‚    â”‚             â”‚    â”‚  store)     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-```
+Moi workflow deu co 3 buoc:
+1. Trigger (schedule hoac webhook)
+2. Process (AI + logic)
+3. Output (notify + store)
 
-Háº§u háº¿t workflow Ä‘á»u theo pattern 3 bÆ°á»›c nÃ y. BÆ°á»›c giá»¯a lÃ  nÆ¡i AI + growth logic hoáº¡t Ä‘á»™ng.
+Buoc giua la noi AI va growth logic hoat dong.
 
 ---
 
 <details>
 <summary>English version</summary>
 
-Ready-to-use n8n workflows for growth marketing automation. Import, configure, run. Built for growth teams who want automation without writing code.
+Ready-to-use n8n workflows for growth marketing automation. Import, configure, run.
 
 ### Why n8n?
 - Open source, no vendor lock-in
