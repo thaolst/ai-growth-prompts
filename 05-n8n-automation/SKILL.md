@@ -1,6 +1,6 @@
 # 05 - Automation Prompts
 
-# Tiếng Việt
+## Tiếng Việt
 
 ## Prompt 01 - Xay competitor promotion monitor
 
@@ -105,7 +105,7 @@ Yeu cau:
 
 ---
 
-# English
+## English
 
 ## Prompt 01 - Build a competitor promotion monitor
 

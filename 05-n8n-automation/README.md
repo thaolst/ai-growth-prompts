@@ -1,6 +1,6 @@
 # 05 - Automation Prompts
 
-# Tiếng Việt
+## Tiếng Việt
 
 > Prompt xay automation cho growth marketing: competitor monitor, campaign alert, feedback sentiment tracker.
 
@@ -12,7 +12,7 @@
 
 ---
 
-# English
+## English
 
 > Prompts for building growth marketing automations: competitor monitoring, campaign alerts, customer feedback tracking.
 

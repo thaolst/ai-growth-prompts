@@ -13,7 +13,7 @@
 
 ---
 
-# Tiếng Việt
+## Tiếng Việt
 
 ## Mục lục
 
@@ -72,7 +72,7 @@ Hầu hết tài liệu growth marketing hoặc quá hàn lâm, hoặc quá tool
 
 ---
 
-# English
+## English
 
 ## Table of Contents
 
