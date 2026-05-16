@@ -1,37 +1,37 @@
-# 05 â€” Churn Signal + Re-engagement
+# 05 - Churn Signal + Re-engagement
 
-> PhÃ¡t hiá»‡n user cÃ³ nguy cÆ¡ rá»i bá», trigger campaign kÃ©o vá» tá»± Ä‘á»™ng.
-
----
-
-## Khi nÃ o dÃ¹ng
-
-- Báº¡n cÃ³ data user activity (login, transaction, engagement)
-- Muá»‘n detect sá»›m user sáº¯p churn trÆ°á»›c khi há» rá»i háº³n
-- Muá»‘n tá»± Ä‘á»™ng trigger re-engagement campaign khÃ´ng cáº§n can thiá»‡p thá»§ cÃ´ng
+> Phat hien user co nguy co roi bo, trigger campaign keo ve tu dong.
 
 ---
 
-## CÃ¡ch hoáº¡t Ä‘á»™ng
+## Khi nao dung
 
-```
-1. Äá»c user activity  â†’  2. AI phÃ¡t hiá»‡n churn signal  â†’  3. PhÃ¢n loáº¡i risk  â†’  4. Trigger campaign
-   (DB/Sheets)            (GPT/Claude)                    (IF logic)          (Webhook/API)
-```
+- Ban co data user activity (login, transaction, engagement)
+- Muon detect som user sap churn truoc khi ho roi han
+- Muon tu dong trigger re-engagement campaign khong can thao tac thu cong
 
 ---
 
-## CÃ¡c node
+## Cach hoat dong
 
-### BÆ°á»›c 1: Äá»c user activity
-- **Node:** Google Sheets / MySQL / PostgreSQL
-- **Dá»¯ liá»‡u:** `user_id`, `last_active_date`, `total_sessions_30d`, `last_transaction`, `segment`, `push_optin`
+1. Doc user activity (DB/Sheets)
+2. AI phat hien churn signal (GPT/Claude)
+3. Phan loai risk (IF logic)
+4. Trigger campaign (Webhook/API)
 
-### BÆ°á»›c 2: AI detect churn signal
-- **Node:** OpenAI / Claude
-- **Prompt:**
+---
+
+## Cac node
+
+### Buoc 1: Doc user activity
+- Node: Google Sheets / MySQL / PostgreSQL
+- Du lieu: user_id, last_active_date, total_sessions_30d, last_transaction, segment, push_optin
+
+### Buoc 2: AI detect churn signal
+- Node: OpenAI / Claude
+- Prompt:
 ```
-You are a retention analyst. Analyze each user and classify churn risk:
+You are a retention analyst. Analyze each user and classify churn risk.
 
 Risk levels:
 - HIGH: Not active >14 days, previously active >3 sessions/week
@@ -49,45 +49,43 @@ User data: {{ $json.data }}
 Output format: JSON array with user_id, risk_level, hypothesis, channel, offer, urgency
 ```
 
-### BÆ°á»›c 3: PhÃ¢n loáº¡i theo risk
-- **Node:** IF / Switch
-- **HIGH:** Gá»­i alert + trigger campaign ngay
-- **MEDIUM:** ThÃªm vÃ o queue re-engagement tuáº§n nÃ y
-- **LOW/NONE:** Bá» qua, tiáº¿p tá»¥c monitor
+### Buoc 3: Phan loai theo risk
+- Node: IF / Switch
+- HIGH: Gui alert + trigger campaign ngay
+- MEDIUM: Them vao queue re-engagement tuan nay
+- LOW/NONE: Bo qua, tiep tuc monitor
 
-### BÆ°á»›c 4: Trigger re-engagement
-- **Node:** Telegram / Slack / HTTP Request (gá»i API campaign tool)
-- **Ná»™i dung:** "User [id] - HIGH churn risk. Recommend: [offer] via [channel] within [urgency]"
+### Buoc 4: Trigger re-engagement
+- Node: Telegram / Slack / HTTP Request (goi API campaign tool)
+- Noi dung: "User [id] - HIGH churn risk. Recommend: [offer] via [channel] within [urgency]"
 
 ---
 
-## VÃ­ dá»¥ output
+## Vi du output
 
-```
-ðŸš¨ CHURN ALERT â€” May 16, 2026
+CHURN ALERT -- May 16, 2026
 
 HIGH RISK (triggered immediately):
-â€¢ user_48392 - KhÃ´ng active 18 ngÃ y
-  â†’ Hypothesis: Háº¿t voucher, khÃ´ng tháº¥y giÃ¡ trá»‹ quay láº¡i
-  â†’ Action: Push "Voucher 5k chá» báº¡n" + SMS reminder
-  â†’ Urgency: Ngay trong hÃ´m nay
+- user_48392 - Khong active 18 ngay
+  > Hypothesis: Het voucher, khong thay gia tri quay lai
+  > Action: Push "Voucher 5k cho ban" + SMS reminder
+  > Urgency: Ngay trong hom nay
 
-â€¢ user_10234 - Tá»«ng active 5x/tuáº§n, giáº£m cÃ²n 0
-  â†’ Hypothesis: Chuyá»ƒn sang Ä‘á»‘i thá»§ / app khÃ¡c
-  â†’ Action: Offer Ä‘áº·c biá»‡t "Giáº£m 15k cho láº§n booking Ä‘áº§u"
-  â†’ Urgency: Trong 24h
+- user_10234 - Tung active 5x/tuan, giam con 0
+  > Hypothesis: Chuyen sang app khac
+  > Action: Offer dac biet "Giam 15k cho lan booking dau"
+  > Urgency: Trong 24h
 
 MEDIUM RISK (queue this week):
-â€¢ user_77102 - 9 ngÃ y khÃ´ng active, frequency giáº£m 40%
-  â†’ Hypothesis: Báº­n, khÃ´ng cÃ³ nhu cáº§u gáº§n Ä‘Ã¢y
-  â†’ Action: Push reminder nháº¹ + ná»™i dung personalized
-  â†’ Urgency: Trong tuáº§n nÃ y
+- user_77102 - 9 ngay khong active, frequency giam 40%
+  > Hypothesis: Ban, khong co nhu cau
+  > Action: Push reminder nhe + personalized content
+  > Urgency: Trong tuan nay
 
 Total scanned: 50,000 users
 HIGH: 142 users | MEDIUM: 893 users | LOW: 2,104 users
-```
 
 ---
 
-*TrÆ°á»›c: [Campaign Brief Generator](./04-campaign-brief-generator.md)*
-*Sau: Quay láº¡i [README](./README.md)*
+*Truoc: Campaign Brief Generator*
+*Sau: Quay lai README*
