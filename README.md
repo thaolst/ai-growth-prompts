@@ -42,6 +42,8 @@ Mỗi prompt có 3 phần:
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning và design brief theo từng cấp độ. |
 | [`05-automation`](./05-n8n-automation) | Prompt xây automation cho growth: monitor đối thủ, campaign alert, feedback tracking. |
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loop, Xu economy, churn prediction, re-engagement. |
+| [`07-experiment-design`](./07-experiment-design) | A/B test, hypothesis design, statistical analysis, experiment framework. |
+| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | n8n workflow sẵn: segment offer, campaign monitor, A/B analyze, churn re-engagement. |
 
 ### Knowledge Base - Nền tảng lý thuyết
 
@@ -98,6 +100,8 @@ Each prompt has three parts:
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning and design briefs by level. |
 | [`05-automation`](./05-n8n-automation) | Automation prompts for competitor monitoring, campaign alerts, feedback tracking. |
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loops, point economy, churn prediction, re-engagement. |
+| [`07-experiment-design`](./07-experiment-design) | A/B testing, hypothesis design, statistical analysis, experiment framework. |
+| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | Ready-to-import n8n workflows: segment offer, campaign monitor, A/B analyze, churn re-engagement. |
 
 ### Knowledge Base
 
