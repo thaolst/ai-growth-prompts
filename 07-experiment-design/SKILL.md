@@ -3,7 +3,7 @@
 Experiment là cách duy nhất để biết cái gì thực sự hiệu quả. Ở cấp S, experiment đơn giản: A/B 1 biến, đo 1 metric. Ở cấp M, có thể chạy multivariate, đo nhiều metric, có statistical significance. Ở cấp L, experiment là hệ thống: always-on testing, automated decision.
 
 | Cấp độ | Experiment khả thi | Ràng buộc |
-|--------|-------------------|-----------|
+| --- | --- | --- |
 | **S** | A/B 1 biến, 1 metric, manual analyze | Traffic thấp, chạy 1-2 tuần, significance khó đạt |
 | **M** | A/B đa biến, funnel analysis, cohort compare | Traffic vừa, có track tool, chạy 2-4 tuần |
 | **L** | Always-on testing, automated decision, personalization | Full data pipeline, ML model, cross-team |
@@ -111,10 +111,20 @@ Yêu cầu output:
 <details>
 <summary>English version</summary>
 
-# 07 · Experiment design & A/B testing
+## English
 
-Experiments are the only way to know what actually works. At level S, keep it simple: A/B one variable, measure one metric. At level M, run multivariate tests with multiple metrics. At level L, build an always-on experiment system.
+Prompts for A/B testing, experiment design, hypothesis building, and statistical analysis.
 
-[Prompts 15-17 cover A/B test design, result analysis, and experiment framework setup.]
+### Prompt 15 · Design A/B test for campaign
+*When to use:* You're about to launch a campaign and want to test one variable first to optimize results.
+*(Prompt content mirrors the Vietnamese version above.)*
+
+### Prompt 16 · Analyze experiment results
+*When to use:* You've run the test and need to analyze results and decide next steps.
+*(Prompt content mirrors the Vietnamese version above.)*
+
+### Prompt 17 · Experiment framework for growth teams
+*When to use:* You need to build an experiment pipeline from scratch -- from hypothesis to decision.
+*(Prompt content mirrors the Vietnamese version above.)*
 
 </details>

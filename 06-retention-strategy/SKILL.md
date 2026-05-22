@@ -3,7 +3,7 @@
 Retention không phải là nhắc user quay lại. Là xây hệ thống để user tự muốn quay lại. Ở cấp S, retention dựa vào timing và ưu đãi đơn giản. Ở cấp M, có thể thêm layer gamification và segment-specific mechanic. Ở cấp L, xây loyalty program riêng.
 
 | Cấp độ | Chiến thuật khả thi | Ràng buộc |
-|--------|--------------------|-----------|
+| --- | --- | --- |
 | **S** | Trigger theo hành vi, voucher tái kích hoạt | In-app + owned out-app, không paid |
 | **M** | Loyalty tier, streak mechanic, segment-specific comm | Có paid hỗ trợ kéo về, dev sprint giới hạn |
 | **L** | Full loyalty program, Xu economy, VIP layer | Nhiều tháng dev, research, cross-functional team |
@@ -191,27 +191,21 @@ Yêu cầu output:
 <details>
 <summary>English version</summary>
 
-# 06 · Retention & loyalty strategy
+## English
 
-Retention is not about reminding users to come back. It's about building a system where users want to come back on their own. At level S, retention relies on timing and simple incentives. At level M, you can add gamification layers and segment-specific mechanics. At level L, you build a full loyalty program.
-
-| Level | Available tactics | Constraints |
-|-------|------------------|-------------|
-| **S** | Behavior triggers, re-activation vouchers | In-app + owned out-app, no paid |
-| **M** | Loyalty tiers, streak mechanics, segment-specific comm | Paid can support re-targeting, limited dev sprint |
-| **L** | Full loyalty program, point economy, VIP tiers | Months of dev, research, cross-functional team |
+Prompts for retention strategy: retention loop design, point economy, churn prediction, and re-engagement campaigns.
 
 ### Prompt 11 · Design retention loop for campaign
-*When to use:* You're designing a campaign and want to build retention mechanics from the start — not wait until users leave to intervene.
+*When to use:* You're designing a campaign and want to build retention mechanics from the start -- not wait until users leave to intervene.
 *(Prompt content mirrors the Vietnamese version above.)*
 
 ### Prompt 12 · Design loyalty point / token economy
-*When to use:* You need to design or optimize a reward points system — how to earn, how to spend, and the value lifecycle.
+*When to use:* You need to design or optimize a reward points system -- how to earn, how to spend, and the value lifecycle.
 
 ### Prompt 13 · Churn prediction & pre-emptive retention
-*When to use:* You have user behavior data and want to build an automated system that detects users about to churn — before they leave.
+*When to use:* You have user behavior data and want to build an automated system that detects users about to churn -- before they leave.
 
 ### Prompt 14 · Re-engagement campaign for lapsed users
-*When to use:* Users haven't been active for >60 days. You need a separate campaign to win them back — don't use the same message as for active users.
+*When to use:* Users haven't been active for >60 days. You need a separate campaign to win them back -- don't use the same message as for active users.
 
 </details>
