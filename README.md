@@ -41,6 +41,7 @@ Mỗi prompt có 3 phần:
 | [`03-game-mechanics`](./03-game-mechanics) | Cơ chế game kéo user quay lại. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning và design brief theo từng cấp độ. |
 | [`05-automation`](./05-n8n-automation) | Prompt xây automation cho growth: monitor đối thủ, campaign alert, feedback tracking. |
+| [`06-retention-strategy`](./06-retention-strategy) | Retention loop, Xu economy, churn prediction, re-engagement. |
 
 ### Knowledge Base - Nền tảng lý thuyết
 
@@ -96,6 +97,7 @@ Each prompt has three parts:
 | [`03-game-mechanics`](./03-game-mechanics) | Engagement loops that bring users back. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning and design briefs by level. |
 | [`05-automation`](./05-n8n-automation) | Automation prompts for competitor monitoring, campaign alerts, feedback tracking. |
+| [`06-retention-strategy`](./06-retention-strategy) | Retention loops, point economy, churn prediction, re-engagement. |
 
 ### Knowledge Base
 
