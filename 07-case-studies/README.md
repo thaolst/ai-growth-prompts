@@ -1,5 +1,8 @@
 # Case Studies (Public)
 
+<p>![prompts](https://img.shields.io/badge/prompts-6-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-knowledge-f59e0b?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)</p>
+
+
 ## Tiếng Việt
 
 Câu chuyện growth công khai từ các công ty lớn: Duolingo, Canva, Notion, Spotify, Dropbox. Không có data nội bộ. Học từ cái đã được kiểm chứng ngoài thị trường.
