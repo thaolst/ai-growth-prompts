@@ -146,3 +146,65 @@ Using ICE (Impact × Confidence × Ease), please:
 2. Calculate total score, rank priority
 3. Explain top priority choice
 ```
+
+---
+
+## Ví dụ output — Chọn framework (Prompt 01)
+
+**Input:**
+```
+Campaign: re-engagement cho user lapsed 30–60 ngày
+Mục tiêu: tăng redemption rate từ 5% lên 8% trong 30 ngày
+```
+
+**Output AI:**
+```
+Framework đề xuất: Hook Model + AARRR kết hợp
+
+Tại sao Hook Model phù hợp:
+User lapsed đã có habit cũ nhưng vòng lặp bị đứt.
+Hook Model giúp xác định đúng chỗ vòng lặp đứt để rebuild:
+→ Trigger: họ đang thiếu trigger bên ngoài (push tắt, không có lý do mở app)
+→ Action: action cũ (redeem) vẫn còn nhớ — barrier thấp nếu trigger đúng
+→ Variable Reward: thêm element bất ngờ thay vì fixed discount
+→ Investment: nếu có streak hoặc progress bar, họ không muốn mất
+
+Tại sao thêm AARRR:
+Để đo đúng giai đoạn nào đang fail — Acquisition (reach) hay Activation (click→redeem)?
+5% redemption rate có thể là: CTR thấp (reach problem) hoặc drop ở landing page (activation problem).
+Đo cả 2 trước khi quyết định fix cái gì.
+
+Apply vào campaign:
+Bước 1: Check AARRR — CTR push vs redemption rate. Gap ở đâu?
+Bước 2: Dùng Hook Model để redesign trigger (push copy) và reward (variable offer thay vì fixed)
+Expected: CTR tăng 30% + conversion rate tăng 20% → redemption tổng đạt 8%
+```
+
+---
+
+## Example output — Pick framework (Prompt 01)
+
+**Input:** Re-engagement campaign for users lapsed 30–60 days. Goal: redemption rate 5% → 8% in 30 days.
+
+**AI output:**
+```
+Recommended: Hook Model + AARRR combined
+
+Why Hook Model fits:
+Lapsed users had a habit loop that broke. Hook Model identifies exactly
+where it broke so you can rebuild it:
+→ Trigger: missing external trigger (push off, no reason to open)
+→ Action: old action (redeem) still remembered — low barrier if triggered right
+→ Variable Reward: add surprise element instead of fixed discount
+→ Investment: streak or progress bar creates loss aversion
+
+Why add AARRR:
+To measure which stage is failing — reach (Acquisition) or action (Activation)?
+5% redemption could mean: low CTR (reach problem) or drop at landing page (activation problem).
+Measure both before deciding what to fix.
+
+Application:
+Step 1: Check AARRR — push CTR vs redemption rate. Where's the gap?
+Step 2: Use Hook Model to redesign trigger (push copy) + reward (variable vs fixed)
+Expected: CTR +30%, conversion rate +20% → combined redemption reaches 8%
+```
