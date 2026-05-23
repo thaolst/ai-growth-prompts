@@ -24,3 +24,18 @@
 | File | Description |
 |------|-------------|
 | [`SKILL.md`](./SKILL.md) | 3 growth automation prompt templates |
+
+---
+
+## 05 vs 10 — Dùng cái nào?
+
+| | Folder này (05) | [10-n8n-growth-workflows](../10-n8n-growth-workflows) |
+|---|---|---|
+| **Là gì** | Prompt để *thiết kế* logic automation | Workflow n8n *sẵn sàng import* |
+| **Dùng khi** | Muốn hiểu logic, tự build bằng bất kỳ tool nào | Đã có n8n, muốn chạy ngay |
+| **Tool** | n8n, Make, Zapier, Python — đều được | n8n cụ thể |
+| **Output** | AI giúp bạn nghĩ ra thiết kế | File JSON import thẳng vào n8n |
+
+**Gợi ý:** Đọc `05` trước để hiểu logic → dùng `10` để thực thi nhanh.
+
+👉 Xem workflow JSON sẵn dùng: [`10-n8n-growth-workflows`](../10-n8n-growth-workflows)
