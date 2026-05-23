@@ -1,0 +1,206 @@
+{
+  "name": "03 - A/B Test Analyzer",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "2",
+      "name": "Read Test Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "documentId": "YOUR_SHEET_ID",
+        "sheetName": "ab_results",
+        "options": {
+          "headerRow": 1
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Prepare Data",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{data: JSON.stringify(items.map(i=>i.json))}}];"
+      }
+    },
+    {
+      "id": "4",
+      "name": "AI Statistics",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are an A/B test statistician. Respond ONLY with valid JSON."
+            },
+            {
+              "role": "user",
+              "content": "Analyze A/B test results. Return JSON:\n{\n  \"variants\": [\n    {\n      \"name\": \"string\",\n      \"conversion_rate\": number,\n      \"lift_vs_control\": number,\n      \"p_value\": number,\n      \"is_winner\": boolean,\n      \"confidence_interval\": [number, number]\n    }\n  ],\n  \"winner\": \"string\",\n  \"confidence_level\": number,\n  \"verdict\": \"strong_winner|clear_winner|marginal|inconclusive\",\n  \"recommendation\": \"string\",\n  \"next_action\": \"scale_100pct|scale_with_monitoring|continue_test|no_winner\"\n}\n\nSignificance threshold: p < 0.05, MDE: 10%\n\nTest data:\n{{ $json.data }}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Format Report",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const d=items[0].json;\nconst winner=d.variants.find(v=>v.is_winner);\nconst report=`🧪 A/B TEST RESULTS\\n\\nWinner: ${d.winner} (${d.confidence_level*100}% confidence)\\nVerdict: ${d.verdict}\\n\\nVariants:\\n${d.variants.map(v=>`• ${v.name}: ${v.conversion_rate}% CVR | lift ${v.lift_vs_control}% | p=${v.p_value}`).join('\\n')}\\n\\nRecommendation: ${d.recommendation}\\nNext action: ${d.next_action}`;\nreturn [{json:{...d, report}}];"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Send Report",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "chatId": "YOUR_CHAT_ID",
+        "text": "={{ $json.report }}"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Save Results",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1560,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "documentId": "YOUR_LOG_SHEET_ID",
+        "sheetName": "ab_log",
+        "columns": {
+          "value": [
+            {
+              "column": "date",
+              "value": "={{ $now.format('YYYY-MM-DD') }}"
+            },
+            {
+              "column": "winner",
+              "value": "={{ $json.winner }}"
+            },
+            {
+              "column": "confidence",
+              "value": "={{ $json.confidence_level }}"
+            },
+            {
+              "column": "verdict",
+              "value": "={{ $json.verdict }}"
+            },
+            {
+              "column": "next_action",
+              "value": "={{ $json.next_action }}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read Test Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Test Data": {
+      "main": [
+        [
+          {
+            "node": "Prepare Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Data": {
+      "main": [
+        [
+          {
+            "node": "AI Statistics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Statistics": {
+      "main": [
+        [
+          {
+            "node": "Format Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Report": {
+      "main": [
+        [
+          {
+            "node": "Send Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Report": {
+      "main": [
+        [
+          {
+            "node": "Save Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": "ai-growth-prompts"
+  }
+}
