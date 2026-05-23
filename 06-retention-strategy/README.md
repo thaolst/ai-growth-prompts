@@ -1,6 +1,6 @@
 # 06 · Retention & loyalty strategy
 
-<p>![prompts](https://img.shields.io/badge/prompts-8-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-S·M·L-60a5fa?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)</p>
+![prompts](https://img.shields.io/badge/prompts-8-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-S·M·L-60a5fa?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
 
 
 ## Tiếng Việt
