@@ -230,3 +230,94 @@ If you don't have real numbers yet, use these industry benchmarks to fill placeh
 | Sample size (MDE 10%, 95% CI) | ~1,500/group | ~3,800/group | ~9,500/group |
 
 **How to use:** Fill "mid" benchmarks into placeholders, run the prompt, replace with real numbers when available.
+
+---
+
+## Ví dụ output — Phân tích cohort drop (Prompt 04)
+
+**Input:**
+```
+Tuần 0: 100% | Tuần 1: 62% | Tuần 2: 41% | Tuần 4: 29% | Tuần 8: 18%
+Cấp độ có thể chạy: S
+```
+
+**Output AI:**
+```
+Điểm rớt mạnh nhất: W0→W1 (-38 điểm) — đây là early activation problem,
+không phải retention problem. User chưa kịp thấy giá trị lần đầu đã rời.
+
+W0→W1 đáng lo hơn W1→W2:
+W1→W2 rớt 21 điểm — user đã activate nhưng không có lý do quay lại.
+W0→W1 rớt 38 điểm — user thậm chí chưa bắt đầu. Fix W0→W1 trước.
+
+3 giả thuyết:
+1. Onboarding flow quá dài → user bỏ trước khi thấy reward đầu tiên
+2. Reward đầu tiên quá nhỏ → không đủ để trigger quay lại
+3. Không có nudge nào trong 48h đầu → user quên mất app
+
+Test cho cấp S (không cần paid):
+1. Đổi onboarding: bỏ bước 3/4, cho user thấy reward ngay trong 60 giây
+2. Tăng reward lần đầu: 5k → 10k, đo redemption D3
+3. Thêm push D2: "Bạn còn 48h để dùng ưu đãi chào mừng"
+
+Nếu chỉ làm 1 việc tuần này: thêm push D2 — ít effort nhất,
+test được trong 1 tuần, không cần dev change.
+```
+
+---
+
+## Ví dụ output — Phân khúc user (Prompt 05)
+
+**Input:**
+```
+Cấp độ: S | Ngân sách: 80M VND | Mục tiêu: tăng MAU
+Kênh: in-app push + owned social
+```
+
+**Output AI:**
+```
+3 segment ưu tiên (bỏ qua inactive >90 ngày ở ngân sách này):
+
+Segment A — "Sleepers" (lapsed 30–60 ngày, từng active)
+→ 35% ngân sách | Voucher giảm 15k, expiry 48h
+→ Lý do: highest reactivation potential, còn nhớ app
+
+Segment B — "Low-frequency actives" (1 lần/tháng, có balance)
+→ 40% ngân sách | Voucher tích lũy: redeem 2 lần → nhận bonus
+→ Lý do: dễ push lên 2 lần/tháng hơn là kéo user lạnh về
+
+Segment C — "New users tháng này" (đăng ký <30 ngày)
+→ 25% ngân sách | Push milestone: "Hoàn thành profile để nhận 5k"
+→ Lý do: habit formation window, ROI dài hạn cao nhất
+
+Bỏ qua: inactive >90 ngày — cost/saved user quá cao với ngân sách S.
+```
+
+---
+
+## Example output — Cohort drop analysis (Prompt 04)
+
+**Input:** Week 0: 100% → W1: 62% → W2: 41% → W4: 29% → W8: 18%. Level: S
+
+**AI output:**
+```
+Steepest drop: W0→W1 (-38 points) — early activation problem,
+not a retention problem. Users leave before experiencing value.
+
+W0→W1 is more concerning than W1→W2:
+W1→W2 drops 21 points — users activated but found no reason to return.
+W0→W1 drops 38 points — users never even started. Fix this first.
+
+3 hypotheses:
+1. Onboarding too long → users quit before seeing first reward
+2. First reward too small → not enough to trigger return visit
+3. No nudge in first 48h → users forget the app exists
+
+S-level tests (no paid budget needed):
+1. Shorten onboarding: remove step 3/4, show reward within 60 seconds
+2. Increase first reward: 5k → 10k, measure D3 redemption
+3. Add D2 push: "48 hours left to claim your welcome reward"
+
+If only 1 action this week: add the D2 push — lowest effort,
+testable in 1 week, no dev change required.
+```
