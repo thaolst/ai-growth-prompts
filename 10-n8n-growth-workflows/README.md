@@ -1,8 +1,5 @@
 # n8n Growth Workflows
 
-![prompts](https://img.shields.io/badge/prompts-5-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-automation-f59e0b?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
-
-
 > Workflow n8n sẵn dùng cho growth marketing automation. Import, config, chạy.
 > Dành cho growth team muốn automation mà không cần code.
 
@@ -19,22 +16,25 @@
 
 ## Danh sách workflow
 
-| # | Workflow | Mô tả | Độ khó |
-|---|---|---|---|
-| 01 | Segment + Offer Designer | Tự động phân nhóm user, thiết kế offer theo segment | Trung bình |
-| 02 | Campaign Monitor + Alert | Check metric hàng ngày, cảnh báo khi drop | Khó |
-| 03 | A/B Test Analyzer | Input kết quả test, AI phân tích, chọn winner | Dễ |
-| 04 | Campaign Brief Generator | Input thông tin đơn giản, AI ra full brief | Trung bình |
-| 05 | Churn Signal + Re-engagement | Detect user sắp rời bỏ, trigger campaign kéo về | Khó |
+| # | Workflow | Mô tả | Độ khó | JSON |
+|---|---|---|---|---|
+| 01 | Segment + Offer Designer | Phân nhóm user, thiết kế offer theo segment | Trung bình | [import](./workflows/01-segment-offer-designer.json) |
+| 02 | Campaign Monitor + Alert | Check metric hàng ngày, cảnh báo khi drop | Khó | [import](./workflows/02-campaign-monitor.json) |
+| 03 | A/B Test Analyzer | Input kết quả test, AI phân tích, chọn winner | Dễ | [import](./workflows/03-ab-test-analyzer.json) |
+| 04 | Campaign Brief Generator | Input đơn giản, AI ra full brief vào Google Doc | Trung bình | [import](./workflows/04-campaign-brief-generator.json) |
+| 05 | Churn Signal + Re-engagement | Detect user sắp rời bỏ, trigger campaign kéo về | Khó | [import](./workflows/05-churn-reengagement.json) |
 
 ---
 
-## Cách xài
+## Cách import workflow vào n8n
 
-1. Cài n8n — `npx n8n` hoặc deploy trên Railway/Render/Fly.io
-2. Import workflow — download file `.json`, kéo vào n8n editor
-3. Config credentials — thêm API keys (OpenAI, Google, Telegram, DB)
-4. Activate — schedule tự động chạy sau khi bật
+1. **Cài n8n** — `npx n8n` hoặc deploy trên [Railway](https://railway.app) (free tier)
+2. **Download file JSON** — click link `import` trong bảng trên
+3. **Import vào n8n** — vào n8n editor → Menu → Import from file → chọn file JSON
+4. **Config credentials** — thêm API keys: OpenAI, Google Sheets, Telegram/Slack
+5. **Thay YOUR_SHEET_ID** — mở workflow, tìm node Google Sheets, điền ID sheet của bạn
+6. **Chạy thử manual** — nhấn "Execute Workflow" một lần trước khi bật schedule
+7. **Activate** — bật toggle để workflow tự chạy theo lịch
 
 ---
 
@@ -42,24 +42,22 @@
 
 | Tool | Free? | Ghi chú |
 |---|---|---|
-| n8n | Free self-host | Cloud ~$20/tháng, deploy Railway free |
+| n8n | Free self-host | Cloud ~$20/tháng, Railway deploy free |
 | OpenAI API | Pay-per-use | ~$1–5/tháng cho growth tasks |
 | Google Sheets API | Free | Cho data input/output |
 | Telegram Bot | Free | Cho alerts & notifications |
+| Google Docs API | Free | Chỉ cần cho workflow 04 |
+| Slack | Free tier | Tùy chọn thay Telegram |
 
 ---
 
 ## Kiến trúc chung
 
-Mỗi workflow đều có 3 bước:
-
 ```
-[Trigger] → [Process (AI + logic)] → [Output (notify + store)]
+[Trigger] → [Fetch Data] → [AI Analysis] → [Decision] → [Output + Log]
 ```
 
-- **Trigger:** schedule hàng ngày hoặc webhook từ hệ thống
-- **Process:** AI phân tích dữ liệu, growth logic ra quyết định
-- **Output:** gửi alert Telegram / cập nhật Google Sheets / trigger campaign
+Mỗi workflow đều theo pattern này. Node AI ở giữa là nơi growth logic xảy ra.
 
 ---
 
@@ -68,7 +66,7 @@ Mỗi workflow đều có 3 bước:
 | Bạn muốn... | Dùng workflow |
 |---|---|
 | Phân nhóm user và thiết kế offer tự động | 01 - Segment + Offer Designer |
-| Nhận cảnh báo khi campaign performance drop | 02 - Campaign Monitor + Alert |
+| Nhận cảnh báo khi campaign metric drop | 02 - Campaign Monitor + Alert |
 | Phân tích kết quả A/B test nhanh | 03 - A/B Test Analyzer |
 | Tạo campaign brief từ vài dòng input | 04 - Campaign Brief Generator |
 | Phát hiện và kéo lại user sắp churn | 05 - Churn Signal + Re-engagement |
@@ -80,58 +78,25 @@ Mỗi workflow đều có 3 bước:
 
 ## n8n Growth Workflows
 
-Ready-to-use n8n workflows for growth marketing automation. Import, configure, run.
-Built for growth teams who want automation without writing code.
+Ready-to-import n8n workflows for growth marketing automation. Download JSON → import → configure → activate.
 
-### Why n8n?
+### How to import
 
-- Open source — self-host or use cloud, no vendor lock-in
-- AI native — OpenAI/Claude nodes built in, perfect for AI × Growth
-- 200+ integrations — Google Sheets, Telegram, Slack, SQL, APIs
-- Visual builder — non-technical marketers can understand and edit
+1. Install n8n — `npx n8n` or deploy on Railway (free tier)
+2. Download JSON file from the table above
+3. In n8n: Menu → Import from file → select JSON
+4. Add credentials: OpenAI, Google Sheets, Telegram/Slack
+5. Replace `YOUR_SHEET_ID` placeholders with your actual sheet IDs
+6. Run manually once to verify, then activate schedule
 
 ### Workflow list
 
-| # | Workflow | Description | Difficulty |
-|---|---|---|---|
-| 01 | Segment + Offer Designer | Auto-segment users, design offers per segment | Medium |
-| 02 | Campaign Monitor + Alert | Daily metric check, alert on drop | Hard |
-| 03 | A/B Test Analyzer | Input test results, AI analyzes, picks winner | Easy |
-| 04 | Campaign Brief Generator | Simple input, AI outputs full brief | Medium |
-| 05 | Churn Signal + Re-engagement | Detect at-risk users, trigger win-back campaign | Hard |
-
-### How to use
-
-1. Install n8n — `npx n8n` or deploy on Railway/Render/Fly.io
-2. Import workflow — download `.json` file, drag into n8n editor
-3. Config credentials — add API keys (OpenAI, Google, Telegram, DB)
-4. Activate — set schedule, workflow runs automatically
-
-### Requirements
-
-| Tool | Free? | Notes |
+| # | Workflow | Description |
 |---|---|---|
-| n8n | Free self-host | Cloud ~$20/month, Railway deploy is free |
-| OpenAI API | Pay-per-use | ~$1–5/month for growth tasks |
-| Google Sheets API | Free | For data input/output |
-| Telegram Bot | Free | For alerts & notifications |
-
-### Common architecture
-
-```
-[Trigger] → [Process (AI + logic)] → [Output (notify + store)]
-```
-
-Every workflow follows this pattern. The middle step is where AI and growth logic happen.
-
-### Where to start?
-
-| You want to... | Use workflow |
-|---|---|
-| Auto-segment users and design offers | 01 - Segment + Offer Designer |
-| Get alerted when campaign metrics drop | 02 - Campaign Monitor + Alert |
-| Analyze A/B test results fast | 03 - A/B Test Analyzer |
-| Generate a campaign brief from a few inputs | 04 - Campaign Brief Generator |
-| Detect and re-engage users about to churn | 05 - Churn Signal + Re-engagement |
+| 01 | Segment + Offer Designer | Auto-segment users, design offers per segment |
+| 02 | Campaign Monitor + Alert | Daily metric check, alert on anomalies |
+| 03 | A/B Test Analyzer | Statistical analysis, pick winner |
+| 04 | Campaign Brief Generator | Full brief into Google Doc from simple input |
+| 05 | Churn Signal + Re-engagement | Detect at-risk users, trigger win-back |
 
 </details>
