@@ -100,3 +100,16 @@ Ready-to-import n8n workflows for growth marketing automation. Download JSON →
 | 05 | Churn Signal + Re-engagement | Detect at-risk users, trigger win-back |
 
 </details>
+
+---
+
+## 10 vs 05 — Dùng cái nào?
+
+| | Folder này (10) | [05-n8n-automation](../05-n8n-automation) |
+|---|---|---|
+| **Là gì** | Workflow n8n *sẵn sàng import* | Prompt để *thiết kế* logic automation |
+| **Dùng khi** | Đã có n8n, muốn chạy ngay | Muốn hiểu logic, tự build bằng bất kỳ tool nào |
+| **Tool** | n8n cụ thể | n8n, Make, Zapier, Python — đều được |
+| **Output** | File JSON import thẳng vào n8n | AI giúp bạn thiết kế logic |
+
+**Gợi ý:** Đọc [`05-n8n-automation`](../05-n8n-automation) trước để hiểu logic → dùng folder này để thực thi nhanh.
