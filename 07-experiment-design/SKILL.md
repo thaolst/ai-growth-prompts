@@ -284,3 +284,39 @@ Win threshold at S: treatment > control by ≥5% for 2+ weeks
 Cadence: 1 experiment per campaign = 4/month
   → enough to learn 2-3 significant things per quarter
 ```
+
+---
+
+## Không có data? Dùng benchmark này
+
+Nếu chưa có số liệu thực, dùng benchmark ngành dưới đây để điền placeholder:
+
+| Metric | Benchmark thấp | Benchmark trung bình | Benchmark cao |
+|---|---|---|---|
+| Push CTR | 2% | 5% | 10% |
+| Redemption rate | 3% | 8% | 15% |
+| D7 retention | 15% | 30% | 50% |
+| D30 retention | 5% | 15% | 30% |
+| Churn rate / tháng | 5% | 15% | 30% |
+| A/B test MDE | 5% | 10% | 20% |
+| Sample size (MDE 10%, 95% CI) | ~1,500/group | ~3,800/group | ~9,500/group |
+
+**Cách dùng:** Điền benchmark "trung bình" vào placeholder, chạy prompt, sau đó thay bằng số thực khi có.
+
+---
+
+## Không có data? Use these benchmarks
+
+If you don't have real numbers yet, use these industry benchmarks to fill placeholders:
+
+| Metric | Low | Mid | High |
+|---|---|---|---|
+| Push CTR | 2% | 5% | 10% |
+| Redemption rate | 3% | 8% | 15% |
+| D7 retention | 15% | 30% | 50% |
+| D30 retention | 5% | 15% | 30% |
+| Monthly churn | 5% | 15% | 30% |
+| A/B test MDE | 5% | 10% | 20% |
+| Sample size (MDE 10%, 95% CI) | ~1,500/group | ~3,800/group | ~9,500/group |
+
+**How to use:** Fill "mid" benchmarks into placeholders, run the prompt, replace with real numbers when available.
