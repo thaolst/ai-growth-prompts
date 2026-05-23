@@ -1,0 +1,249 @@
+{
+  "name": "05 - Churn Signal + Re-engagement",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Daily 9AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Read User Activity",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "documentId": "YOUR_SHEET_ID",
+        "sheetName": "user_activity",
+        "options": {
+          "headerRow": 1
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Batch Users",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const rows=items.map(i=>i.json);\nreturn [{json:{data:JSON.stringify(rows),total:rows.length}}];"
+      }
+    },
+    {
+      "id": "4",
+      "name": "AI Churn Detection",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a retention analyst. Respond ONLY with valid JSON."
+            },
+            {
+              "role": "user",
+              "content": "Analyze user activity and classify churn risk. Return JSON array:\n[\n  {\n    \"user_id\": \"string\",\n    \"risk_level\": \"HIGH|MEDIUM|LOW|NONE\",\n    \"hypothesis\": \"string\",\n    \"channel\": \"push|sms|email\",\n    \"offer\": \"string\",\n    \"urgency\": \"immediate|48h|this_week\"\n  }\n]\n\nRisk rules:\n- HIGH: not active >14 days AND was active >3 sessions/week before\n- MEDIUM: not active >7 days OR frequency declining >30%\n- LOW: active within 7 days, stable\n- NONE: active today/yesterday\n\nUser data:\n{{ $json.data }}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Filter HIGH Risk",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const users=JSON.parse(items[0].json.choices[0].message.content);\nconst high=users.filter(u=>u.risk_level==='HIGH');\nconst medium=users.filter(u=>u.risk_level==='MEDIUM');\nconst summary={high:high.length,medium:medium.length,total:users.length,high_users:high,medium_users:medium};\nreturn [{json:summary}];"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Has HIGH Risk?",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.high }}",
+              "operation": "larger",
+              "value2": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Send ALERT",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1560,
+        200
+      ],
+      "parameters": {
+        "chatId": "YOUR_CHAT_ID",
+        "text": "🚨 CHURN ALERT — {{ $now.format('DD/MM/YYYY') }}\n\nHIGH RISK: {{ $json.high }} users\nMEDIUM RISK: {{ $json.medium }} users\nTotal scanned: {{ $json.total }}\n\nTop HIGH risk:\n{{ $json.high_users.slice(0,3).map(u=>`• ${u.user_id}: ${u.hypothesis}\\n  → ${u.offer} via ${u.channel} (${u.urgency})`).join('\\n') }}"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Log to Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1560,
+        400
+      ],
+      "parameters": {
+        "operation": "append",
+        "documentId": "YOUR_LOG_SHEET_ID",
+        "sheetName": "churn_log",
+        "columns": {
+          "value": [
+            {
+              "column": "date",
+              "value": "={{ $now.format('YYYY-MM-DD') }}"
+            },
+            {
+              "column": "high_count",
+              "value": "={{ $json.high }}"
+            },
+            {
+              "column": "medium_count",
+              "value": "={{ $json.medium }}"
+            },
+            {
+              "column": "total_scanned",
+              "value": "={{ $json.total }}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 9AM": {
+      "main": [
+        [
+          {
+            "node": "Read User Activity",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read User Activity": {
+      "main": [
+        [
+          {
+            "node": "Batch Users",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Batch Users": {
+      "main": [
+        [
+          {
+            "node": "AI Churn Detection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Churn Detection": {
+      "main": [
+        [
+          {
+            "node": "Filter HIGH Risk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter HIGH Risk": {
+      "main": [
+        [
+          {
+            "node": "Has HIGH Risk?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has HIGH Risk?": {
+      "main": [
+        [
+          {
+            "node": "Send ALERT",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log to Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send ALERT": {
+      "main": [
+        [
+          {
+            "node": "Log to Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": "ai-growth-prompts"
+  }
+}
