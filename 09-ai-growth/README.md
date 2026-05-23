@@ -2,15 +2,45 @@
 
 ## Tiếng Việt
 
-AI đang thay đổi growth marketing thế nào - từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
-
-Bảy phần: personalization, segmentation, campaign optimization, predictive analytics, game mechanics, growth stack, và limitation/rủi ro. Mỗi phần có prompt để thử ngay.
-
-👉 **Prompt thực hành:** [`SKILL.md`](./SKILL.md) — 4 prompt: personalization, campaign analysis, A/B test design, outcome prediction.
+AI đang thay đổi growth marketing thế nào — từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.
 
 ---
 
-## Tại Sao Lại Quan Trọng
+## 🚀 Cách Dùng Repo Này
+
+### Bước 1 — Chọn đúng prompt theo tình huống
+
+| Bạn đang cần... | Dùng prompt |
+|---|---|
+| Cá nhân hóa campaign cho từng nhóm user | `SKILL.md` → Prompt 01 |
+| Phân tích kết quả campaign vừa chạy xong | `SKILL.md` → Prompt 02 |
+| Thiết kế A/B test, không biết test gì trước | `SKILL.md` → Prompt 03 |
+| Dự đoán kết quả trước khi launch campaign | `SKILL.md` → Prompt 04 |
+| Phân khúc user, dự đoán ai sắp churn | `SKILL.md` → Prompt 05 |
+| Thiết kế hệ thống gamification | `SKILL.md` → Prompt 06 |
+
+### Bước 2 — Điền vào placeholder
+
+Mỗi prompt có các ô `[như thế này]`. Điền thông tin thực của bạn vào trước khi paste vào ChatGPT / Claude.
+
+**Ví dụ cụ thể:**
+```
+# Thay vì để nguyên:
+Segments: [VD: new user, active user, dormant user]
+
+# Điền thực tế của bạn:
+Segments: new user (đăng ký < 7 ngày), active user (order trong 30 ngày), dormant (không login > 60 ngày)
+```
+
+### Bước 3 — Đọc output và lặp lại
+
+AI sẽ trả về phân tích hoặc đề xuất. Nếu chưa đủ chi tiết, hỏi tiếp ngay trong cùng cuộc trò chuyện — không cần paste lại prompt từ đầu.
+
+**Tip:** Càng nhiều dữ liệu thực → output càng sát thực tế. Paste CSV, số liệu dashboard, hoặc mô tả cụ thể thay vì để trống placeholder.
+
+---
+
+## Tại Sao AI Quan Trọng Với Growth
 
 - 70% đội growth đã dùng AI để tối ưu campaign
 - Cá nhân hóa quy mô lớn là bất khả thi trước khi có AI
@@ -31,10 +61,7 @@ Bảy phần: personalization, segmentation, campaign optimization, predictive a
 - **Tối ưu thời điểm:** Giờ gửi thông báo tốt nhất dựa trên hành vi
 - **Chọn kênh:** Kênh nào (push, SMS, in-app) hiệu quả cho người dùng nào
 
-**Prompt để thử:**
-```
-You're a growth marketer. Given user segment [describe], design 3 personalized offer variants. Each variant should target a different motivation: price sensitivity, novelty-seeking, or habit reinforcement.
-```
+→ **Dùng:** `SKILL.md` Prompt 01
 
 ---
 
@@ -48,13 +75,10 @@ You're a growth marketer. Given user segment [describe], design 3 personalized o
 **Use cases:**
 - **Dự đoán churn:** Người dùng nào sẽ rời bỏ tháng tới
 - **Hành động tốt nhất tiếp theo:** Nên offer gì cho mỗi người dùng ngay lúc này
-- **Lookalike modeling:** Tìm thêm người dùng giống phân khúc tốt nhất của bạn
-- **Dự đoán vòng đời người dùng:** Người dùng này đang ở đâu trong hành trình?
+- **Lookalike modeling:** Tìm thêm người dùng giống phân khúc tốt nhất
+- **Dự đoán vòng đời:** Người dùng này đang ở đâu trong hành trình?
 
-**Prompt để thử:**
-```
-Given these user behavior patterns [data], identify the top 3 segments that are most likely to churn next month. For each segment, suggest a one-action intervention (no more than CZK [budget] per user).
-```
+→ **Dùng:** `SKILL.md` Prompt 05
 
 ---
 
@@ -71,10 +95,7 @@ Given these user behavior patterns [data], identify the top 3 segments that are 
 - **Tối ưu bid:** Điều chỉnh giá thầu thời gian thực trên kênh trả phí
 - **Tối ưu landing page:** Tự động tạo và test biến thể landing page
 
-**Prompt để thử:**
-```
-Design a campaign optimization flow that: 1) launches 3 creative variants per segment, 2) auto-pauses underperformers after 24h, 3) reallocates budget to the winner, 4) generates a performance report daily. Budget: [amount], timeline: [days].
-```
+→ **Dùng:** `SKILL.md` Prompt 02, 03
 
 ---
 
@@ -91,10 +112,7 @@ Design a campaign optimization flow that: 1) launches 3 creative variants per se
 - **Dự báo theo mùa:** Dự đoán nhu cầu dựa trên lịch sử + tín hiệu bên ngoài
 - **Phát hiện bất thường:** Nhận cảnh báo khi metric vượt ngoài khoảng dự kiến
 
-**Prompt để thử:**
-```
-Based on this campaign data [describe], forecast the expected ROI for the next 30 days. Consider seasonality, previous campaign performance, and current market conditions. Highlight the top 3 risk factors.
-```
+→ **Dùng:** `SKILL.md` Prompt 04
 
 ---
 
@@ -110,10 +128,7 @@ Based on this campaign data [describe], forecast the expected ROI for the next 3
 - **Độ khó thích ứng:** Thử thách khó dần khi người dùng lên cấp
 - **Tái tương tác đúng lúc:** AI phát hiện khi engagement đang giảm và kích hoạt thử thách
 
-**Prompt để thử:**
-```
-Design a gamification system for [product type] that: 1) personalizes goals per user, 2) uses loss aversion (don't lose your streak) over reward-seeking, 3) has 3 levels with increasing difficulty, 4) triggers re-engagement before user drops off.
-```
+→ **Dùng:** `SKILL.md` Prompt 06
 
 ---
 
@@ -142,9 +157,9 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 ## 7. Giới Hạn & Rủi Ro
 
 - **Phụ thuộc dữ liệu:** Rác vào = rác ra. AI cần dữ liệu sạch, có cấu trúc.
-- **Quyền riêng tư:** Cá nhân hóa cần dữ liệu. Cân bằng giữa cá nhân hóa và tuân thủ quyền riêng tư.
+- **Quyền riêng tư:** Cá nhân hóa cần dữ liệu. Cân bằng giữa cá nhân hóa và tuân thủ privacy.
 - **Thiên kiến:** Mô hình ML có thể khuếch đại thiên kiến có sẵn trong dữ liệu.
-- **Tự động hóa quá mức:** AI tối ưu tốt trong các mẫu đã biết nhưng khó với chiến lược mới.
+- **Tự động hóa quá mức:** AI tối ưu tốt trong mẫu đã biết nhưng khó với chiến lược mới.
 - **Chi phí:** Chi phí hạ tầng AI là thực tế. Bắt đầu nhỏ, chứng minh giá trị, rồi mở rộng.
 
 ---
@@ -157,15 +172,47 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 
 ---
 
-*Xem các prompt thực hành AI × Growth ở các folder khác - đặc biệt là [01-voucher-design](../01-voucher-design) và [03-game-mechanics](../03-game-mechanics).*
+*Xem các prompt thực hành AI × Growth ở các folder khác — đặc biệt là [01-voucher-design](../01-voucher-design) và [03-game-mechanics](../03-game-mechanics).*
 
 ---
 
 ## English
 
-How AI is reshaping growth marketing - from personalization at scale to automated experimentation. Practical frameworks, not hype.
+How AI is reshaping growth marketing — from personalization at scale to automated experimentation. Practical frameworks, not hype.
 
-Seven sections: personalization, segmentation, campaign optimization, predictive analytics, game mechanics, growth stack, and limitations/risks. Each section includes a prompt to try now.
+---
+
+## 🚀 How to Use This Repo
+
+### Step 1 — Pick the right prompt for your situation
+
+| You need to... | Use prompt |
+|---|---|
+| Personalize a campaign per user segment | `SKILL.md` → Prompt 01 |
+| Analyze results of a campaign that just ended | `SKILL.md` → Prompt 02 |
+| Design A/B tests, unsure what to prioritize | `SKILL.md` → Prompt 03 |
+| Predict campaign results before launch | `SKILL.md` → Prompt 04 |
+| Segment users, predict who will churn | `SKILL.md` → Prompt 05 |
+| Design a gamification system | `SKILL.md` → Prompt 06 |
+
+### Step 2 — Fill in the placeholders
+
+Each prompt has `[placeholders like this]`. Fill in your real data before pasting into ChatGPT / Claude.
+
+**Example:**
+```
+# Instead of leaving it blank:
+Segments: [e.g. new user, active user, dormant user]
+
+# Fill in your actual data:
+Segments: new user (registered < 7 days), active user (ordered in last 30 days), dormant (no login > 60 days)
+```
+
+### Step 3 — Read the output and iterate
+
+AI will return analysis or recommendations. If you need more detail, ask follow-up questions in the same conversation — no need to paste the full prompt again.
+
+**Tip:** More real data = more accurate output. Paste CSVs, dashboard numbers, or specific descriptions instead of leaving placeholders empty.
 
 ---
 
@@ -173,7 +220,7 @@ Seven sections: personalization, segmentation, campaign optimization, predictive
 
 - 70% of growth teams already use AI for campaign optimization
 - Personalization at scale was impossible before AI
-- The teams that adopt AI-first growth will have a structural advantage
+- Teams that adopt AI-first growth will have a structural advantage
 
 ---
 
@@ -190,10 +237,7 @@ Seven sections: personalization, segmentation, campaign optimization, predictive
 - **Timing optimization:** Best send time for notifications based on behavior patterns
 - **Channel selection:** Which channel (push, SMS, in-app) works for which user
 
-**Prompt to try:**
-```
-You're a growth marketer. Given user segment [describe], design 3 personalized offer variants. Each variant should target a different motivation: price sensitivity, novelty-seeking, or habit reinforcement.
-```
+→ **Use:** `SKILL.md` Prompt 01
 
 ---
 
@@ -210,10 +254,7 @@ You're a growth marketer. Given user segment [describe], design 3 personalized o
 - **Lookalike modeling:** Find more users like your best segment
 - **User lifecycle prediction:** Where is this user in their journey?
 
-**Prompt to try:**
-```
-Given these user behavior patterns [data], identify the top 3 segments that are most likely to churn next month. For each segment, suggest a one-action intervention (no more than CZK [budget] per user).
-```
+→ **Use:** `SKILL.md` Prompt 05
 
 ---
 
@@ -230,10 +271,7 @@ Given these user behavior patterns [data], identify the top 3 segments that are 
 - **Bid optimization:** Real-time bid adjustment in paid channels
 - **Landing page optimization:** Auto-generate and test landing page variants
 
-**Prompt to try:**
-```
-Design a campaign optimization flow that: 1) launches 3 creative variants per segment, 2) auto-pauses underperformers after 24h, 3) reallocates budget to the winner, 4) generates a performance report daily. Budget: [amount], timeline: [days].
-```
+→ **Use:** `SKILL.md` Prompt 02, 03
 
 ---
 
@@ -250,10 +288,7 @@ Design a campaign optimization flow that: 1) launches 3 creative variants per se
 - **Seasonal prediction:** Forecast demand based on historical + external signals
 - **Anomaly detection:** Get alerted when a metric moves outside expected range
 
-**Prompt to try:**
-```
-Based on this campaign data [describe], forecast the expected ROI for the next 30 days. Consider seasonality, previous campaign performance, and current market conditions. Highlight the top 3 risk factors.
-```
+→ **Use:** `SKILL.md` Prompt 04
 
 ---
 
@@ -269,10 +304,7 @@ Based on this campaign data [describe], forecast the expected ROI for the next 3
 - **Adaptive difficulty:** Challenges that get harder as users level up
 - **Re-engagement at the right time:** AI detects when engagement is dropping and triggers a challenge
 
-**Prompt to try:**
-```
-Design a gamification system for [product type] that: 1) personalizes goals per user, 2) uses loss aversion (don't lose your streak) over reward-seeking, 3) has 3 levels with increasing difficulty, 4) triggers re-engagement before user drops off.
-```
+→ **Use:** `SKILL.md` Prompt 06
 
 ---
 
@@ -303,7 +335,7 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 - **Data dependency:** Garbage in = garbage out. AI needs clean, structured data.
 - **Privacy:** Personalization requires data. Balance personalization with privacy compliance.
 - **Bias:** ML models can amplify existing biases in your data.
-- **Over-automation:** AI can optimize within known patterns but struggles with novel strategies.
+- **Over-automation:** AI optimizes well within known patterns but struggles with novel strategies.
 - **Cost:** AI infrastructure costs are real. Start small, prove value, scale.
 
 ---
@@ -316,4 +348,4 @@ Design a gamification system for [product type] that: 1) personalizes goals per 
 
 ---
 
-*For practical AI × Growth prompts, see the other folders in this repo - especially [01-voucher-design](../01-voucher-design) and [03-game-mechanics](../03-game-mechanics).*
+*For practical AI × Growth prompts, see the other folders — especially [01-voucher-design](../01-voucher-design) and [03-game-mechanics](../03-game-mechanics).*
