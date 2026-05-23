@@ -40,10 +40,10 @@ Mỗi prompt có 3 phần:
 | [`02-segment-analysis`](./02-segment-analysis) | Target ai, can thiệp lúc nào, phân bổ ngân sách ra sao. |
 | [`03-game-mechanics`](./03-game-mechanics) | Cơ chế game kéo user quay lại. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning và design brief theo từng cấp độ. |
-| [`05-automation`](./05-n8n-automation) | Prompt xây automation cho growth: monitor đối thủ, campaign alert, feedback tracking. |
+| [`05-automation`](./05-n8n-automation) | **Thiết kế** automation logic (tool-agnostic): competitor monitor, campaign alert, sentiment tracker. Dùng n8n/Make/Zapier/Python đều được. |
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loop, Xu economy, churn prediction, re-engagement. |
 | [`07-experiment-design`](./07-experiment-design) | A/B test, hypothesis design, statistical analysis, experiment framework. |
-| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | n8n workflow sẵn: segment offer, campaign monitor, A/B analyze, churn re-engagement. |
+| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | **Thực thi** ngay: 5 workflow n8n có file JSON import sẵn. Cần cài n8n. Dùng sau khi đọc `05`. |
 
 ### Knowledge Base - Nền tảng lý thuyết
 
@@ -98,10 +98,10 @@ Each prompt has three parts:
 | [`02-segment-analysis`](./02-segment-analysis) | Who to target, when to intervene, how to allocate. |
 | [`03-game-mechanics`](./03-game-mechanics) | Engagement loops that bring users back. |
 | [`04-comm-and-brief`](./04-comm-and-brief) | Communication planning and design briefs by level. |
-| [`05-automation`](./05-n8n-automation) | Automation prompts for competitor monitoring, campaign alerts, feedback tracking. |
+| [`05-automation`](./05-n8n-automation) | **Design** automation logic (tool-agnostic): competitor monitor, campaign alert, sentiment tracker. Works with n8n, Make, Zapier, or Python. |
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loops, point economy, churn prediction, re-engagement. |
 | [`07-experiment-design`](./07-experiment-design) | A/B testing, hypothesis design, statistical analysis, experiment framework. |
-| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | Ready-to-import n8n workflows: segment offer, campaign monitor, A/B analyze, churn re-engagement. |
+| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | **Execute** immediately: 5 n8n workflows with importable JSON files. Requires n8n. Read `05` first for the logic. |
 
 ### Knowledge Base
 
