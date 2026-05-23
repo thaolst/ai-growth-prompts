@@ -148,3 +148,72 @@ Playbook needs:
 2. 3 specific tactics I can test in 2 weeks
 3. Common mistakes from case studies — avoid
 ```
+
+---
+
+## Ví dụ output — Phân tích case study (Prompt 01)
+
+**Input:**
+```
+Case study: Duolingo — streak system
+Họ làm: Thêm streak counter, push notification "sắp mất streak",
+         shield để bảo vệ streak khi bỏ lỡ 1 ngày
+Kết quả: DAU tăng 4.5x trong 2 năm
+Bối cảnh: app học ngôn ngữ, freemium, mobile-first
+Campaign của tôi: loyalty program, user lapsed 30–45 ngày
+```
+
+**Output AI:**
+```
+Tại sao streak hiệu quả (root cause):
+Không phải vì reward — mà vì loss aversion.
+Người ta ghét mất thứ đang có hơn là muốn có thứ mới.
+Streak tạo ra "sunk cost" tâm lý: "Mình đã giữ 15 ngày rồi, không thể mất."
+
+Yếu tố phụ thuộc context Duolingo (không copy được):
+- Học ngôn ngữ có natural daily habit loop (học 5 phút/ngày)
+- User đã có intrinsic motivation (muốn học)
+- Streak shield là premium feature → monetization tied vào habit
+
+Yếu tố độc lập với context (áp dụng được):
+- Loss aversion message mạnh hơn reward message
+- "Sắp mất" frame mạnh hơn "sắp được"
+- Recovery mechanic (shield/grace period) giảm churn khi user lỡ 1 ngày
+
+Adapt vào campaign lapsed user:
+Thay vì "Voucher 15k đang chờ bạn" → "Điểm của bạn hết hạn sau 48h"
+Thêm: nếu user redeem trong 7 ngày → unlock "streak bonus" lần sau
+Rủi ro: loyalty program không có daily trigger tự nhiên như app học —
+         cần tạo trigger nhân tạo (push + in-app banner phối hợp)
+Mitigate: test push frequency trước (không over-notify segment lapsed)
+```
+
+---
+
+## Example output — Case study analysis (Prompt 01)
+
+**Input:** Duolingo streak system. Result: DAU 4.5x in 2 years. My campaign: lapsed user re-engagement.
+
+**AI output:**
+```
+Why streak worked (root cause):
+Not the reward — the loss aversion.
+People hate losing what they have more than they want to gain something new.
+Streak creates psychological sunk cost: "I've kept this for 15 days, I can't lose it."
+
+Context-dependent factors (not copyable):
+- Language learning has natural daily habit loop (5 min/day)
+- Users already have intrinsic motivation (want to learn)
+- Streak shield is a premium feature → monetization tied to habit
+
+Context-independent factors (applicable):
+- Loss aversion message stronger than reward message
+- "About to lose" frame stronger than "about to gain"
+- Recovery mechanic (grace period) reduces churn when users miss one day
+
+Adapt to lapsed user campaign:
+Instead of "15k voucher waiting for you" → "Your points expire in 48h"
+Add: redeem within 7 days → unlock "comeback bonus" next time
+Risk: loyalty program lacks natural daily trigger unlike learning app
+Mitigate: test push frequency first (avoid over-notifying lapsed segment)
+```
