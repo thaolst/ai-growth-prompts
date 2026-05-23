@@ -1,117 +1,99 @@
-# 08 · Growth Glossary — Prompt để Tra Cứu Thuật Ngữ
+# 08 · Growth Glossary — Prompt
 
 ## Tiếng Việt
 
-Prompt dùng glossary để hiểu thuật ngữ nhanh hơn. Thay vì đọc định nghĩa khô, AI sẽ giải thích bằng ví dụ campaign của bạn.
+Chỉ cần 1 prompt. Dùng khi gặp thuật ngữ lạ hoặc cần giải thích cho team.
 
 ---
 
-## Prompt 01 — Giải thích thuật ngữ với ví dụ thực tế
+## Prompt duy nhất — Giải thích thuật ngữ bằng ví dụ campaign của bạn
 
-**Khi nào dùng:** Gặp thuật ngữ growth lạ, muốn hiểu ngay bằng ví dụ campaign của mình.
+**Khi nào dùng:** Gặp thuật ngữ growth lạ, muốn hiểu ngay bằng ví dụ thực tế của mình. Hoặc cần giải thích cho team/sếp không có background growth.
 
 ```
-Giải thích thuật ngữ growth sau đây cho tôi:
+Giải thích thuật ngữ growth sau đây:
 
-Thuật ngữ: [tên thuật ngữ, VD: North Star Metric, Growth Loop, JTBD]
+Thuật ngữ: [tên, VD: North Star Metric / Growth Loop / JTBD / LTV / CAC / MDE]
 
 Yêu cầu:
-1. Định nghĩa ngắn (1 câu)
-2. Ví dụ từ công ty thật (VD: Spotify, Duolingo, Airbnb)
-3. Ví dụ áp dụng vào campaign cụ thể của tôi: [mô tả ngắn campaign]
-4. Khi nào KHÔNG nên dùng thuật ngữ / framework này
+1. Định nghĩa ngắn — 1 câu, không jargon
+2. Ví dụ từ công ty thật (Duolingo, Shopee, Grab, Spotify...)
+3. Ví dụ áp dụng vào campaign của tôi: [mô tả ngắn campaign/sản phẩm]
+4. Khi nào KHÔNG nên dùng thuật ngữ/framework này
+5. Nếu cần giải thích cho sếp không có background growth: dùng analogy gì?
 ```
 
----
-
-## Prompt 02 — So sánh 2 thuật ngữ dễ nhầm
-
-**Khi nào dùng:** Phân biệt 2 thuật ngữ growth dễ nhầm lẫn.
+**Biến thể — So sánh 2 thuật ngữ dễ nhầm:**
 
 ```
-Phân biệt giúp tôi 2 thuật ngữ sau:
+Phân biệt 2 thuật ngữ:
 
-Thuật ngữ A: [tên A]
-Thuật ngữ B: [tên B]
+Thuật ngữ A: [tên A, VD: Retention]
+Thuật ngữ B: [tên B, VD: Engagement]
 
-Hãy:
 1. Định nghĩa từng cái (1 câu)
-2. Sự khác biệt chính (bảng so sánh)
-3. Khi nào dùng A, khi nào dùng B
-4. 1 câu chuyện ngắn minh họa sự khác biệt (campaign thực tế)
+2. Sự khác biệt chính — bảng so sánh
+3. Khi nào đo A, khi nào đo B
+4. Ví dụ ngắn minh họa sự khác biệt
 ```
 
----
-
-## Prompt 03 — Từ vựng growth cho buổi thuyết trình
-
-**Khi nào dùng:** Sắp có buổi presentation với team/sếp, cần dùng đúng từ growth.
+**Biến thể — Chuẩn bị từ vựng cho presentation:**
 
 ```
-Tôi sắp có buổi thuyết trình về [chủ đề: VD campaign loyalty / growth strategy].
+Tôi sắp thuyết trình về [chủ đề] cho [audience: team tech / C-level / new hire].
 
-Hãy giúp tôi:
-1. Top 5 thuật ngữ growth nên dùng trong buổi này (phù hợp chủ đề)
-2. Định nghĩa ngắn cho từng thuật ngữ (1 câu để nói trong meeting)
-3. 1 câu ví dụ cho từng thuật ngữ, gắn với campaign của tôi
-4. Thuật ngữ nào KHÔNG nên dùng (dễ gây hiểu nhầm hoặc quá technical)
+Top 5 thuật ngữ growth nên dùng trong buổi này:
+1. Định nghĩa 1 câu cho từng thuật ngữ (nói được trong meeting)
+2. 1 câu ví dụ gắn với campaign của tôi
+3. Thuật ngữ nào KHÔNG nên dùng với audience này (quá technical / dễ hiểu sai)
 ```
 
 ---
 
 ## English
 
-Prompts to use the glossary more effectively. Instead of dry definitions, AI explains terms using your actual campaign context.
+One prompt is enough. Use when you encounter an unfamiliar term or need to explain it to your team.
 
 ---
 
-## Prompt 01 — Explain a term with real examples
+## Single prompt — Explain a term using your campaign context
 
-**When to use:** Need a quick, practical explanation of a growth term.
+**When to use:** Hit an unfamiliar growth term and want a practical explanation. Or need to explain it to a non-growth stakeholder.
 
 ```
 Explain this growth term:
 
-Term: [name, e.g., North Star Metric, Growth Loop, JTBD]
+Term: [name, e.g., North Star Metric / Growth Loop / JTBD / LTV / CAC / MDE]
 
 Requirements:
-1. One-line definition
-2. Real company example (Spotify, Duolingo, Airbnb)
-3. Apply to my campaign: [brief description]
-4. When NOT to use this term/framework
+1. One-line definition — no jargon
+2. Real company example (Duolingo, Shopify, Uber, Spotify...)
+3. Apply to my context: [brief description of your campaign/product]
+4. When NOT to use this term or framework
+5. If explaining to a non-growth executive: what analogy works best?
 ```
 
----
-
-## Prompt 02 — Compare 2 confusing terms
-
-**When to use:** Confuse two similar growth terms.
+**Variant — Compare 2 confusing terms:**
 
 ```
 Distinguish between:
 
-Term A: [name A]
-Term B: [name B]
+Term A: [e.g., Retention]
+Term B: [e.g., Engagement]
 
-Please:
-1. Define each (1 sentence)
-2. Key differences (comparison table)
-3. When to use A vs B
-4. A short story illustrating the difference
+1. One-sentence definition each
+2. Key differences — comparison table
+3. When to measure A vs B
+4. Short example illustrating the difference
 ```
 
----
-
-## Prompt 03 — Growth vocabulary for presentations
-
-**When to use:** Preparing a presentation, need to use the right growth terms.
+**Variant — Prep vocabulary for a presentation:**
 
 ```
-I'm preparing a presentation about [topic: e.g., loyalty campaign / growth strategy].
+I'm presenting about [topic] to [audience: tech team / C-level / new hires].
 
-Help me:
-1. Top 5 growth terms to use in this presentation
-2. One-sentence definition for each
-3. One example sentence per term, linked to my campaign
-4. Which terms to AVOID (confusing or too technical)
+Top 5 growth terms to use:
+1. One-sentence definition per term (speakable in a meeting)
+2. One example sentence linked to my campaign
+3. Terms to AVOID with this audience (too technical / easily misunderstood)
 ```
