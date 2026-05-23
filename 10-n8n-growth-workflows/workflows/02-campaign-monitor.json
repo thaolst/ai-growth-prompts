@@ -1,0 +1,231 @@
+{
+  "name": "02 - Campaign Monitor + Alert",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Daily 8AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Fetch Metrics",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "documentId": "YOUR_SHEET_ID",
+        "sheetName": "campaign_metrics",
+        "options": {
+          "headerRow": 1
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "AI Analysis",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a campaign analyst. Respond ONLY with valid JSON."
+            },
+            {
+              "role": "user",
+              "content": "Analyze campaign metrics and return JSON:\n{\n  \"status\": \"green|yellow|red\",\n  \"drr\": number,\n  \"cpa\": number,\n  \"anomalies\": [\"string\"],\n  \"actions\": [\"string\"],\n  \"summary\": \"string (2 sentences)\"\n}\n\nMetrics (last 7 days):\n{{ $json.metrics }}\n\nTargets: DRR > 3%, CPA < 2000 VND"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Check Status",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status }}",
+              "operation": "notEqual",
+              "value2": "green"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "ALERT Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1120,
+        200
+      ],
+      "parameters": {
+        "chatId": "YOUR_CHAT_ID",
+        "text": "🚨 CAMPAIGN ALERT\nStatus: {{ $json.status.toUpperCase() }}\nDRR: {{ $json.drr }}%\nCPA: {{ $json.cpa }} VND\n\nAnomalies:\n{{ $json.anomalies.join('\\n') }}\n\nActions:\n{{ $json.actions.join('\\n') }}"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Daily Report",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1120,
+        400
+      ],
+      "parameters": {
+        "chatId": "YOUR_CHAT_ID",
+        "text": "✅ CAMPAIGN OK — {{ $now.format('DD/MM/YYYY') }}\nDRR: {{ $json.drr }}% | CPA: {{ $json.cpa }} VND\n{{ $json.summary }}"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Log to Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "documentId": "YOUR_LOG_SHEET_ID",
+        "sheetName": "log",
+        "columns": {
+          "value": [
+            {
+              "column": "date",
+              "value": "={{ $now.format('YYYY-MM-DD') }}"
+            },
+            {
+              "column": "status",
+              "value": "={{ $json.status }}"
+            },
+            {
+              "column": "drr",
+              "value": "={{ $json.drr }}"
+            },
+            {
+              "column": "cpa",
+              "value": "={{ $json.cpa }}"
+            },
+            {
+              "column": "notes",
+              "value": "={{ $json.summary }}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 8AM": {
+      "main": [
+        [
+          {
+            "node": "Fetch Metrics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Metrics": {
+      "main": [
+        [
+          {
+            "node": "AI Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Analysis": {
+      "main": [
+        [
+          {
+            "node": "Check Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Status": {
+      "main": [
+        [
+          {
+            "node": "ALERT Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Daily Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ALERT Telegram": {
+      "main": [
+        [
+          {
+            "node": "Log to Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily Report": {
+      "main": [
+        [
+          {
+            "node": "Log to Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": "ai-growth-prompts"
+  }
+}
