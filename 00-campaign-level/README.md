@@ -1,6 +1,6 @@
 # 00 · Xác định cấp độ campaign
 
-<p>![prompts](https://img.shields.io/badge/prompts-2-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-foundation-60a5fa?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)</p>
+![prompts](https://img.shields.io/badge/prompts-2-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-foundation-60a5fa?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
 
 
 Bắt đầu tại đây. Level quyết định ngân sách, kênh, đầu việc, và timeline.
