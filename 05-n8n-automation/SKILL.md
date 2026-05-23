@@ -194,3 +194,94 @@ Requirements:
 - These prompts work with any automation tool (n8n, Make, Python, Zapier)
 - Focus on *logic and output*, not specific implementation
 - Start small: begin with 1 use case, validate ROI before scaling
+
+---
+
+## Ví dụ output — Thiết kế campaign performance auto-alert (Prompt 02)
+
+**Input:**
+```
+Campaign: Flash sale 7 ngày, redemption rate target 8%
+Threshold alert: nếu < 5%
+Tần suất check: mỗi ngày lúc 8am
+Nguồn data: Google Sheets cập nhật tự động từ dashboard
+```
+
+**Output AI (thiết kế automation):**
+```
+Workflow logic:
+
+Trigger: Schedule 8:00 AM hàng ngày
+
+Node 1 — Đọc data
+Google Sheets → lấy row ngày hôm qua
+Columns cần: date, redemptions, sends, redemption_rate, spend, cpa
+
+Node 2 — Tính toán
+redemption_rate = redemptions / sends
+status = "green" nếu ≥ 8%, "yellow" nếu 5–8%, "red" nếu < 5%
+trend = so sánh với D-1 (tăng/giảm/ổn định)
+
+Node 3 — Phân nhánh IF
+Nếu red → alert ngay + gợi ý action
+Nếu yellow → log + alert nhẹ vào cuối ngày
+Nếu green → daily report ngắn gọn
+
+Node 4 — Output
+Red alert Telegram:
+"🚨 CAMPAIGN ALERT
+Redemption rate: 3.2% (target: 8%, threshold: 5%)
+Gap: -4.8%
+Trend: giảm 1.1% so với hôm qua
+
+Possible causes:
+1. Push CTR thấp → kiểm tra delivery rate
+2. Landing page drop-off → check funnel
+3. Offer không compelling → check by segment
+
+Action ngay: pull CTR breakdown theo segment"
+
+Node 5 — Log vào sheet
+date | status | rate | trend | action_taken
+
+Ước lượng chi phí:
+- n8n self-host: free
+- Google Sheets API: free
+- OpenAI (nếu thêm AI analysis): ~$0.5/tháng
+- Build time: 2–3 giờ với người biết n8n cơ bản
+```
+
+---
+
+## Example output — Campaign performance auto-alert design (Prompt 02)
+
+**AI output:**
+```
+Workflow logic:
+
+Trigger: Schedule 8:00 AM daily
+
+Node 1 — Read data: Google Sheets → yesterday's row
+Node 2 — Calculate: redemption_rate = redemptions/sends
+         Status: green ≥8%, yellow 5–8%, red <5%
+
+Node 3 — IF branch:
+Red → immediate alert + suggested action
+Yellow → log + end-of-day soft alert
+Green → short daily report
+
+Red alert message:
+"🚨 CAMPAIGN ALERT
+Redemption rate: 3.2% (target: 8%, threshold: 5%)
+Gap: -4.8% | Trend: down 1.1% vs yesterday
+
+Possible causes:
+1. Low push CTR → check delivery rate
+2. Landing page drop → check funnel
+3. Offer not compelling → check by segment
+
+Immediate action: pull CTR breakdown by segment"
+
+Cost estimate: n8n self-host free + Sheets API free + ~$0.5/month OpenAI
+Build time: 2–3 hours for someone with basic n8n knowledge
+```
