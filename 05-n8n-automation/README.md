@@ -1,6 +1,6 @@
 # 05 - Automation Prompts
 
-<p>![prompts](https://img.shields.io/badge/prompts-6-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-automation-f59e0b?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)</p>
+![prompts](https://img.shields.io/badge/prompts-6-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-automation-f59e0b?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
 
 
 ## Tiếng Việt
