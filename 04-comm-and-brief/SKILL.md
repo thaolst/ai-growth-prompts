@@ -340,3 +340,106 @@ No aesthetic feedback unless it directly affects conversion.
 ## Discussion
 
 How do you work with agencies at L level campaigns? What's the hardest part - writing the brief or aligning cross-functional teams? Do you have a process to ensure the agency delivers what you intended?
+
+---
+
+## Ví dụ output — Push notification copy (Prompt 10-S)
+
+**Input:**
+```
+Segment: lapsed 30–45 ngày, từng redeem 3+ lần, balance còn 2,000–5,000 điểm
+Khuyến mãi: giảm 15k cho đơn hàng tiếp theo, hết hạn 48h
+Tone: ấm áp, gần gũi
+```
+
+**Output AI:**
+```
+Variant 1 — Urgency (38 ký tự title / 72 body)
+Title: "Ưu đãi 15k hết hạn trong 48 tiếng"
+Body: "Lâu rồi không gặp! Voucher giảm 15k đang chờ bạn."
+Góc: urgency + personal recall
+
+Variant 2 — Benefit (32 / 68)
+Title: "Bạn có voucher giảm 15k"
+Body: "Áp dụng cho đơn hàng tiếp theo. Không cần điều kiện tối thiểu."
+Góc: benefit rõ ràng, zero friction
+
+Variant 3 — Curiosity (28 / 75)
+Title: "Có gì đó đang chờ bạn 👀"
+Body: "Mở ra xem — có thể bạn sẽ thích. Ưu đãi hết hạn sáng mai."
+Góc: curiosity + urgency nhẹ
+
+Variant 4 — Personalization (35 / 70)
+Title: "Điểm của bạn sắp hết hạn"
+Body: "Dùng 3,000 điểm + voucher 15k để tiết kiệm tối đa hôm nay."
+Góc: personalized asset + utility
+
+Variant 5 — Social proof (40 / 78)
+Title: "Nhiều người đã redeem voucher này hôm nay"
+Body: "Giảm 15k cho đơn hàng tiếp theo — còn 2 ngày để dùng."
+Góc: social proof + scarcity
+
+Test trước: Variant 1 vs Variant 2
+Lý do: Urgency vs Benefit là axis cần biết nhất với lapsed segment.
+Variant 1 activate loss aversion, Variant 2 giảm friction.
+Kết quả sẽ cho biết segment này driven by urgency hay clarity.
+```
+
+---
+
+## Ví dụ output — Campaign brief generator (Prompt 09-M)
+
+**Output AI (rút gọn):**
+```
+CAMPAIGN BRIEF: Win-back Flash — Tháng 6
+
+1. Overview
+Objective: Reactivate lapsed users (30–60 ngày không active)
+KPI: Redemption rate ≥ 8% | CAC ≤ 18k VND | MAU lift +5%
+Duration: 7 ngày | Budget: 150M VND
+
+2. Message Architecture
+Primary: "Bạn vẫn còn điểm — đừng để lãng phí"
+In-app: Benefit-led, không urgency (user đang trong app rồi)
+SMS: Urgency-led, ngắn gọn, CTA rõ
+Owned social: Emotional, "lâu rồi không gặp" tone
+
+3. Channel Plan
+In-app push: 60M (40%) — 3 waves: D1, D3, D6
+SMS: 52M (35%) — 1 lần D2, chỉ user có push opt-out
+Owned social: 38M (25%) — story + feed, retarget lookalike
+
+4. Timeline
+Tuần 1 (T0): Finalize brief + asset list
+Tuần 2–3 (T+7): Design + copy
+Tuần 4 (T+21): QA + setup
+Tuần 5 (T+28): Launch
+```
+
+---
+
+## Example output — Push notification copy (Prompt 10-S)
+
+**Input:** Segment: lapsed 30–45 days, previously active, 2k–5k points balance. Offer: 15k discount, 48h expiry.
+
+**AI output:**
+```
+Variant 1 — Urgency: "Your 15k voucher expires in 48h"
+/ "Been a while! A 15k discount is waiting for you."
+
+Variant 2 — Benefit: "You have a 15k discount voucher"
+/ "No minimum order required. Use it on your next purchase."
+
+Variant 3 — Curiosity: "Something is waiting for you 👀"
+/ "Open to see — offer expires tomorrow morning."
+
+Variant 4 — Personalization: "Your points are expiring soon"
+/ "Use 3,000 pts + 15k voucher to maximize savings today."
+
+Variant 5 — Social proof: "Many people claimed this voucher today"
+/ "15k off your next order — 2 days left."
+
+Test first: Variant 1 vs Variant 2
+Reason: Urgency vs Benefit is the key axis for lapsed segments.
+Results will show whether this segment is driven by loss aversion or friction reduction.
+```
