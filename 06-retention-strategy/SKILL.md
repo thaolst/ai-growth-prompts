@@ -178,7 +178,7 @@ Yêu cầu output:
    - "Nhớ bạn" (emotional, community)
    - "Có deal mới" (transactional, FOMO)
    - "Tài khoản bạn vẫn còn X" (utility, sunken cost)
-2. Timing strategy: gửi lúc nào,间隔 bao nhiêu ngày, tối đa mấy lần
+2. Timing strategy: gửi lúc nào, cách nhau bao nhiêu ngày, tối đa mấy lần
 3. Offer structure:
    - S: 1 offer duy nhất (take it or leave it)
    - M: 2-3 offer variants, A/B test, động học theo response
@@ -188,24 +188,190 @@ Yêu cầu output:
 
 ---
 
-<details>
-<summary>English version</summary>
-
 ## English
 
-Prompts for retention strategy: retention loop design, point economy, churn prediction, and re-engagement campaigns.
+Retention isn't about reminding users to come back. It's about building a system where they want to come back on their own. At S level, retention relies on smart timing and simple incentives. At M level, you can add gamification layers and segment-specific mechanics. At L level, you build a full loyalty program.
 
-### Prompt 11 · Design retention loop for campaign
-*When to use:* You're designing a campaign and want to build retention mechanics from the start -- not wait until users leave to intervene.
-*(Prompt content mirrors the Vietnamese version above.)*
+| Level | Viable tactics | Constraints |
+| --- | --- | --- |
+| **S** | Behavior-triggered push, reactivation vouchers | In-app + owned only, no paid |
+| **M** | Loyalty tiers, streak mechanics, segment-specific comm | Paid support available, limited dev sprint |
+| **L** | Full loyalty program, point economy, VIP layer | Months of dev, research, cross-functional team |
 
-### Prompt 12 · Design loyalty point / token economy
-*When to use:* You need to design or optimize a reward points system -- how to earn, how to spend, and the value lifecycle.
+## Prompt 11 · Design a retention loop for a campaign
 
-### Prompt 13 · Churn prediction & pre-emptive retention
-*When to use:* You have user behavior data and want to build an automated system that detects users about to churn -- before they leave.
+**When to use:** You're designing a campaign and want to build retention mechanics from the start — not wait until users drop off to intervene.
 
-### Prompt 14 · Re-engagement campaign for lapsed users
-*When to use:* Users haven't been active for >60 days. You need a separate campaign to win them back -- don't use the same message as for active users.
+```
+The retention loop needs to be designed into the campaign from day one,
+not added after users start dropping off.
 
-</details>
+Campaign level: [S / M / L / XL]
+Campaign type: [voucher drop / game / event / loyalty program / other]
+Estimated budget: [amount or range]
+
+Context:
+- Campaign goal: [increase frequency / activate new users / cross-sell]
+- Primary channels: [in-app push / SMS / email / paid social / in-app banner]
+- Target users: [new / active last 30 days / lapsed >60 days / VIP]
+- Expected campaign length: [days or weeks]
+
+Design a retention loop with 3 phases:
+
+**Phase 1 - Kick-off (Day 1–3)**
+- What does the user see and do in the first 3 days?
+- What brings them back a second time?
+- KPI for this phase: [Day 3 return rate]
+
+**Phase 2 - Engagement (Day 4–14)**
+- What mechanic drives more than 1 interaction per week?
+- What triggers are needed — and can they be automated?
+- At [S]: in-app push only + smart timing
+- At [M]: can add paid channel triggers if cost allows
+- KPI for this phase: [sessions / user / week]
+
+**Phase 3 - Sustain (Day 15+)**
+- When does the user come back naturally without being prompted?
+- What moment converts them from "campaign participant" to "habitual user"?
+- Expected retention rate at Day 30: [% of cohort MAU]
+
+Required output:
+1. Retention loop diagram (describe in text, ASCII if needed)
+2. 3 most critical decision points in the loop
+3. How to measure each phase — which metric, which dashboard
+4. Risk: if the loop fails, where does it break first?
+```
+
+**Example output (S level, voucher campaign):**
+
+```
+Phase 1 - Kick-off:
+- User receives voucher → redeems within 48h
+- After redemption: push trigger "one more special voucher if you return this weekend"
+- KPI: >40% of users redeem a second voucher within 3 days
+
+Phase 2 - Engagement:
+- Push reminder Day 5–7: voucher expiring soon
+- Day 10: push "you've saved X so far — even better deals next week"
+- In-app push only, no paid
+
+Phase 3 - Sustain:
+- Day 21: campaign ends → redirect to loyalty hub
+- Users who redeemed >=2 times → tagged "active" in cohort
+- Goal: 15–20% of cohort converts to monthly active users
+```
+
+## Prompt 12 · Design a loyalty point / token economy
+
+**When to use:** You need to design or optimize a reward points system (points, coins, stamps) — how users earn, how they spend, and the value lifecycle.
+
+```
+Design or optimize a token economy for a loyalty program.
+
+Campaign level: [S / M / L / XL]
+Token type: [points / coins / stamps / other]
+Current system: [brief description or "none yet"]
+
+Goals:
+- [ ] Increase frequency: users return more often
+- [ ] Increase basket size: users spend more per visit
+- [ ] Increase cross-sell: users try a new category
+- [ ] Increase retention: keep users active >90 days
+
+Constraints:
+- Point cost / real value ratio: [e.g. 10% — 10,000 pts = 1,000 VND value]
+- Average user balance right now: [number]
+- % of users who spend all points in a month: [%]
+- [Other technical / budget constraints]
+
+Required output:
+1. Token earning model: which behaviors get rewarded? How much?
+   - Entry actions: easy to earn, small amounts
+   - Engagement actions: more effort, bigger reward
+   - Milestone actions: rare, spike reward
+2. Token spending model: what can users spend on?
+   - Redeemable vouchers / cashback / non-monetary rewards
+   - % of points in circulation per month
+3. Economy balance:
+   - Points entering the system per month vs points leaving
+   - Inflation / deflation rate of the token
+   - Burn mechanism: do points expire? Reset?
+4. Gap analysis: what gaps exist between earning and spending?
+   - Users accumulate but have nothing to spend on → token loses value
+   - Users spend immediately, no reason to accumulate → no retention
+5. At [S]: 1–2 earning actions + 1–2 spending items is enough
+   At [M]: add tier mechanics + bonuses for repeated behavior
+```
+
+## Prompt 13 · Churn prediction & pre-emptive retention
+
+**When to use:** You have user behavior data and want to build a system that automatically detects users about to churn — before they leave.
+
+```
+Build a churn prediction framework for early intervention.
+
+Campaign level: [S / M]
+At S: use rule-based detection (no ML model needed)
+At M: can use a simple model or advanced heuristics
+
+Available data (circle what you have):
+- Last active date
+- Sessions in last 7 / 30 days
+- Points / token balance
+- Last redemption date
+- Last purchase / transaction date
+- Vouchers used in last 30 days
+- Preferred voucher category
+
+Goal: detect "at-risk" users 7–14 days before they churn
+and intervene at minimum cost.
+
+Required output:
+1. Risk criteria (S level — rule based):
+   - High risk: [condition, e.g. no activity 14 days + unused points]
+   - Medium risk: [condition, e.g. activity down 50% vs last month]
+   - Low risk: [condition, e.g. consistently active but not redeeming]
+2. Intervention per risk level:
+   - High: personalized voucher, higher value, urgency framing
+   - Medium: soft reminder + light offer, personalized message
+   - Low: content-driven retention (tips, new feature announcements)
+3. At [S]: high risk only, 1 intervention type, automated via push
+   At [M]: all 3 levels, A/B test intervention messages
+4. Cost per saved user estimate
+5. Metric: saved rate (users who return within 14 days of intervention)
+```
+
+## Prompt 14 · Design a re-engagement campaign for lapsed users
+
+**When to use:** Users have been inactive for >60 days. You need a dedicated campaign to win them back — don't use the same message as for active users.
+
+```
+Design a re-engagement campaign for lapsed users.
+
+Campaign level: [S / M]
+Segment: users lapsed >[number] days, not yet uninstalled
+
+Data:
+- Size of this segment: [number]
+- Reason for leaving (if survey or data available): [common reasons]
+- Behavior before going lapsed: [what did they do? Buy? Play?]
+- Last interaction: [date / month]
+- Remaining points balance: [yes / no / average amount]
+
+Goal: [number]% of users return and are active within 14 days of campaign
+
+Budget: [estimate]
+Channels: [in-app push / SMS / email / paid retargeting]
+
+Required output:
+1. 3 re-engagement message concepts — different angles:
+   - "We miss you" (emotional, community)
+   - "New deals available" (transactional, FOMO)
+   - "Your account still has X" (utility, sunk cost)
+2. Timing strategy: when to send, how many days apart, maximum touchpoints
+3. Offer structure:
+   - S: one offer only (take it or leave it)
+   - M: 2–3 offer variants, A/B test, dynamically adjust based on response
+4. Cost analysis: how many users need to return to break even?
+5. Fallback: if user doesn't respond after 2 attempts, what's next?
+```
