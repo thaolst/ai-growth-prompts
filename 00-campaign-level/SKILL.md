@@ -157,3 +157,75 @@ Every company draws the lines differently.
 - How do you classify campaigns at your company?
 - What's the hardest part about getting the level right?
 - Share your approach - I'd love to learn.
+
+---
+
+## Ví dụ output — Phân loại campaign
+
+**Input điền vào prompt:**
+```
+Campaign: Voucher giảm 20k cho user lapsed >45 ngày
+Ngân sách: 150M VND/tháng
+Thời gian: 2 tuần
+Mục tiêu: kéo lại lapsed user, drive first redemption
+Độc lập hay thuộc initiative lớn? Độc lập
+Chạy song song campaign lớn không? Không
+Team tải: bình thường
+```
+
+**Output AI trả về:**
+```
+Level đề xuất: M
+
+Lý do: Ngân sách 150M/tháng vượt ngưỡng S (<1B? không — đây là 150M
+media spend). Với mục tiêu kéo lại lapsed user, owned channel đơn lẻ
+(cấp S) thường không đủ reach. Cần thêm 1 kênh paid để tiếp cận
+user đã giảm engagement.
+
+Cảnh báo: 2 tuần là timeline gấp cho cấp M (chuẩn 4–6 tuần).
+Nếu không có asset sẵn, cần quyết định ngay: đơn giản hóa
+creative hoặc lùi launch 1 tuần.
+
+Ngày launch sớm nhất có thể: 3 tuần kể từ hôm nay nếu dùng
+template có sẵn, không shoot mới.
+
+Một việc cần quyết định trước khi brief:
+→ Kênh paid nào? SMS hay paid social? Quyết định này ảnh hưởng
+toàn bộ asset list và budget split.
+```
+
+---
+
+## Example output — Classify campaign level
+
+**Input:**
+```
+Campaign: 20k discount voucher for users lapsed >45 days
+Budget: 150M VND/month
+Duration: 2 weeks
+Goal: win back lapsed users, drive first redemption
+Standalone or part of larger initiative? Standalone
+Parallel campaigns? No
+Team load: normal
+```
+
+**AI output:**
+```
+Recommended level: M
+
+Reason: Budget at 150M/month exceeds typical S threshold.
+To reach lapsed users (by definition lower engagement),
+owned channels alone rarely achieve sufficient reach.
+1 paid channel needed to supplement in-app.
+
+Warning: 2-week timeline is aggressive for M level
+(standard prep: 4–6 weeks). Decision needed: simplify
+creative scope or push launch by 1 week.
+
+Earliest realistic launch: 3 weeks from today using
+existing templates, no new shoot.
+
+One decision before briefing anyone:
+→ Which paid channel — SMS or paid social?
+This determines the full asset list and budget split.
+```
