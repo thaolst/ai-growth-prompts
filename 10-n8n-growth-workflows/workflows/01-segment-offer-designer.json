@@ -1,0 +1,228 @@
+{
+  "name": "01 - Segment + Offer Designer",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "weeksInterval": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Read User Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "operation": "read",
+        "documentId": "YOUR_SHEET_ID",
+        "sheetName": "users",
+        "options": {
+          "headerRow": 1
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Prepare Batch",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const rows = items.map(i=>i.json);\nreturn [{json:{data:JSON.stringify(rows.slice(0,200))}}];"
+      }
+    },
+    {
+      "id": "4",
+      "name": "AI Segmentation",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a growth marketing analyst. Respond ONLY with valid JSON."
+            },
+            {
+              "role": "user",
+              "content": "Segment these users into 3-5 groups using RFM (Recency, Frequency, Monetary).\n\nFor each segment return JSON array:\n[\n  {\n    \"segment_name\": \"string (4 words max)\",\n    \"traits\": [\"trait1\",\"trait2\",\"trait3\"],\n    \"offer_type\": \"discount|cashback|reward|freebie\",\n    \"offer_value\": \"low|medium|high\",\n    \"expected_cvr\": \"number (%)\"\n  }\n]\n\nUser data:\n{{ $json.data }}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "AI Offer Design",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        1120,
+        300
+      ],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a campaign offer designer. Respond ONLY with valid JSON."
+            },
+            {
+              "role": "user",
+              "content": "Design 3 offer variants for this segment.\n\nSegment: {{ $json.segment_name }}\nTraits: {{ $json.traits }}\n\nReturn JSON:\n{\n  \"variants\": [\n    {\n      \"name\": \"string (6 words max)\",\n      \"mechanic\": \"string\",\n      \"value_prop\": \"string\",\n      \"cac\": \"low|medium\",\n      \"urgency\": \"string\"\n    }\n  ]\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Write to Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        1340,
+        300
+      ],
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": "YOUR_OUTPUT_SHEET_ID",
+        "sheetName": "results",
+        "columns": {
+          "value": [
+            {
+              "column": "segment_name",
+              "value": "={{ $json.segment_name }}"
+            },
+            {
+              "column": "offer_1",
+              "value": "={{ $json.variants[0].name }}"
+            },
+            {
+              "column": "offer_2",
+              "value": "={{ $json.variants[1].name }}"
+            },
+            {
+              "column": "offer_3",
+              "value": "={{ $json.variants[2].name }}"
+            },
+            {
+              "column": "updated_at",
+              "value": "={{ $now }}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
+      "name": "Notify Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "position": [
+        1560,
+        300
+      ],
+      "parameters": {
+        "chatId": "YOUR_CHAT_ID",
+        "text": "✅ Segment + Offer Designer hoàn thành\n📊 Kết quả đã lưu vào Google Sheet"
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read User Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read User Data": {
+      "main": [
+        [
+          {
+            "node": "Prepare Batch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Batch": {
+      "main": [
+        [
+          {
+            "node": "AI Segmentation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Segmentation": {
+      "main": [
+        [
+          {
+            "node": "AI Offer Design",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Offer Design": {
+      "main": [
+        [
+          {
+            "node": "Write to Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write to Sheet": {
+      "main": [
+        [
+          {
+            "node": "Notify Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": "ai-growth-prompts"
+  }
+}
