@@ -141,3 +141,76 @@ Please analyze:
 ## Discussion
 
 What game mechanics have you used for loyalty programs? Which ones worked best? Have you ever run into a case where a mechanic was too complex for the campaign level?
+
+---
+
+## Ví dụ output — Thiết kế game mechanic (Prompt 07)
+
+**Input:**
+```
+Cấp độ: S | Vấn đề: user vào game 1 lần rồi không quay lại
+Hiện có: spin wheel đơn giản, không có streak
+MAU engagement: 12%
+Ràng buộc: không có dev sprint lớn trong 6 tuần tới
+```
+
+**Output AI:**
+```
+3 mechanic phù hợp cấp S (không cần dev lớn):
+
+Mechanic 1 — Daily Streak (khuyến nghị)
+Flow: Mở app → spin → nhận reward → "Quay lại ngày mai để giữ streak"
+Return loop: Ngày 3 streak → bonus reward. Mất streak → mất bonus.
+Chi phí điểm: +50 điểm/ngày, bonus ngày 3: +200 điểm
+Implement: chỉ cần thêm counter + push logic, không đổi core mechanic
+
+Mechanic 2 — Weekly Mission
+Flow: Mỗi tuần có 3 nhiệm vụ nhỏ → hoàn thành → nhận reward lớn
+Return loop: Deadline cuối tuần tạo urgency
+Chi phí điểm: 500 điểm/tuần nếu hoàn thành đủ 3 nhiệm vụ
+Implement: cần design mission logic — phức tạp hơn mechanic 1
+
+Mechanic 3 — Lucky Hour
+Flow: Mỗi ngày 1 khung giờ random → reward x2
+Return loop: User check app để biết hôm nay Lucky Hour mấy giờ
+Chi phí điểm: tương đương current, chỉ tăng x2 trong 1h
+Implement: đơn giản nhất — chỉ cần time-based multiplier
+
+Khuyến nghị: Mechanic 1 (Streak) — phù hợp nhất cấp S,
+không cần dev lớn, loss aversion mạnh hơn reward-seeking.
+
+Metrics ngày 14: D7 retention, average sessions/user/week
+Metrics ngày 30: streak length distribution, D30 retention
+```
+
+---
+
+## Example output — Design game mechanic (Prompt 07)
+
+**Input:** Level S, problem: users play once and don't return, no dev sprint available
+
+**AI output:**
+```
+3 mechanics suited for S level (no major dev needed):
+
+Mechanic 1 — Daily Streak (recommended)
+Flow: Open app → spin → earn reward → "Come back tomorrow to keep streak"
+Return loop: Day 3 streak = bonus reward. Break streak = lose bonus.
+Point cost: +50 pts/day, Day 3 bonus: +200 pts
+Implement: add counter + push logic only, core mechanic unchanged
+
+Mechanic 2 — Weekly Mission
+Flow: 3 small tasks per week → complete all → big reward
+Return loop: End-of-week deadline creates urgency
+Point cost: 500 pts/week if all 3 completed
+Implement: requires mission logic design — more complex than option 1
+
+Mechanic 3 — Lucky Hour
+Flow: One random hour daily → 2x rewards
+Return loop: Users check app to find today's Lucky Hour
+Point cost: same as current, 2x multiplier for 1 hour only
+Implement: simplest — time-based multiplier only
+
+Recommendation: Mechanic 1 (Streak) — best fit for S level,
+no major dev, loss aversion stronger driver than reward-seeking.
+```
