@@ -13,6 +13,10 @@
 
 ---
 
+💡 **Mới:** [AI Growth Agents for Marketers](https://github.com/thaolst/ai-growth-agents-for-marketers) — bản nâng cấp có Python + CI/CD + Agent Skills. Prompt từ repo này đã được đóng gói thành agent chạy được.
+
+---
+
 # Tiếng Việt
 
 ## Mục lục
