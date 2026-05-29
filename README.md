@@ -6,6 +6,11 @@
   <img src="https://img.shields.io/github/last-commit/thaolst/ai-growth-prompts?color=a78bfa&style=flat-square" alt="last commit" />
   <img src="https://img.shields.io/github/stars/thaolst/ai-growth-prompts?style=flat-square&color=facc15&logo=github" alt="stars" />
   <img src="https://img.shields.io/badge/ai-growth--marketing-blue?style=flat-square" alt="topic" />
+  <a href="https://github.com/thaolst/ai-growth-prompts/discussions"><img src="https://img.shields.io/badge/💬-Discussions-8b5cf6?style=flat-square" alt="discussions" /></a>
+</p>
+
+<p align="center">
+  <a href="https://star-history.com/#thaolst/ai-growth-prompts&Date"><img src="https://api.star-history.com/svg?repos=thaolst/ai-growth-prompts&type=Date" width="400" alt="Star History" /></a>
 </p>
 
 > Prompts được kiểm chứng từ chạy campaign thực tế, không template chung chung.
@@ -24,6 +29,7 @@
 - [Cách dùng](#cách-dùng)
 - [Cấu trúc](#cấu-trúc)
 - [Nguyên lý](#nguyên-lý)
+- [Tham gia](#tham-gia)
 
 ## Cách dùng
 
@@ -130,6 +136,14 @@ Every campaign starts with a level decision ([`00-campaign-level`](./00-campaign
 The Knowledge Base folders (`06-09`) provide the theoretical foundation. Use them to level up your thinking. Use the Campaign Toolbox to get things done.
 
 *Updated as new prompts are tested in practice.*
+
+---
+
+## Tham gia / Join the community
+
+- [💬 GitHub Discussions](https://github.com/thaolst/ai-growth-prompts/discussions) — hỏi đáp, chia sẻ prompt, góp ý
+- [📝 Contributing](./CONTRIBUTING.md) — hướng dẫn đóng góp prompt mới
+- [🐛 Report issue](https://github.com/thaolst/ai-growth-prompts/issues) — báo lỗi hoặc đề xuất
 
 ---
 
