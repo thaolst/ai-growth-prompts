@@ -16,11 +16,7 @@
 > Prompts được kiểm chứng từ chạy campaign thực tế, không template chung chung.
 > Built from running loyalty and promotion campaigns where budget levels, channel constraints, and segment behavior actually matter.
 
----
-
 💡 **Mới:** [AI Growth Agents for Marketers](https://github.com/thaolst/ai-growth-agents-for-marketers) — bản nâng cấp có Python + CI/CD + Agent Skills. Prompt từ repo này đã được đóng gói thành agent chạy được.
-
----
 
 # Tiếng Việt
 
@@ -79,8 +75,6 @@ Knowledge Base (`06-09`) cung cấp nền tảng lý thuyết. Dùng để nâng
 
 *Cập nhật khi có prompt mới được kiểm chứng thực tế.*
 
----
-
 # English
 
 ## Table of Contents
@@ -137,15 +131,11 @@ The Knowledge Base folders (`06-09`) provide the theoretical foundation. Use the
 
 *Updated as new prompts are tested in practice.*
 
----
-
 ## Tham gia / Join the community
 
 - [💬 GitHub Discussions](https://github.com/thaolst/ai-growth-prompts/discussions) — hỏi đáp, chia sẻ prompt, góp ý
 - [📝 Contributing](./CONTRIBUTING.md) — hướng dẫn đóng góp prompt mới
 - [🐛 Report issue](https://github.com/thaolst/ai-growth-prompts/issues) — báo lỗi hoặc đề xuất
-
----
 
 ## License
 
