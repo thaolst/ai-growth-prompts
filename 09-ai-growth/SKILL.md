@@ -344,3 +344,63 @@ Design the gamification system:
 6. Metrics to measure effectiveness (D7 retention, DAU/MAU, streak length)
 Return as flow diagram + levels table.
 ```
+
+---
+
+## Prompt 07 — AI explains how RAG works in campaign targeting *(new)*
+
+**When to use:** Want to understand AI retrieval mechanics to design better campaign targeting, or explain to your team why the personalization engine behaves the way it does.
+
+```
+Explain how RAG (Retrieval-Augmented Generation) relates to campaign targeting, using TF-IDF as a concrete example.
+
+My context:
+- Campaign pool: [describe size and types — e.g. 20 campaigns: cashback / gamification / referral / urgency]
+- User segments: [e.g. new user, active, dormant, high-value]
+- Current targeting approach: [e.g. rule-based, manual, ML model]
+
+Explain:
+1. What TF-IDF is and how it "matches" users to campaigns (with examples from my campaigns)
+2. How RAG differs from TF-IDF — embeddings understand semantics, TF-IDF understands exact terms
+3. Why "user who likes games" can match "gamification spin wheel" even without using that word
+4. When TF-IDF is enough vs. when you need embeddings / RAG
+5. Simplest possible Python code example illustrating the concept (< 30 lines)
+```
+
+**Note:** If AI returns 0% score across all campaigns, the query uses terms entirely outside the corpus — review how you describe campaigns or segments.
+
+---
+
+## Prompt 08 — Build a mini campaign search engine in Python *(new)*
+
+**When to use:** Want to build a tool to match user segments with the best-fit campaigns, no ML framework, pure Python only.
+
+```
+Help me build a mini campaign search engine in pure Python (no sklearn or ML libraries).
+
+My campaign pool:
+[Paste campaign list in this format:
+- Name: [campaign name]
+  Description: [keywords describing mechanic, offer, target — e.g. cashback refund shopping voucher]
+]
+
+Segment queries to match:
+[e.g.
+- New user: "streak check-in points accumulation new users"
+- Churned: "winback reactivation lapsed users offer"
+- High-value: "vip loyalty premium exclusive tier"
+]
+
+Build an engine with:
+1. TF-IDF from scratch — explain each step: TF, IDF, score
+2. search(query, top_k=3) returning best-fit campaigns with relevance %
+3. IDF analysis — which terms are most specific in my pool
+4. Edge case: handle when query matches no campaign (score = 0)
+5. Comments explaining each code block in marketer language
+
+Expected output: runnable code with results like:
+Segment: Churned 60 days
+  -> Winback churned users   100%  ######################
+  -> VIP loyalty tier         27%  ######
+```
+
