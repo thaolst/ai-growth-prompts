@@ -2,6 +2,20 @@
 
 All notable changes to this project are documented here.
 
+## [0.4.0] - 2026-06-03
+
+### Added
+- **10-n8n-growth-workflows/SKILL.md** — 5 prompts for workflow selection, customization, pipeline building, debugging, and feature extension. Resolution of the only structural gap (all other folders had SKILL.md).
+- **09-ai-growth/SKILL.md** — Added 3 new prompts (total: 08 → 11):
+  - Prompt 09: AI growth agent design (autonomous campaign monitoring & decision)
+  - Prompt 10: AI content & video script generator for campaigns
+  - Prompt 11: AI churn prediction & win-back automation system
+  - English versions for prompts 07, 08, 09, 10, 11
+- **08-glossary/SKILL.md** — Expanded from a single prompt to a full glossary with 40+ growth marketing terms (VI + EN) organized by category: Strategy & Frameworks, Metrics & Measurement, Optimization & Experimentation, Economics & Loyalty, Growth & Acquisition, Technical & Automation.
+- **trending.md** — Refreshed for June 2026: 7 new trends (AI agents, zero-engagement retention, super-app creep, AI personalization at scale, video-first growth loops, privacy-first stack, n8n as default automation). Updated Monthly Signals section with 2026 data.
+
+---
+
 ## [0.3.0] - 2026-05-16
 
 ### Fixed
