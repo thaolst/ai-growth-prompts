@@ -2,6 +2,24 @@
 
 All notable changes to this project are documented here.
 
+## [0.5.0] - 2026-06-03
+
+### Added
+- **11-content-agent** — content agent for personal brand automation (Python). Agent scans repo, suggests 3 topic ideas daily with angle + hook ideas + folder reference. Does not write content — only suggests. Supports LinkedIn, Facebook, Threads format suggestions.
+- **11-content-agent/README.md** — full docs in VI + EN with sample output and screenshot
+- **11-content-agent/config.example.json** — config template (no tokens)
+- **Content pipeline** — Research → Suggest → Track flow for personal brand content
+
+### Changed
+- **content-agent.py** — v0.5: Idea Suggester mode. Removed all content-writing logic. Scans repo folders for approved content only.
+- **README.md** — added 11-content-agent link in both VI + EN sections
+
+### Fixed
+- No tokens in repo (config.json → .gitignore)
+- Format: no dashes, no quotes, no slang in generated content
+
+---
+
 ## [0.4.0] - 2026-06-03
 
 ### Added

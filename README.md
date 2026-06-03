@@ -132,7 +132,7 @@ Every campaign starts with a level decision ([`00-campaign-level`](./00-campaign
 
 The Knowledge Base folders (`06-09`) provide the theoretical foundation. Use them to level up your thinking. Use the Campaign Toolbox to get things done.
 
-*Updated as new prompts are tested in practice.*
+*Updated as new prompts are tested in practice. Latest version: v0.5.0.*
 
 ## Tham gia / Join the community
 

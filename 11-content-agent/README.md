@@ -10,6 +10,10 @@ Mỗi gợi ý gồm: chủ đề, góc nhìn, hook idea, folder tham chiếu.
 
 Bạn tự viết — vì tone của bạn không AI nào bắt chước được.
 
+![Cấu trúc repo](repo-structure.jpg)
+
+Agent quét nội dung trong các folder để gợi ý chủ đề dựa trên nội dung đã duyệt.
+
 ### Cách dùng
 
 ```bash
