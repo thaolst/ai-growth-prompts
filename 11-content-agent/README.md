@@ -20,6 +20,29 @@ cp config.example.json config.json
 python3 content-agent.py                  # gợi ý 3 ideas
 ```
 
+### Ví dụ output
+
+```text
+💡 GỢI Ý CONTENT IDEA — hôm nay
+Dựa trên nội dung đã duyệt trong repo
+
+#1 — 02 · Phân tích segment
+  Góc nhìn: Dormant 30 ngày vs 60 ngày — can thiệp khác nhau thế nào?
+  Hook idea:
+    • Chủ đề: 02 · Phân tích segment. Góc nhìn: chia sẻ kinh nghiệm thực tế từ repo.
+  📁 02-segment-analysis
+
+#2 — Growth Glossary / Thuật ngữ Growth
+  Góc nhìn: Thuật ngữ AI cơ bản cho growth team
+  📁 08-glossary
+
+#3 — 05 - Automation Prompts
+  Góc nhìn: Chia sẻ kinh nghiệm thực tế từ repo
+  📁 05-automation
+```
+
+Chạy xong, chọn ý thích, tự viết theo tone của bạn, track performance sau khi đăng.
+
 ### Cấu trúc file
 
 ```
