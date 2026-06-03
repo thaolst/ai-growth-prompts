@@ -50,6 +50,7 @@ Mỗi prompt có 3 phần:
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loop, Xu economy, churn prediction, re-engagement. |
 | [`07-experiment-design`](./07-experiment-design) | A/B test, hypothesis design, statistical analysis, experiment framework. |
 | [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | **Thực thi** ngay: 5 workflow n8n có file JSON import sẵn. Cần cài n8n. Dùng sau khi đọc `05`. |
+| [`11-content-agent`](./11-content-agent) | **Tự động** personal brand: Python script Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
 
 ### Knowledge Base - Nền tảng lý thuyết
 
@@ -106,6 +107,8 @@ Each prompt has three parts:
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loops, point economy, churn prediction, re-engagement. |
 | [`07-experiment-design`](./07-experiment-design) | A/B testing, hypothesis design, statistical analysis, experiment framework. |
 | [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | **Execute** immediately: 5 n8n workflows with importable JSON files. Requires n8n. Read `05` first for the logic. |
+| [`11-content-agent`](./11-content-agent) | **Automate** personal brand: Python script for Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
+| [`11-content-agent`](./11-content-agent) | **Automate** personal brand: Python script for Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
 
 ### Knowledge Base
 

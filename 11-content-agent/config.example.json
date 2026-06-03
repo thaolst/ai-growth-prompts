@@ -1,0 +1,9 @@
+{
+  "content_dir": "~/.openclaw/workspace-main",
+  "output_dir": "~/.openclaw/workspace-main/posts",
+  "repo_url": "https://github.com/thaolst/ai-growth-prompts",
+  "telegram_token": "YOUR_TELEGRAM_BOT_TOKEN",
+  "telegram_chat_id": "YOUR_CHAT_ID",
+  "openai_api_key": "sk-your-key-here",
+  "openai_model": "gpt-4"
+}
