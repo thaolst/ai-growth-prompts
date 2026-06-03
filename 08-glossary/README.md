@@ -2,7 +2,6 @@
 
 ![prompts](https://img.shields.io/badge/prompts-6-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-knowledge-f59e0b?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
 
-
 ## Tiếng Việt
 
 80+ thuật ngữ growth marketing - định nghĩa ngắn gọn, ví dụ thực tế, ai cũng hiểu được. Từ AARRR đến Zero-Party Data.

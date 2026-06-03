@@ -2,7 +2,6 @@
 
 ![prompts](https://img.shields.io/badge/prompts-12-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-AI·growth-a78bfa?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
 
-
 ## Tiếng Việt
 
 AI đang thay đổi growth marketing thế nào — từ personalization quy mô lớn đến automated experimentation. Framework thực tế, không hype.

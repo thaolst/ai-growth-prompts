@@ -25,7 +25,7 @@
 - [Cách dùng](#cách-dùng)
 - [Cấu trúc](#cấu-trúc)
 - [Nguyên lý](#nguyên-lý)
-- [Tham gia](#tham-gia)
+- [Tham gia](#tham-gia--join-the-community)
 
 ## Cách dùng
 

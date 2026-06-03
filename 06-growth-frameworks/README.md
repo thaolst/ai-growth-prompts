@@ -2,7 +2,6 @@
 
 ![prompts](https://img.shields.io/badge/prompts-6-4ade80?style=flat-square) ![type](https://img.shields.io/badge/type-knowledge-f59e0b?style=flat-square) [![← repo](https://img.shields.io/badge/←_back-repo-a78bfa?style=flat-square)](../README.md)
 
-
 ## Tiếng Việt
 
 Các mental model growth cốt lõi mà mọi growth marketer cần biết: AARRR, North Star, Growth Loops, Hook Model, ICE/RICE, Flywheel, JTBD. Học một lần, áp dụng mãi mãi.
