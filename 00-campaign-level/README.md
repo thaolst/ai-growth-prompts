@@ -27,3 +27,39 @@ Get this wrong and everything downstream is miscalibrated.
 | **L** | > 3B VND media | Full channels | + Concept creative + PM |
 
 Full content + prompt → `SKILL.md`
+
+### 🎯 Ví dụ output
+
+**Đầu vào:** Campaign Tết, ngân sách media 1.5B VND/tháng, target 500K user mới, kênh in-app + Facebook + TikTok.
+
+**Kết quả:**
+
+> **Level: M** (ngân sách > 1B, cần 2 paid channels)
+>
+> **Hậu quả nếu chọn sai:**
+> * Chọn S → thiếu budget media, không đủ reach
+> * Chọn L → quá tải team, không kịp creative concept
+>
+> **Execution phù hợp:**
+> * Team: thêm 1 Comm Planner + 1 Media Buyer
+> * Timeline: T-6 tuần (không phải T-10 như L, không phải T-3 như S)
+> * Tracking: 1 campaign dashboard (không phải full report suite như L)
+
+---
+
+### 📎 Example output
+
+**Input:** Tet campaign, media budget 1.5B VND/month, target 500K new users, channels: in-app + Facebook + TikTok.
+
+**Result:**
+
+> **Level: M** (budget > 1B, needs 2 paid channels)
+>
+> **Wrong level cost:**
+> * If S → insufficient media budget, can't hit reach target
+> * If L → team overwhelmed, won't meet creative timeline
+>
+> **Right execution:**
+> * Team: add 1 Comm Planner + 1 Media Buyer
+> * Timeline: T-6 weeks (not T-10 for L, not T-3 for S)
+> * Tracking: 1 campaign dashboard (not full report suite for L)
