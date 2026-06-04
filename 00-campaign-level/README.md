@@ -28,7 +28,7 @@ Get this wrong and everything downstream is miscalibrated.
 
 Full content + prompt → `SKILL.md`
 
-### 🎯 Ví dụ output
+## 🎯 Ví dụ output
 
 **Đầu vào:** Campaign Tết, ngân sách media 1.5B VND/tháng, target 500K user mới, kênh in-app + Facebook + TikTok.
 
@@ -47,7 +47,7 @@ Full content + prompt → `SKILL.md`
 
 ---
 
-### 📎 Example output
+## 📎 Example output
 
 **Input:** Tet campaign, media budget 1.5B VND/month, target 500K new users, channels: in-app + Facebook + TikTok.
 

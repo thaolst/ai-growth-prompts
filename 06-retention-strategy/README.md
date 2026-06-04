@@ -8,7 +8,7 @@ Các prompt về retention strategy: thiết kế retention loop, Xu economy, ch
 
 Xem [`SKILL.md`](./SKILL.md) cho nội dung đầy đủ.
 
-### 🎯 Ví dụ output
+## 🎯 Ví dụ output
 
 **Đầu vào:** App muốn giảm churn 15% trong 3 tháng, user base 2M MAU, Xu economy đã có.
 
@@ -33,7 +33,7 @@ Prompts for retention strategy: retention loop design, point economy, churn pred
 
 See [`SKILL.md`](./SKILL.md) for full content.
 
-### 🎯 Example output
+## 🎯 Example output
 
 **Input:** App wants to reduce churn by 15% in 3 months, 2M MAU user base, existing points economy.
 

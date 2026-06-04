@@ -4,7 +4,7 @@
 
 Nội dung chi tiết + prompt → `SKILL.md`
 
-### 🎯 Ví dụ output
+## 🎯 Ví dụ output
 
 **Đầu vào:** Campaign T12, target 500K users, cần phân bổ budget theo segment: high-value (20%), new (30%), dormant (30%), churned (20%).
 
@@ -28,7 +28,7 @@ Nội dung chi tiết + prompt → `SKILL.md`
 
 Full content + prompt → `SKILL.md`
 
-### 🎯 Example output
+## 🎯 Example output
 
 **Input:** T12 campaign, target 500K users, budget allocation by segment: high-value (20%), new (30%), dormant (30%), churned (20%).
 

@@ -4,7 +4,7 @@
 
 Nội dung chi tiết + prompt → `SKILL.md`
 
-### 🎯 Ví dụ output
+## 🎯 Ví dụ output
 
 **Đầu vào:** Mini-game Oản Tù Tì, prize pool 200 triệu, chạy 2 tuần, target 100K user tham gia, daily active 10K.
 
@@ -31,7 +31,7 @@ Nội dung chi tiết + prompt → `SKILL.md`
 
 Full content + prompt → `SKILL.md`
 
-### 🎯 Example output
+## 🎯 Example output
 
 **Input:** Rock-Paper-Scissors mini-game, prize pool 200M VND, 2-week campaign, target 100K participants, 10K DAU.
 

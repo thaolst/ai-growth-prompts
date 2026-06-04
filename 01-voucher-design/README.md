@@ -10,7 +10,7 @@ Nội dung chi tiết + prompt → `SKILL.md`
 
 Full content + prompt → `SKILL.md`
 
-### 🎯 Ví dụ output
+## 🎯 Ví dụ output
 
 **Đầu vào:** Campaign T12, ngân sách voucher 500 triệu, target 200K redemptions, 2 loại voucher: 50K giảm thẳng (new user) và 20% hoàn xu (existing).
 
@@ -34,7 +34,7 @@ Full content + prompt → `SKILL.md`
 
 Full content + prompt → `SKILL.md`
 
-### 🎯 Example output
+## 🎯 Example output
 
 **Input:** Campaign T12, voucher budget 500M VND, target 200K redemptions, 2 types: 50K flat discount (new user) and 20% cashback (existing).
 
