@@ -18,7 +18,7 @@ Agent quét nội dung trong các folder để gợi ý chủ đề dựa trên 
 
 ```bash
 git clone https://github.com/thaolst/ai-growth-prompts.git
-cd ai-growth-prompts/11-content-agent
+cd ai-growth-prompts/13-content-agent
 cp config.example.json config.json
 # Sửa config.json: repo_path trỏ đến thư mục clone
 python3 content-agent.py                  # gợi ý 3 ideas
@@ -38,7 +38,7 @@ Dựa trên nội dung đã duyệt trong repo
 
 #2 — Growth Glossary / Thuật ngữ Growth
   Góc nhìn: Thuật ngữ AI cơ bản cho growth team
-  📁 08-glossary
+  📁 10-glossary
 
 #3 — 05 - Automation Prompts
   Góc nhìn: Chia sẻ kinh nghiệm thực tế từ repo
@@ -50,7 +50,7 @@ Chạy xong, chọn ý thích, tự viết theo tone của bạn, track performa
 ### Cấu trúc file
 
 ```
-11-content-agent/
+13-content-agent/
 ├── README.md
 ├── SKILL.md
 ├── content-agent.py        ← main agent (chạy được luôn)

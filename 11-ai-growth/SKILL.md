@@ -432,7 +432,7 @@ Hãy thiết kế:
 4. Cách implement: chạy trong n8n / Make / Python script?
 5. Scale: từ 1 campaign lên 10 campaigns thì cần thay đổi gì?
 
-Nếu implement bằng n8n: xem thêm workflow [02 Campaign Monitor](./10-n8n-growth-workflows/).
+Nếu implement bằng n8n: xem thêm workflow [02 Campaign Monitor](./12-n8n-growth-workflows/).
 ```
 
 **Ví dụ output mong đợi:**

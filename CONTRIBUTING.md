@@ -25,10 +25,10 @@ Prompt có thể bằng **tiếng Việt hoặc tiếng Anh**. Nếu được, t
 03-game-mechanics/     — SKILL.md (Game mechanics)
 04-comm-and-brief/     — SKILL.md (Comm plan & brief)
 05-automation/         — SKILL.md (Automation prompts)
-06-growth-frameworks/  — SKILL.md (Prompt mental model growth)
-07-case-studies/       — SKILL.md (Prompt phân tích case study)
-08-glossary/           — SKILL.md (Prompt tra cứu thuật ngữ)
-09-ai-growth/          — SKILL.md (Prompt AI × growth marketing)
+08-growth-frameworks/  — SKILL.md (Prompt mental model growth)
+09-case-studies/       — SKILL.md (Prompt phân tích case study)
+10-glossary/           — SKILL.md (Prompt tra cứu thuật ngữ)
+11-ai-growth/          — SKILL.md (Prompt AI × growth marketing)
 ```
 
 Muốn thêm folder mới? Tạo issue trước để thảo luận.

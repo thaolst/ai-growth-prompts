@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## [0.6.0] - 2026-06-10
+
+### Changed
+- **Renumbered folders to remove duplicates** - Knowledge Base moved to 08-11 (growth-frameworks, case-studies, glossary, ai-growth), execution folders moved to 12-13 (n8n-growth-workflows, content-agent). Campaign Toolbox keeps 00-07. All internal links updated.
+- Removed duplicate 13-content-agent row in English README table.
+
+### Added
+- Cross-repo positioning table clarifying when to use ai-growth-prompts, ai-growth-agents-for-marketers, and growth-mcp.
+
 ## [0.5.0] - 2026-06-03
 
 ### Added

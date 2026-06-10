@@ -49,17 +49,17 @@ Mỗi prompt có 3 phần:
 | [`05-automation`](./05-n8n-automation) | **Thiết kế** automation logic (tool-agnostic): competitor monitor, campaign alert, sentiment tracker. Dùng n8n/Make/Zapier/Python đều được. |
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loop, Xu economy, churn prediction, re-engagement. |
 | [`07-experiment-design`](./07-experiment-design) | A/B test, hypothesis design, statistical analysis, experiment framework. |
-| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | **Thực thi** ngay: 5 workflow n8n có file JSON import sẵn. Cần cài n8n. Dùng sau khi đọc `05`. |
-| [`11-content-agent`](./11-content-agent) | **Tự động** personal brand: Python script Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
+| [`12-n8n-growth-workflows`](./12-n8n-growth-workflows) | **Thực thi** ngay: 5 workflow n8n có file JSON import sẵn. Cần cài n8n. Dùng sau khi đọc `05`. |
+| [`13-content-agent`](./13-content-agent) | **Tự động** personal brand: Python script Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
 
 ### Knowledge Base - Nền tảng lý thuyết
 
 | Thư mục | Mô tả | Skill |
 |---|---|---|
-| [`06-growth-frameworks`](./06-growth-frameworks) | Mental model growth cốt lõi: AARRR, North Star, Growth Loops, Hook, ICE/RICE, JTBD | [`SKILL.md`](./06-growth-frameworks/SKILL.md) |
-| [`07-case-studies`](./07-case-studies) | Câu chuyện growth từ Duolingo, Canva, Notion, Spotify, Dropbox | [`SKILL.md`](./07-case-studies/SKILL.md) |
-| [`08-glossary`](./08-glossary) | 80+ thuật ngữ growth marketing kèm định nghĩa thực tế | [`SKILL.md`](./08-glossary/SKILL.md) |
-| [`09-ai-growth`](./09-ai-growth) | AI đang thay đổi growth marketing thế nào: personalization, prediction, optimization | [`SKILL.md`](./09-ai-growth/SKILL.md) |
+| [`08-growth-frameworks`](./08-growth-frameworks) | Mental model growth cốt lõi: AARRR, North Star, Growth Loops, Hook, ICE/RICE, JTBD | [`SKILL.md`](./08-growth-frameworks/SKILL.md) |
+| [`09-case-studies`](./09-case-studies) | Câu chuyện growth từ Duolingo, Canva, Notion, Spotify, Dropbox | [`SKILL.md`](./09-case-studies/SKILL.md) |
+| [`10-glossary`](./10-glossary) | 80+ thuật ngữ growth marketing kèm định nghĩa thực tế | [`SKILL.md`](./10-glossary/SKILL.md) |
+| [`11-ai-growth`](./11-ai-growth) | AI đang thay đổi growth marketing thế nào: personalization, prediction, optimization | [`SKILL.md`](./11-ai-growth/SKILL.md) |
 
 ### Resources
 
@@ -68,11 +68,21 @@ Mỗi prompt có 3 phần:
 | [`references.md`](./references.md) | Sách, newsletter, podcast, influencer được tuyển chọn |
 | [`trending.md`](./trending.md) | Xu hướng growth marketing hiện tại |
 
+## Hệ sinh thái repo
+
+Mình có 3 repo phục vụ 3 mục đích khác nhau:
+
+| Repo | Là gì | Dùng khi nào |
+|---|---|---|
+| [ai-growth-prompts](https://github.com/thaolst/ai-growth-prompts) (repo này) | Thư viện prompt theo chủ đề, copy-paste được ngay | Cần prompt cho 1 task cụ thể: thiết kế voucher, phân tích segment, viết brief |
+| [ai-growth-agents-for-marketers](https://github.com/thaolst/ai-growth-agents-for-marketers) | Workflow nhiều bước dạng prompt + script, có skill cài cho Claude Code | Muốn chạy quy trình end-to-end: lập kế hoạch MEU, phân tích A/B test |
+| [growth-mcp](https://github.com/thaolst/growth-mcp) | MCP server đóng gói logic growth thành tool | Muốn Claude/Cursor gọi tool trực tiếp thay vì paste prompt |
+
 ## Nguyên lý
 
 Mọi campaign bắt đầu bằng quyết định level ([`00-campaign-level`](./00-campaign-level)). Level đó định nghĩa kênh, ngân sách, timeline bạn thực sự có. Các prompt trong `01-04` được thiết kế để hoạt động trong những ràng buộc đó, không phải điều kiện lý tưởng.
 
-Knowledge Base (`06-09`) cung cấp nền tảng lý thuyết. Dùng để nâng cấp tư duy. Dùng Campaign Toolbox để ra kết quả.
+Knowledge Base (`08-11`) cung cấp nền tảng lý thuyết. Dùng để nâng cấp tư duy. Dùng Campaign Toolbox để ra kết quả.
 
 *Cập nhật khi có prompt mới được kiểm chứng thực tế.*
 
@@ -106,18 +116,17 @@ Each prompt has three parts:
 | [`05-automation`](./05-n8n-automation) | **Design** automation logic (tool-agnostic): competitor monitor, campaign alert, sentiment tracker. Works with n8n, Make, Zapier, or Python. |
 | [`06-retention-strategy`](./06-retention-strategy) | Retention loops, point economy, churn prediction, re-engagement. |
 | [`07-experiment-design`](./07-experiment-design) | A/B testing, hypothesis design, statistical analysis, experiment framework. |
-| [`10-n8n-growth-workflows`](./10-n8n-growth-workflows) | **Execute** immediately: 5 n8n workflows with importable JSON files. Requires n8n. Read `05` first for the logic. |
-| [`11-content-agent`](./11-content-agent) | **Automate** personal brand: Python script for Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
-| [`11-content-agent`](./11-content-agent) | **Automate** personal brand: Python script for Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
+| [`12-n8n-growth-workflows`](./12-n8n-growth-workflows) | **Execute** immediately: 5 n8n workflows with importable JSON files. Requires n8n. Read `05` first for the logic. |
+| [`13-content-agent`](./13-content-agent) | **Automate** personal brand: Python script for Research → Queue → Draft → Track. LinkedIn, Facebook, Twitter. |
 
 ### Knowledge Base
 
 | Folder | Description | Skill |
 |---|---|---|
-| [`06-growth-frameworks`](./06-growth-frameworks) | Core growth mental models: AARRR, North Star, Growth Loops, Hook, ICE/RICE, JTBD | [`SKILL.md`](./06-growth-frameworks/SKILL.md) |
-| [`07-case-studies`](./07-case-studies) | Public growth stories from Duolingo, Canva, Notion, Spotify, Dropbox | [`SKILL.md`](./07-case-studies/SKILL.md) |
-| [`08-glossary`](./08-glossary) | 80+ growth marketing terms with practical definitions | [`SKILL.md`](./08-glossary/SKILL.md) |
-| [`09-ai-growth`](./09-ai-growth) | How AI is transforming growth: personalization, prediction, optimization | [`SKILL.md`](./09-ai-growth/SKILL.md) |
+| [`08-growth-frameworks`](./08-growth-frameworks) | Core growth mental models: AARRR, North Star, Growth Loops, Hook, ICE/RICE, JTBD | [`SKILL.md`](./08-growth-frameworks/SKILL.md) |
+| [`09-case-studies`](./09-case-studies) | Public growth stories from Duolingo, Canva, Notion, Spotify, Dropbox | [`SKILL.md`](./09-case-studies/SKILL.md) |
+| [`10-glossary`](./10-glossary) | 80+ growth marketing terms with practical definitions | [`SKILL.md`](./10-glossary/SKILL.md) |
+| [`11-ai-growth`](./11-ai-growth) | How AI is transforming growth: personalization, prediction, optimization | [`SKILL.md`](./11-ai-growth/SKILL.md) |
 
 ### Resources
 
@@ -126,11 +135,21 @@ Each prompt has three parts:
 | [`references.md`](./references.md) | Curated reading list: books, newsletters, podcasts, influencers |
 | [`trending.md`](./trending.md) | What's hot in growth marketing right now |
 
+## Repo ecosystem
+
+I maintain 3 repos serving different purposes:
+
+| Repo | What it is | When to use |
+|---|---|---|
+| [ai-growth-prompts](https://github.com/thaolst/ai-growth-prompts) (this repo) | Topic-based prompt library, ready to copy-paste | You need a prompt for one specific task: voucher design, segment analysis, campaign brief |
+| [ai-growth-agents-for-marketers](https://github.com/thaolst/ai-growth-agents-for-marketers) | Multi-step workflows as prompts + scripts, installable as Claude Code skills | You want an end-to-end process: MEU planning, A/B test analysis |
+| [growth-mcp](https://github.com/thaolst/growth-mcp) | MCP server packaging growth logic as callable tools | You want Claude/Cursor to call tools directly instead of pasting prompts |
+
 ## Underlying Logic
 
 Every campaign starts with a level decision ([`00-campaign-level`](./00-campaign-level)). That level defines what channels, assets, and timeline you actually have. The prompts in `01-04` are calibrated to work within those constraints, not in ideal conditions.
 
-The Knowledge Base folders (`06-09`) provide the theoretical foundation. Use them to level up your thinking. Use the Campaign Toolbox to get things done.
+The Knowledge Base folders (`08-11`) provide the theoretical foundation. Use them to level up your thinking. Use the Campaign Toolbox to get things done.
 
 *Updated as new prompts are tested in practice. Latest version: v0.5.0.*
 

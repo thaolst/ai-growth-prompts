@@ -38,7 +38,7 @@
 
 ### 7. n8n & No-Code Automation Becomes Default
 - **Why now:** Growth teams at companies of all sizes are standardizing on n8n (open source) as their automation layer — replacing expensive martech stacks with a single visual tool + AI. Make.com and Zapier are alternatives but n8n wins on cost and customizability.
-- **Read:** [n8n Growth Workflows (this repo → 10-n8n-growth-workflows)](./10-n8n-growth-workflows/)
+- **Read:** [n8n Growth Workflows (this repo → 12-n8n-growth-workflows)](./12-n8n-growth-workflows/)
 - **Action:** Pick one manual reporting task. Automate it with n8n this week. The 5 workflows in this repo are ready to import.
 
 ---

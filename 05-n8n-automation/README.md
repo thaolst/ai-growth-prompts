@@ -28,7 +28,7 @@
 
 ## 05 vs 10 — Dùng cái nào?
 
-| | Folder này (05) | [10-n8n-growth-workflows](../10-n8n-growth-workflows) |
+| | Folder này (05) | [12-n8n-growth-workflows](../12-n8n-growth-workflows) |
 |---|---|---|
 | **Là gì** | Prompt để *thiết kế* logic automation | Workflow n8n *sẵn sàng import* |
 | **Dùng khi** | Muốn hiểu logic, tự build bằng bất kỳ tool nào | Đã có n8n, muốn chạy ngay |
@@ -37,4 +37,4 @@
 
 **Gợi ý:** Đọc `05` trước để hiểu logic → dùng `10` để thực thi nhanh.
 
-👉 Xem workflow JSON sẵn dùng: [`10-n8n-growth-workflows`](../10-n8n-growth-workflows)
+👉 Xem workflow JSON sẵn dùng: [`12-n8n-growth-workflows`](../12-n8n-growth-workflows)
